@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="黄大仁的博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="Data ValidationData Validation 数据验证,在网络开发中,对用户提交的数据进行检验,是常见的需求.在本章中我们会讲解Java中常用的两种数据验证方式.  Bean Validation Spring v Validation  Bean ValidationBean Validation是一种规范,为验证JavaBean定义了相应的Annotation和API。  关于">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据验证">
+<meta property="og:url" content="http://yoursite.com/2018/08/11/Java/JavaWeb/5.表示层/SpringMVC/数据验证/index.html">
+<meta property="og:site_name" content="黄大仁的博客">
+<meta property="og:description" content="Data ValidationData Validation 数据验证,在网络开发中,对用户提交的数据进行检验,是常见的需求.在本章中我们会讲解Java中常用的两种数据验证方式.  Bean Validation Spring v Validation  Bean ValidationBean Validation是一种规范,为验证JavaBean定义了相应的Annotation和API。  关于">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/huangdaren1997/Java/blob/master/JavaWeb/5.%E8%A1%A8%E7%A4%BA%E5%B1%82/SpringMVC/image/hibernate%20validator%20annotation.png?raw=true">
+<meta property="og:updated_time" content="2019-01-12T12:53:45.701Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据验证">
+<meta name="twitter:description" content="Data ValidationData Validation 数据验证,在网络开发中,对用户提交的数据进行检验,是常见的需求.在本章中我们会讲解Java中常用的两种数据验证方式.  Bean Validation Spring v Validation  Bean ValidationBean Validation是一种规范,为验证JavaBean定义了相应的Annotation和API。  关于">
+<meta name="twitter:image" content="https://github.com/huangdaren1997/Java/blob/master/JavaWeb/5.%E8%A1%A8%E7%A4%BA%E5%B1%82/SpringMVC/image/hibernate%20validator%20annotation.png?raw=true">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/08/11/Java/JavaWeb/5.表示层/SpringMVC/数据验证/">
+
+
+
+
+
+  <title>数据验证 | 黄大仁的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">黄大仁的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/11/Java/JavaWeb/5.表示层/SpringMVC/数据验证/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">数据验证</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-11T00:00:00+08:00">
+                2018-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/SpringMVC/" itemprop="url" rel="index">
+                    <span itemprop="name">SpringMVC</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Data-Validation"><a href="#Data-Validation" class="headerlink" title="Data Validation"></a>Data Validation</h1><p>Data Validation 数据验证,在网络开发中,对用户提交的数据进行检验,是常见的需求.在本章中我们会讲解Java中常用的两种数据验证方式.</p>
+<ul>
+<li>Bean Validation</li>
+<li>Spring v Validation</li>
+</ul>
+<h2 id="Bean-Validation"><a href="#Bean-Validation" class="headerlink" title="Bean Validation"></a>Bean Validation</h2><p>Bean Validation是一种规范,为验证JavaBean定义了相应的Annotation和API。</p>
+<ul>
+<li>关于该规范的详细内容,可以上网查看JSR-303.</li>
+<li><strong>JSRs</strong> Java Specification Requests Java 规范提案,它是一份文档,里面描述了添加到Java平台的建议规范和技术.</li>
+</ul>
+<h2 id="Hibernate-Validator"><a href="#Hibernate-Validator" class="headerlink" title="Hibernate Validator"></a>Hibernate Validator</h2><p>Hibernate Validator 是 Bean Validation 规范的实现. </p>
+<p>Hibernate Validator 提供了 JSR 303 规范中所有内置 constraint 的实现，除此之外还有一些附加的 constraint。</p>
+<p>简而言之,Bean Validation是一种方案,Hibernate Validator则是该方案的实施者.</p>
+<h2 id="Spring-Validator"><a href="#Spring-Validator" class="headerlink" title="Spring Validator"></a>Spring Validator</h2><hr>
+<h1 id="Hibernate-Validator-1"><a href="#Hibernate-Validator-1" class="headerlink" title="Hibernate Validator"></a>Hibernate Validator</h1><p>概括</p>
+<ul>
+<li>了解Hibernate Validator 内置约束</li>
+<li>学会单独使用Hibernate Validator<ul>
+<li>使用内置的约束</li>
+<li>自定义约束</li>
+</ul>
+</li>
+</ul>
+<h2 id="Hibernate-Validator-内置约束"><a href="#Hibernate-Validator-内置约束" class="headerlink" title="Hibernate Validator 内置约束"></a>Hibernate Validator 内置约束</h2><p>约束(constraint)其实就是,规定某样东西必须符合某种要求.</p>
+<p>由于Hibernate Validator是JSR303规范的实现库,也就是说Hibernate Validator 内置的约束,其实就是JSR303规定的约束.</p>
+<h3 id="JSR303规定的约束"><a href="#JSR303规定的约束" class="headerlink" title="JSR303规定的约束"></a>JSR303规定的约束</h3><p>JSR303中定义了很多常用的约束注解，使用方法就是把约束注解添加到目标(字段 方法等等)上,然后通过验证器(validator)进行验证.下面是常见的约束.</p>
+<p><strong>空检查</strong><br>@Null 验证对象是否为null<br>@NotNull 验证对象是否不为null, 无法查检长度为0的字符串<br>@NotBlank 检查约束字符串是不是Null还有被Trim的长度是否大于0,只对字符串,且会去掉前后空格.<br>@NotEmpty 检查约束元素是否为NULL或者是EMPTY.</p>
+<p><strong>Booelan检查</strong><br>@AssertTrue 验证 Boolean 对象是否为 true<br>@AssertFalse 验证 Boolean 对象是否为 false</p>
+<p><strong>长度检查</strong><br>@Size(min=, max=) 验证对象（Array,Collection,Map,String）长度是否在给定的范围之内<br>@Length(min=, max=) 限制字符长度</p>
+<p><strong>日期检查</strong><br>@Past 验证 Date 和 Calendar 对象是否在当前时间之前，验证成立的话被注释的元素一定是一个过去的日期<br>@Future 验证 Date 和 Calendar 对象是否在当前时间之后 ，验证成立的话被注释的元素一定是一个将来的日期 </p>
+<p><strong>正则表达式</strong><br>@Pattern 验证 String 对象是否符合正则表达式的规则，被注释的元素符合制定的正则表达式，regexp:正则表达式 flags: 指定 Pattern.Flag 的数组，表示正则表达式的相关选项。</p>
+<p><strong>数值检查</strong><br>建议使用在Stirng,Integer类型，不建议使用在int类型上，因为表单值为“”时无法转换为int,Integer则为null<br>@Min 验证 Number 和 String 对象是否大等于指定的值<br>@Max 验证 Number 和 String 对象是否小等于指定的值<br>@DecimalMax 被标注的值必须不大于约束中指定的最大值. 这个约束的参数是一个通过BigDecimal定义的最大值的字符串表示.小数存在精度<br>@DecimalMin 被标注的值必须不小于约束中指定的最小值. 这个约束的参数是一个通过BigDecimal定义的最小值的字符串表示.小数存在精度<br>@Digits 验证 Number 和 String 的构成是否合法<br>@Digits(integer=,fraction=) 验证字符串是否是符合指定格式的数字，interger指定整数精度，fraction指定小数精度。<br>@Range(min=, max=) 被指定的元素必须在合适的范围内<br>@Range(min=10000,max=50000,message=”range.bean.wage”)<br>@Valid 递归的对关联对象进行校验, 如果关联对象是个集合或者数组,那么对其中的元素进行递归校验,如果是一个map,则对其中的值部分进行校验.(是否进行递归验证)<br>@CreditCardNumber信用卡验证<br>@Email 验证是否是邮件地址，如果为null,不进行验证，算通过验证。<br>@ScriptAssert(lang= ,script=, alias=)<br>@URL(protocol=,host=, port=,regexp=, flags=)  </p>
+<h3 id="Hibernate-Validator扩展的约束"><a href="#Hibernate-Validator扩展的约束" class="headerlink" title="Hibernate Validator扩展的约束"></a>Hibernate Validator扩展的约束</h3><p>Hibernate validator 在JSR303的基础上对校验注解进行了扩展，扩展注解如下：</p>
+<p> <img src="https://github.com/huangdaren1997/Java/blob/master/JavaWeb/5.%E8%A1%A8%E7%A4%BA%E5%B1%82/SpringMVC/image/hibernate%20validator%20annotation.png?raw=true" alt></p>
+<h2 id="使用内置的约束"><a href="#使用内置的约束" class="headerlink" title="使用内置的约束"></a>使用内置的约束</h2><h3 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.hibernate<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>hibernate-validator<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.4.Final<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>compile<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用约束"><a href="#使用约束" class="headerlink" title="使用约束"></a>使用约束</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="meta">@NotNull</span></span><br><span class="line">    <span class="meta">@Pattern</span>(regexp = <span class="string">"[0-9]&#123;15&#125;|[0-9]&#123;18&#125;"</span> ,message = <span class="string">"身份证格式错误,必须是15或18位数字"</span>)</span><br><span class="line">    <span class="keyword">private</span> String id;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@NotNull</span>(message = <span class="string">"名字不能为空"</span>)</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="comment">// setter getter</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>在上代码前,我们需要了解两个对象,分别是validator对象以及ConstraintViolation对象.</p>
+<h4 id="validator对象"><a href="#validator对象" class="headerlink" title="validator对象"></a>validator对象</h4><p><code>Validator</code>用于检验对象是否遵循其约束</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取Validator的实例</span></span><br><span class="line">Validator validator = Validation.buildDefaultValidatorFactory().getValidator();</span><br></pre></td></tr></table></figure>
+<p><code>Validator</code>中有三个方法能够用来校验整个实体对象或者实体对象中的属性. 这三个方法都会返回一个<code>Set&lt;ConstraintViolation&gt;</code>对象, 如果整个验证过程没有发现问题的话,那么这个set是空的, 否则, 每个违反约束的地方都会被包装成一个<code>ConstraintViolation</code>的实例然后添加到set当中. </p>
+<ul>
+<li>validate(obj)<ul>
+<li>使用<code>validate()</code>方法对一个给定的实体对象中定义的所有约束条件进行校验 </li>
+</ul>
+</li>
+<li>validateProperty(obj,”propertyName”)<ul>
+<li>对一个给定实体对象的单个属性进行校验. 其中属性名称需要符合JavaBean规范中定义的属性名称 </li>
+</ul>
+</li>
+<li>validateValue(Class,”propertyName”,null)<ul>
+<li>测试把一个特定的值赋给一个类的某一个属性,是否会违反此类中定义的约束条件. </li>
+</ul>
+</li>
+</ul>
+<h4 id="ConstraintViolation对象"><a href="#ConstraintViolation对象" class="headerlink" title="ConstraintViolation对象"></a>ConstraintViolation对象</h4><p>ConstraintViolation对象包含了违反约束的相关信息.</p>
+<ul>
+<li>getMessage() 获取message</li>
+<li>getMessageTemplate() 获取信息模板</li>
+<li>getRootBean() 获取校验的对象</li>
+<li>getRootBeanClass() 获取校验的对象的类</li>
+<li>getLeafBean() <ul>
+<li>如果约束是添加在一个bean(实体对象)上的,那么则返回这个bean的实例</li>
+<li>如果是约束是定义在一个属性上的, 则返回这个属性所属的bean的实例对象</li>
+</ul>
+</li>
+<li>getPropertyPath()  从被验证的根对象到被验证的属性的路径. </li>
+<li>getConstraintDescriptor() 导致校验失败的约束定义 </li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestValidation</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Validator validator = </span><br><span class="line">        Validation.buildDefaultValidatorFactory().getValidator();</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">personValidation</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Person person = <span class="keyword">new</span> Person();</span><br><span class="line">        person.setId(<span class="string">"123456789012345"</span>);</span><br><span class="line">        Set&lt;ConstraintViolation&lt;Person&gt;&gt; constraintViolations = validator.validate(person);</span><br><span class="line">        <span class="keyword">for</span>(ConstraintViolation&lt;Person&gt; cv:constraintViolations)&#123;</span><br><span class="line">            System.out.println(cv.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="自定义约束"><a href="#自定义约束" class="headerlink" title="自定义约束"></a>自定义约束</h2><p>尽管Bean Validation API定义了一大堆标准的约束条件, 但是肯定还是有这些约束不能满足我们需求的时候, 在这种情况下, 你可以根据你的特定的校验需求来创建自己的约束条件. </p>
+<p>按照以下三个步骤来创建一个自定义的约束</p>
+<ul>
+<li>创建约束注解</li>
+<li>实现一个验证器</li>
+</ul>
+<h4 id="创建约束注解"><a href="#创建约束注解" class="headerlink" title="创建约束注解"></a>创建约束注解</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target</span>( &#123; METHOD, FIELD, ANNOTATION_TYPE &#125;)</span><br><span class="line"><span class="meta">@Retention</span>(RUNTIME) <span class="comment">//注解信息是在运行期通过反射被读取的</span></span><br><span class="line"><span class="meta">@Constraint</span>(validatedBy = IdValidator.class) <span class="comment">//验证器</span></span><br><span class="line"><span class="meta">@Documented</span> <span class="comment">//对使用了@CheckCase的类进行javadoc操作到时候, 这个标注会被添加到javadoc当中</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> IdConstraint &#123;</span><br><span class="line">	<span class="comment">//默认的消息模版, 当这个约束条件被验证失败的时候,通过此属性来输出错误信息</span></span><br><span class="line">    <span class="function">String <span class="title">message</span><span class="params">()</span> <span class="keyword">default</span> "</span>&#123;身份证号有误,必须是<span class="number">15</span>或<span class="number">18</span>位数字&#125;<span class="string">";</span></span><br><span class="line"><span class="string">	//指定这个约束条件属于哪(些)个校验组</span></span><br><span class="line"><span class="string">    Class&lt;?&gt;[] groups() default &#123;&#125;;</span></span><br><span class="line"><span class="string">	//使用者可以通过此属性来给约束条件指定严重级别</span></span><br><span class="line"><span class="string">    Class&lt;? extends Payload&gt;[] payload() default &#123;&#125;;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="验证器"><a href="#验证器" class="headerlink" title="验证器"></a>验证器</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.validation.ConstraintValidator;</span><br><span class="line"><span class="keyword">import</span> javax.validation.ConstraintValidatorContext;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IdValidator</span> <span class="keyword">implements</span> <span class="title">ConstraintValidator</span>&lt;<span class="title">IdConstraint</span>, <span class="title">String</span>&gt; </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">initialize</span><span class="params">(IdConstraint constraint)</span> </span>&#123;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValid</span><span class="params">(String id, ConstraintValidatorContext context)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> id.matches(<span class="string">"[0-9]&#123;15&#125;|[0-9]&#123;18&#125;"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@IdConstraint</span></span><br><span class="line">    <span class="keyword">private</span> String id;</span><br><span class="line">	<span class="comment">// getter setter</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestValidation</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Validator validator = </span><br><span class="line">        Validation.buildDefaultValidatorFactory().getValidator();</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">personValidation</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Person person = <span class="keyword">new</span> Person();</span><br><span class="line">        person.setId(<span class="string">"123456"</span>);</span><br><span class="line">        Set&lt;ConstraintViolation&lt;Person&gt;&gt; constraintViolations = </span><br><span class="line">            validator.validate(person);</span><br><span class="line">        <span class="keyword">for</span>(ConstraintViolation&lt;Person&gt; cv:constraintViolations)&#123;</span><br><span class="line">            System.out.println(cv.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>掌握了上面的知识就可以去看下一篇文章了.</strong></p>
+<hr>
+<h2 id="Spring-MVC整合Hibernate-Validator"><a href="#Spring-MVC整合Hibernate-Validator" class="headerlink" title="Spring MVC整合Hibernate Validator"></a>Spring MVC整合Hibernate Validator</h2><h3 id="注册Validator"><a href="#注册Validator" class="headerlink" title="注册Validator"></a>注册Validator</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"validator"</span> <span class="attr">class</span>=</span></span><br><span class="line"><span class="tag">      "<span class="attr">org.springframework.validation.beanvalidation.LocalValidatorFactoryBean</span>"&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"providerClass"</span> <span class="attr">value</span>=</span></span><br><span class="line"><span class="tag">              "<span class="attr">org.hibernate.validator.HibernateValidator</span>"/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mvc:annotation-driven</span> <span class="attr">validator</span>=<span class="string">"validator"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用信息源"><a href="#使用信息源" class="headerlink" title="使用信息源"></a>使用信息源</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"messageSource"</span> <span class="attr">class</span>=</span></span><br><span class="line"><span class="tag">       "<span class="attr">org.springframework.context.support.ResourceBundleMessageSource</span>"&gt;</span> </span><br><span class="line">         <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"basename"</span> <span class="attr">value</span>=<span class="string">"message"</span>/&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"validator"</span> <span class="attr">class</span>=</span></span><br><span class="line"><span class="tag">      "<span class="attr">org.springframework.validation.beanvalidation.LocalValidatorFactoryBean</span>"&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"providerClass"</span> <span class="attr">value</span>=<span class="string">"org.hibernate.validator.HibernateValidator"</span>/&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"validationMessageSource"</span> <span class="attr">ref</span>=<span class="string">"messageSource"</span>/&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">mvc:annotation-driven</span> <span class="attr">validator</span>=<span class="string">"validator"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="国际化"><a href="#国际化" class="headerlink" title="国际化"></a>国际化</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"localeResolver"</span> <span class="attr">class</span>=</span></span><br><span class="line"><span class="tag">      "<span class="attr">org.springframework.web.servlet.i18n.SessionLocaleResolver</span>"&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"defaultLocale"</span> <span class="attr">value</span>=<span class="string">"en"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Hibernate-Validator进阶"><a href="#Hibernate-Validator进阶" class="headerlink" title="Hibernate Validator进阶"></a>Hibernate Validator进阶</h2><h3 id="约束条件组合"><a href="#约束条件组合" class="headerlink" title="约束条件组合"></a>约束条件组合</h3><p>有些时候一个属性可能会有多个约束注解,如果这个属性在多个地方出现,重复写这些注解就有违DRY原则了.</p>
+<p>这是我们可以定义一个约束,然后在其中添加其他约束.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@NotNull</span></span><br><span class="line"><span class="meta">@Size</span>(min = <span class="number">2</span>, max = <span class="number">14</span>)</span><br><span class="line"><span class="meta">@CheckCase</span>(CaseMode.UPPER)</span><br><span class="line"><span class="meta">@Target</span>( &#123; METHOD, FIELD, ANNOTATION_TYPE &#125;)</span><br><span class="line"><span class="meta">@Retention</span>(RUNTIME)</span><br><span class="line"><span class="meta">@Constraint</span>(validatedBy = &#123;&#125;)</span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> ValidLicensePlate &#123;</span><br><span class="line"></span><br><span class="line">    <span class="function">String <span class="title">message</span><span class="params">()</span> <span class="keyword">default</span> "......."</span>;</span><br><span class="line"></span><br><span class="line">    Class&lt;?&gt;[] groups() <span class="keyword">default</span> &#123;&#125;;</span><br><span class="line"></span><br><span class="line">    Class&lt;? extends Payload&gt;[] payload() <span class="keyword">default</span> &#123;&#125;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="Spring-Validation"><a href="#Spring-Validation" class="headerlink" title="Spring Validation"></a>Spring Validation</h1><p>在Bean Validation中,validator只需要进行验证,然后返回boolean类型的结果.</p>
+<p>在Spring Validation中,validator使用Errors对象,由它来存放验证错误的信息.</p>
+<h2 id="Validator接口"><a href="#Validator接口" class="headerlink" title="Validator接口"></a>Validator接口</h2><p>spring提供了一个Validator接口,通过实现Validator接口进行验证,Validator接口里面有一个Errors对象，该对象存放验证错误的信息.</p>
+<p>看个例子</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// the usual getters and setters...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接下来我们要为Person类提供数据验证的服务,通过实现 org.springframework.validation.Validator 接口的两个方法</p>
+<ul>
+<li>supports(Class)  此验证器可以验证提供的类的实例吗？</li>
+<li>validate(Object, org.springframework.validation.Errors) 对传入的对象进行验证,如果有错误则传递给Errors对象.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PersonValidator</span> <span class="keyword">implements</span> <span class="title">Validator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supports</span><span class="params">(Class clazz)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Person.class.equals(clazz);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">validate</span><span class="params">(Object obj, Errors e)</span> </span>&#123;</span><br><span class="line">        Person p = (Person) o;</span><br><span class="line">        String name = p.getName();</span><br><span class="line">        <span class="keyword">int</span> age = p.getAge();</span><br><span class="line">        <span class="keyword">if</span>(name==<span class="keyword">null</span>) errors.rejectValue(<span class="string">"name"</span>,<span class="string">"name.empty"</span>);</span><br><span class="line">        <span class="keyword">if</span>(age&lt;<span class="number">0</span>||age&gt;<span class="number">110</span>) errors.rejectValue(<span class="string">"age"</span>,<span class="string">"请输入正确的年龄"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Errors接口"><a href="#Errors接口" class="headerlink" title="Errors接口"></a>Errors接口</h2><p>Errors接口的作用:存储和公开有关特定对象的数据绑定和验证错误的信息。</p>
+<p>具体内容看API,注意看它的方法和实现类.</p>
+<h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestValidation</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Validator validator = <span class="keyword">new</span> PersonValidator();</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">personValidation</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Person person = <span class="keyword">new</span> Person();</span><br><span class="line">        person.setAge(-<span class="number">1</span>);</span><br><span class="line">        Errors errors = <span class="keyword">new</span> BeanPropertyBindingResult(person,<span class="string">"person"</span>);</span><br><span class="line">        <span class="keyword">if</span>(validator.supports(person.getClass()))&#123;</span><br><span class="line">            validator.validate(person,errors);</span><br><span class="line">        &#125;</span><br><span class="line">        List&lt;ObjectError&gt; allErrors = errors.getAllErrors();</span><br><span class="line">        <span class="keyword">for</span>(ObjectError e:allErrors)&#123;</span><br><span class="line">            System.out.println(e.toString());</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(errors.getObjectName());</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="DataBinder"><a href="#DataBinder" class="headerlink" title="DataBinder"></a>DataBinder</h2><p>从Spring3开始,可以使用Validator配置DataBinder实例.一旦配置了,可以通过binder.validate()方法调用Validator.<br>所有的验证错误都会被添加到BindingResult.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Foo target = <span class="keyword">new</span> Foo();</span><br><span class="line">DataBinder binder = <span class="keyword">new</span> DataBinder(target);</span><br><span class="line">binder.setValidator(<span class="keyword">new</span> FooValidator());</span><br><span class="line"></span><br><span class="line"><span class="comment">// bind to the target object</span></span><br><span class="line">binder.bind(propertyValues);</span><br><span class="line"></span><br><span class="line"><span class="comment">// validate the target object</span></span><br><span class="line">binder.validate();</span><br><span class="line"></span><br><span class="line"><span class="comment">// get BindingResult that includes any validation errors</span></span><br><span class="line">BindingResult results = binder.getBindingResult();</span><br></pre></td></tr></table></figure>
+<h2 id="嵌套的validator"><a href="#嵌套的validator" class="headerlink" title="嵌套的validator"></a>嵌套的validator</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CustomerValidator</span> <span class="keyword">implements</span> <span class="title">Validator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> Validator addressValidator;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CustomerValidator</span><span class="params">(Validator addressValidator)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (addressValidator == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"The supplied [Validator] is "</span> +</span><br><span class="line">                <span class="string">"required and must not be null."</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!addressValidator.supports(Address.class)) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"The supplied [Validator] must "</span> +</span><br><span class="line">                <span class="string">"support the validation of [Address] instances."</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.addressValidator = addressValidator;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * This Validator validates Customer instances, and any subclasses of Customer too</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supports</span><span class="params">(Class clazz)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Customer.class.isAssignableFrom(clazz);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">validate</span><span class="params">(Object target, Errors errors)</span> </span>&#123;</span><br><span class="line">        ValidationUtils.rejectIfEmptyOrWhitespace(errors, <span class="string">"firstName"</span>, <span class="string">"field.required"</span>);</span><br><span class="line">        ValidationUtils.rejectIfEmptyOrWhitespace(errors, <span class="string">"surname"</span>, <span class="string">"field.required"</span>);</span><br><span class="line">        Customer customer = (Customer) target;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            errors.pushNestedPath(<span class="string">"address"</span>);</span><br><span class="line">            ValidationUtils.invokeValidator(<span class="keyword">this</span>.addressValidator, </span><br><span class="line">                                            customer.getAddress(), errors);</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            errors.popNestedPath();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Spring-MVC-Validation"><a href="#Spring-MVC-Validation" class="headerlink" title="Spring MVC Validation"></a>Spring MVC Validation</h1><h2 id="LocalValidatorFactoryBean"><a href="#LocalValidatorFactoryBean" class="headerlink" title="LocalValidatorFactoryBean"></a>LocalValidatorFactoryBean</h2><p>默认的,如果Bean Validation存在于类路径(例如引入了Hibernate Validator库),<code>LocalValidatorFactoryBean</code>会被注册为全局Validator,用于与控制器方法参数上的@Valid和@Validated一起使用。</p>
+<p>基于java配置</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableWebMvc</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Validator <span class="title">getValidator</span><span class="params">()</span></span>; &#123;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>基于XML</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:mvc</span>=<span class="string">"http://www.springframework.org/schema/mvc"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xsi:schemaLocation</span>=<span class="string">"</span></span></span><br><span class="line"><span class="tag"><span class="string">        http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="tag"><span class="string">        http://www.springframework.org/schema/beans/spring-beans.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">        http://www.springframework.org/schema/mvc</span></span></span><br><span class="line"><span class="tag"><span class="string">        http://www.springframework.org/schema/mvc/spring-mvc.xsd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">mvc:annotation-driven</span> <span class="attr">validator</span>=<span class="string">"globalValidator"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="整合Spring-Validation和-BeanValidation"><a href="#整合Spring-Validation和-BeanValidation" class="headerlink" title="整合Spring Validation和 BeanValidation"></a>整合Spring Validation和 BeanValidation</h1><h2 id="编写Validator"><a href="#编写Validator" class="headerlink" title="编写Validator"></a>编写Validator</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.packt.webstore.validation.validator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.packt.webstore.domain.bean.Product;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.validation.Errors;</span><br><span class="line"><span class="keyword">import</span> org.springframework.validation.Validator;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.validation.ConstraintViolation;</span><br><span class="line"><span class="keyword">import</span> javax.validation.Path;</span><br><span class="line"><span class="keyword">import</span> java.util.HashSet;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProductValidator</span> <span class="keyword">implements</span> <span class="title">Validator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> javax.validation.Validator beanValidator;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Set&lt;Validator&gt; springValidators;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ProductValidator</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.springValidators = <span class="keyword">new</span> HashSet&lt;Validator&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSpringValidators</span><span class="params">(Set&lt;Validator&gt; springValidators)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.springValidators = springValidators;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supports</span><span class="params">(Class&lt;?&gt; aClass)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Product.class.isAssignableFrom(aClass);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">validate</span><span class="params">(Object o, Errors errors)</span> </span>&#123;</span><br><span class="line">        Set&lt;ConstraintViolation&lt;Object&gt;&gt; constraintViolationSet = beanValidator.validate(o);</span><br><span class="line">        <span class="keyword">for</span>(ConstraintViolation&lt;Object&gt; cv:constraintViolationSet)&#123;</span><br><span class="line">            String propertyPath = cv.getPropertyPath().toString();</span><br><span class="line">            String message = cv.getMessage();</span><br><span class="line">            errors.rejectValue(propertyPath,<span class="string">""</span>,message);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(Validator validator:springValidators)&#123;</span><br><span class="line">            validator.validate(o,errors);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="注册Validator-Bean"><a href="#注册Validator-Bean" class="headerlink" title="注册Validator Bean"></a>注册Validator Bean</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"productValidator"</span> <span class="attr">class</span>=<span class="string">"com.packt.webstore.validation.validator.ProductValidator"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"springValidators"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">set</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"com.packt.webstore.validation.validator.UnitsInStockValidator"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">set</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="在Controller注入Bean"><a href="#在Controller注入Bean" class="headerlink" title="在Controller注入Bean"></a>在Controller注入Bean</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> ProductValidator productValidator;</span><br></pre></td></tr></table></figure>
+<h2 id="绑定Validator"><a href="#绑定Validator" class="headerlink" title="绑定Validator"></a>绑定Validator</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">binder.setValidator(productValidator);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/11/Java/JavaWeb/5.表示层/MySpringMVC/5.数据验证/" rel="next" title="数据验证">
+                <i class="fa fa-chevron-left"></i> 数据验证
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/22/Java/JavaSE/ch11_多线程与并发编程/1.多线程基础/" rel="prev" title="1.多线程基础">
+                1.多线程基础 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="黄大仁">
+            
+              <p class="site-author-name" itemprop="name">黄大仁</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">181</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Data-Validation"><span class="nav-text">Data Validation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Bean-Validation"><span class="nav-text">Bean Validation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hibernate-Validator"><span class="nav-text">Hibernate Validator</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-Validator"><span class="nav-text">Spring Validator</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hibernate-Validator-1"><span class="nav-text">Hibernate Validator</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hibernate-Validator-内置约束"><span class="nav-text">Hibernate Validator 内置约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JSR303规定的约束"><span class="nav-text">JSR303规定的约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hibernate-Validator扩展的约束"><span class="nav-text">Hibernate Validator扩展的约束</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用内置的约束"><span class="nav-text">使用内置的约束</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#引入依赖"><span class="nav-text">引入依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用约束"><span class="nav-text">使用约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证"><span class="nav-text">验证</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#validator对象"><span class="nav-text">validator对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ConstraintViolation对象"><span class="nav-text">ConstraintViolation对象</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义约束"><span class="nav-text">自定义约束</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建约束注解"><span class="nav-text">创建约束注解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#验证器"><span class="nav-text">验证器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用"><span class="nav-text">使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试"><span class="nav-text">测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spring-MVC整合Hibernate-Validator"><span class="nav-text">Spring MVC整合Hibernate Validator</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册Validator"><span class="nav-text">注册Validator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用信息源"><span class="nav-text">使用信息源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#国际化"><span class="nav-text">国际化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hibernate-Validator进阶"><span class="nav-text">Hibernate Validator进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#约束条件组合"><span class="nav-text">约束条件组合</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Validation"><span class="nav-text">Spring Validation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Validator接口"><span class="nav-text">Validator接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Errors接口"><span class="nav-text">Errors接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-1"><span class="nav-text">使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DataBinder"><span class="nav-text">DataBinder</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌套的validator"><span class="nav-text">嵌套的validator</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-MVC-Validation"><span class="nav-text">Spring MVC Validation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#LocalValidatorFactoryBean"><span class="nav-text">LocalValidatorFactoryBean</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#整合Spring-Validation和-BeanValidation"><span class="nav-text">整合Spring Validation和 BeanValidation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编写Validator"><span class="nav-text">编写Validator</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册Validator-Bean"><span class="nav-text">注册Validator Bean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在Controller注入Bean"><span class="nav-text">在Controller注入Bean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定Validator"><span class="nav-text">绑定Validator</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">黄大仁</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

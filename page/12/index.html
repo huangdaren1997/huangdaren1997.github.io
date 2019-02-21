@@ -1,0 +1,2908 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="黄大仁的博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄大仁的博客">
+<meta property="og:url" content="http://yoursite.com/page/12/index.html">
+<meta property="og:site_name" content="黄大仁的博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="黄大仁的博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/12/">
+
+
+
+
+
+  <title>黄大仁的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">黄大仁的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/29/工具/Git/Git基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/29/工具/Git/Git基础/" itemprop="url">2.Git基础</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-29T00:00:00+08:00">
+                2018-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Git基础"><a href="#Git基础" class="headerlink" title="Git基础"></a>Git基础</h1><h2 id="仓库"><a href="#仓库" class="headerlink" title="仓库"></a>仓库</h2><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+<h3 id="获取仓库"><a href="#获取仓库" class="headerlink" title="获取仓库"></a>获取仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># git clone [url]</span><br><span class="line">git clone https://github.com/libgit2/libgit2</span><br></pre></td></tr></table></figure>
+<h2 id="记录每个更新到仓库"><a href="#记录每个更新到仓库" class="headerlink" title="记录每个更新到仓库"></a>记录每个更新到仓库</h2><p>在Git仓库里面，文件有两种类型，分别是已跟踪和未跟踪。</p>
+<p>对于已跟踪的文件又有三种类型，分别是为修改、已修改、暂存</p>
+<p><img src="https://git-scm.com/book/en/v2/images/lifecycle.png" alt></p>
+<h2 id="查看提交历史"><a href="#查看提交历史" class="headerlink" title="查看提交历史"></a>查看提交历史</h2><p><code>git log</code> 会按提交时间列出所有的更新，最近的更新排在最上面。 </p>
+<p><code>git config --global log.date iso</code> 修改时间样式</p>
+<p><code>-p</code>，用来显示每次提交的内容差异。 你也可以加上 <code>-2</code> 来仅显示最近两次提交</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log -p -2</span><br></pre></td></tr></table></figure>
+<p><code>--stat</code> 选项在每次提交的下面列出所有被修改过的文件、有多少文件被修改了以及被修改过的文件的哪些行被移除或是添加了。 在每次提交的最后还有一个总结。</p>
+<h2 id="撤销操作"><a href="#撤销操作" class="headerlink" title="撤销操作"></a>撤销操作</h2><ul>
+<li>提交完了，发现漏掉了几个文件没有添加，或者提交信息写错了</li>
+</ul>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+<p>这个命令会将暂存区中的文件提交。 如果自上次提交以来你还未做任何修改（例如，在上次提交后马上执行了此命令），那么快照会保持不变，而你所修改的只是提交信息。</p>
+<ul>
+<li>取消暂存的文件，使用 <code>git reset HEAD &lt;file&gt;...</code> 来取消暂存。</li>
+</ul>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD CONTRIBUTING.md</span><br></pre></td></tr></table></figure>
+<ul>
+<li>取消对尚未暂存的文件的修改</li>
+</ul>
+<p>如果你并不想保留对 <code>CONTRIBUTING.md</code> 文件的修改怎么办？ 你该如何方便地撤消修改 - 将它还原成上次提交时的样子（或者刚克隆完的样子，或者刚把它放入工作目录时的样子）？</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- CONTRIBUTING.md</span><br></pre></td></tr></table></figure>
+<p> <code>git checkout -- [file]</code> 是一个危险的命令。 你对那个文件做的任何修改都会消失 - 你只是拷贝了另一个文件来覆盖它。 除非你确实清楚不想要那个文件了，否则不要使用这个命令。</p>
+<h2 id="远程仓库的使用"><a href="#远程仓库的使用" class="headerlink" title="远程仓库的使用"></a>远程仓库的使用</h2><h3 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h3><p>查看你已经配置的远程仓库服务器，可以运行 <code>git remote</code> 命令</p>
+<p>指定选项 <code>-v</code>，会显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL。如果你的远程仓库不止一个，该命令会将它们全部列出。</p>
+<p><code>git remote show [remote-name]</code> 获取更详细的信息</p>
+<h3 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h3><p>运行 <code>git remote add &lt;shortname&gt; &lt;url&gt;</code> 添加一个新的远程 Git 仓库。</p>
+<h3 id="从远程仓库中抓取与拉取"><a href="#从远程仓库中抓取与拉取" class="headerlink" title="从远程仓库中抓取与拉取"></a>从远程仓库中抓取与拉取</h3><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch [remote-name]</span><br></pre></td></tr></table></figure>
+<p>这个命令会访问远程仓库，从中拉取所有你还没有的数据。 执行完成后，你将会拥有那个远程仓库中所有分支的引用，可以随时合并或查看。 必须注意 <code>git fetch</code> 命令会将数据拉取到你的本地仓库 - 它并不会自动合并或修改你当前的工作。 当准备好时你必须手动将其合并入你的工作。</p>
+<h3 id="推送到远程仓库"><a href="#推送到远程仓库" class="headerlink" title="推送到远程仓库"></a>推送到远程仓库</h3><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push [remote-name] [branch-name]</span><br></pre></td></tr></table></figure>
+<p>只有当你有所克隆服务器的写入权限，并且之前没有人推送过时，这条命令才能生效。 当你和其他人在同一时间克隆，他们先推送到上游然后你再推送到上游，你的推送就会毫无疑问地被拒绝。 你必须先将他们的工作拉取下来并将其合并进你的工作后才能推送。</p>
+<h3 id="远程仓库的移除与重命名"><a href="#远程仓库的移除与重命名" class="headerlink" title="远程仓库的移除与重命名"></a>远程仓库的移除与重命名</h3><p>如果想要重命名引用的名字可以运行 <code>git remote rename</code> 去修改一个远程仓库的简写名。 </p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rename pb paul</span><br></pre></td></tr></table></figure>
+<p>想要移除一个远程仓库，可以使用 <code>git remote rm</code> </p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rm paul</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/13/Java/JavaWeb/6.业务层/SpringSecurity/1.SpringSecurity大杂烩/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/13/Java/JavaWeb/6.业务层/SpringSecurity/1.SpringSecurity大杂烩/" itemprop="url">1.Spring Secuirty 大杂烩</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-13T00:00:00+08:00">
+                2018-11-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Spring-Security/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring Security</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Spring-Secuirty-大杂烩"><a href="#Spring-Secuirty-大杂烩" class="headerlink" title="Spring Secuirty 大杂烩"></a>Spring Secuirty 大杂烩</h1><p>Spring Security是一个企业级应用中用来用户验证、鉴权以及安全保护的Java框架。</p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.png?raw=true" alt="1541988651265"></p>
+<ul>
+<li>Authentication：认证</li>
+<li>Authenticated：已认证</li>
+<li>Authorize：授权</li>
+</ul>
+<p>通过一个个Authentication Filter(认证过滤器)组成的链，来对用户进行验证，最后进入FilterSecurity拦截器，如果认真过程出现异常就交由ExceptionTranslationFilter处理。</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p><img src="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E8%A1%A8%E5%8D%95%E8%AE%A4%E8%AF%81%E6%B5%81%E7%A8%8B.png?raw=true" alt="1541989918171"></p>
+<p>通过表单提交了一个登录请求，请求就会进入用户名密码认证过滤器（<code>UsernamePasswordAuthenticationFilter</code>），该过滤器获取表单提交的用户名和密码然后生成一个用户名密码认证令牌（<code>UsernamePasswordAuthenticationToken</code>）然后调用认证管理器（<code>AuthenticationManager</code>）的认证方法（<code>authentication</code>），认证管理器(<code>AuthenticationManager</code>)只是个接口，它的实现类(<code>ProviderManager</code>)本身不会对token进行验证，它负责找出相应的认证提供者（<code>AuthenticationProvider</code>），让它进行认证工作。</p>
+<p>在表单登录中，认证提供者（<code>AuthenticationProvider</code>）是DAO认证提供者（<code>DaoAuthenticationProvider</code>），它负责根据输入的用户名查找出相应的用户信息，然后对密码进行验证，验证通过后返回一个新的带有全名用户信息的token，（未完成待续）</p>
+<h2 id="UsernamePasswordAuthenticationFilter"><a href="#UsernamePasswordAuthenticationFilter" class="headerlink" title="UsernamePasswordAuthenticationFilter"></a>UsernamePasswordAuthenticationFilter</h2><p>对一次提交进行认证处理。</p>
+<p>登录表单需要提交两个参数给该过滤器，默认是<code>username</code>和<code>password</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String SPRING_SECURITY_FORM_USERNAME_KEY = <span class="string">"username"</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String SPRING_SECURITY_FORM_PASSWORD_KEY = <span class="string">"password"</span>;</span><br></pre></td></tr></table></figure>
+<p>当然，可以通过修改<code>usernameParameter</code> 和 <code>passwordParameter</code>属性制定我们想要的参数名</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> String usernameParameter = SPRING_SECURITY_FORM_USERNAME_KEY;</span><br><span class="line"><span class="keyword">private</span> String passwordParameter = SPRING_SECURITY_FORM_PASSWORD_KEY;</span><br></pre></td></tr></table></figure>
+<h2 id="ExceptionTranslationFilter"><a href="#ExceptionTranslationFilter" class="headerlink" title="ExceptionTranslationFilter"></a>ExceptionTranslationFilter</h2><p>处理所有在过滤器链中抛出的<code>AccessDeniedException</code> 和 <code>AuthenticationException</code>。</p>
+<p>该过滤器在Java异常和HTTP响应之间建立一座桥梁。</p>
+<p>如果是<code>AuthenticationException</code>，那么过滤器会运行<code>authenticationEntryPoint</code>，它允许共同处理源自<code>AbstractSecurityInterceptor</code>的任何子类的身份验证失败。</p>
+<p>如果是<code>AccessDeniedException</code> ，过滤器首先判断用户是不是匿名用户，如果是则运行<code>authenticationEntryPoint</code>，否则调用<code>AccessDeniedHandler</code>。</p>
+<h2 id="FilterSecurityInterceptor"><a href="#FilterSecurityInterceptor" class="headerlink" title="FilterSecurityInterceptor"></a>FilterSecurityInterceptor</h2><p>通过实现过滤器接口（Filter）对HTTP资源进行安全处理。具体的工作流程需要查看它所继承的抽象类<code>AbstractSecurityInterceptor</code></p>
+<p>## </p>
+<h1 id="自定义用户认证逻辑"><a href="#自定义用户认证逻辑" class="headerlink" title="自定义用户认证逻辑"></a>自定义用户认证逻辑</h1><ul>
+<li>处理用户信息获取逻辑：UserDetailsService</li>
+<li>处理用户校验逻辑：UserDetails</li>
+<li>处理密码加密解密：PasswordEncoder</li>
+</ul>
+<h2 id="UserDetailsService"><a href="#UserDetailsService" class="headerlink" title="UserDetailsService"></a>UserDetailsService</h2><p>加载用户相关信息的核心接口。</p>
+<p>框架中用它作为User DAO，以及使用了策略模式，它的具体策略会被<code>DaoAuthenticationProvider</code>所调用。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDetailsService</span> </span>&#123;</span><br><span class="line">   <span class="function">UserDetails <span class="title">loadUserByUsername</span><span class="params">(String username)</span> <span class="keyword">throws</span> UsernameNotFoundException</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="DaoAuthenticationProvider"><a href="#DaoAuthenticationProvider" class="headerlink" title="DaoAuthenticationProvider"></a>DaoAuthenticationProvider</h3><p>从UserDetailsService中获取用户信息</p>
+<h2 id="UserDetails"><a href="#UserDetails" class="headerlink" title="UserDetails"></a>UserDetails</h2><p>定义了需要存储那些用户信息的接口。</p>
+<table>
+<thead>
+<tr>
+<th>方法类型</th>
+<th>f方法描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>java.util.Collection&lt;? extends GrantedAuthority&gt;</code></td>
+<td><code>getAuthorities()</code>Returns the authorities granted to the user.</td>
+</tr>
+<tr>
+<td><code>java.lang.String</code></td>
+<td><code>getPassword()</code></td>
+</tr>
+<tr>
+<td><code>java.lang.String</code></td>
+<td><code>getUsername()</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>isAccountNonExpired()</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>isAccountNonLocked()</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>isCredentialsNonExpired()</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>isEnabled()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="PasswordEncoder"><a href="#PasswordEncoder" class="headerlink" title="PasswordEncoder"></a>PasswordEncoder</h2><p>对密码进行编码的服务接口，推荐使用其实现类<code>BCryptPasswordEncoder</code></p>
+<h1 id="自定义登录界面"><a href="#自定义登录界面" class="headerlink" title="自定义登录界面"></a>自定义登录界面</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">configure</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="comment">// 该方法返回一个 FormLoginConfigurer</span></span><br><span class="line">    http.formLogin()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="FormLoginConfigurer"><a href="#FormLoginConfigurer" class="headerlink" title="FormLoginConfigurer"></a>FormLoginConfigurer</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">FormLoginConfigurer</span>&lt;<span class="title">H</span> <span class="keyword">extends</span> <span class="title">HttpSecurityBuilder</span>&lt;<span class="title">H</span>&gt;&gt; </span></span><br><span class="line"><span class="class">	<span class="keyword">extends</span> <span class="title">AbstractAuthenticationFilterConfigurer</span>&lt;<span class="title">H</span>,<span class="title">FormLoginConfigurer</span>&lt;<span class="title">H</span>&gt;,</span></span><br><span class="line"><span class="class">		<span class="title">UsernamePasswordAuthenticationFilter</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>添加基于表单的身份验证。所有属性都有合理的默认值，所有参数都是可选的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 根据loginProcessingUrl创建RequestMatcher </span></span><br><span class="line"><span class="comment">// RequestMatcher 匹配HttpServletRequest的简单策略。</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> RequestMatcher <span class="title">createLoginProcessingUrlMatcher</span><span class="params">(String loginProcessingUrl)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">new</span> AntPathRequestMatcher(loginProcessingUrl, <span class="string">"POST"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> FormLoginConfigurer&lt;H&gt; <span class="title">successForwardUrl</span><span class="params">(String forwardUrl)</span> </span>&#123;</span><br><span class="line">	successHandler(<span class="keyword">new</span> ForwardAuthenticationSuccessHandler(forwardUrl));</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> FormLoginConfigurer&lt;H&gt; <span class="title">failureForwardUrl</span><span class="params">(String forwardUrl)</span> </span>&#123;</span><br><span class="line">   failureHandler(<span class="keyword">new</span> ForwardAuthenticationFailureHandler(forwardUrl));</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>它继承自AbstractAuthenticationFilterConfigurer，所以更多的方法在AbstractAuthenticationFilterConfigurer上。</p>
+<h2 id="loginPage-string-path"><a href="#loginPage-string-path" class="headerlink" title="loginPage(string path)"></a>loginPage(string path)</h2><p>重定向到这个路径，可以直接返回文件，也可以到达Controller再进行处理。</p>
+<h2 id="loginProcessingUrl-“-authentication-login”"><a href="#loginProcessingUrl-“-authentication-login”" class="headerlink" title="loginProcessingUrl(“/authentication/login”)"></a>loginProcessingUrl(“/authentication/login”)</h2><p>表单中action的值</p>
+<h1 id="SpringSecurity表单登录验证流程"><a href="#SpringSecurity表单登录验证流程" class="headerlink" title="SpringSecurity表单登录验证流程"></a>SpringSecurity表单登录验证流程</h1><p><img src="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.png?raw=true" alt="1541988651265"></p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E8%A1%A8%E5%8D%95%E8%AE%A4%E8%AF%81%E6%B5%81%E7%A8%8B.png?raw=true" alt="1541989918171"></p>
+<ol>
+<li>表单登录请求进入<code>UsernamePasswordAuthenticationFilter</code>，</li>
+<li><code>UsernamePasswordAuthenticationFilter</code>使用传递过来的用户名和密码创建一个<code>UsernamePasswordAuthenticationToken</code>对象，</li>
+<li><code>UsernamePasswordAuthenticationFilter</code>调用<code>getAuthenticationManager()</code>获得<code>ProviderManager</code>对象</li>
+<li>调用<code>ProviderManager</code>对象的<code>authenticate(Authentication authentication)</code>方法</li>
+<li><code>authenticate(Authentication authentication)</code>方法找到<code>DaoAuthenticationProvider</code>类进行<code>authenticate</code></li>
+<li></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/Java/JavaWeb/工具类库/Jackson/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/01/Java/JavaWeb/工具类库/Jackson/" itemprop="url">Jackson</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T00:00:00+08:00">
+                2018-11-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/常用类/" itemprop="url" rel="index">
+                    <span itemprop="name">常用类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Jackson"><a href="#Jackson" class="headerlink" title="Jackson"></a>Jackson</h1><h2 id="什么是Jackson"><a href="#什么是Jackson" class="headerlink" title="什么是Jackson"></a>什么是Jackson</h2><p>Jackson是一个Java应用库，Jackson可以轻松的将Java对象转换成json对象和xml文档，同样也可以将json、xml转换成Java对象。</p>
+<h2 id="Jackson的三种使用方法"><a href="#Jackson的三种使用方法" class="headerlink" title="Jackson的三种使用方法"></a>Jackson的三种使用方法</h2><p><strong>jackson提供了三种处理JSON的方式</strong></p>
+<ul>
+<li><p>Streaming API</p>
+<p>使用org.codehaus.jackson.JsonParser解析Json，使用org.codehaus.jackson.JsonGenerator生成Json</p>
+</li>
+<li><p>Tree Model </p>
+<p>使用org.codehaus.jackson.map.ObjectMapper构建树，节点是JsonNode，树模型类似于XML的DOM模型</p>
+</li>
+<li><p>Data Binding 使用属性方法或者注解实现JSON和POJOs之间的相互转换</p>
+<ul>
+<li>完全对象绑定（full data binding）<ul>
+<li>用来在JSON和java bean对象之间的转换，同样适用于java内置对象</li>
+</ul>
+</li>
+<li>简单对象绑定（simple data binding）<ul>
+<li>用来在JSON和java的Maps, Lists, Strings, Numbers, Booleans, and null之间转换</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>各自的优势</strong></p>
+<ul>
+<li>Streaming API性能最好（最低的消耗、最快的读写速度、其他两种方法的基础） </li>
+<li>Tree Model 灵活</li>
+<li>Data Binding 好用、便利 </li>
+</ul>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="Full-Data-Binding-POJO"><a href="#Full-Data-Binding-POJO" class="headerlink" title="Full Data Binding (POJO)"></a>Full Data Binding (POJO)</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span> : &#123; <span class="attr">"first"</span> : <span class="string">"Joe"</span>, <span class="attr">"last"</span> : <span class="string">"Sixpack"</span> &#125;,</span><br><span class="line">  <span class="attr">"gender"</span> : <span class="string">"MALE"</span>,</span><br><span class="line">  <span class="attr">"verified"</span> : <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">"userImage"</span> : <span class="string">"Rm9vYmFyIQ=="</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">       <span class="comment">// 名字 内部类</span></span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Name</span> </span>&#123;</span><br><span class="line">         <span class="keyword">private</span> String _first, _last;</span><br><span class="line"></span><br><span class="line">         <span class="function"><span class="keyword">public</span> String <span class="title">getFirst</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> _first; &#125;</span><br><span class="line">         <span class="function"><span class="keyword">public</span> String <span class="title">getLast</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> _last; &#125;</span><br><span class="line"></span><br><span class="line">         <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setFirst</span><span class="params">(String s)</span> </span>&#123; _first = s; &#125;</span><br><span class="line">         <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setLast</span><span class="params">(String s)</span> </span>&#123; _last = s; &#125;</span><br><span class="line">       &#125;</span><br><span class="line">	   <span class="comment">// 性别 枚举类</span></span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">enum</span> Gender &#123; MALE, FEMALE &#125;;</span><br><span class="line">       <span class="comment">// 实例变量</span></span><br><span class="line">       <span class="keyword">private</span> Gender _gender;</span><br><span class="line">       <span class="keyword">private</span> Name _name;</span><br><span class="line">       <span class="keyword">private</span> <span class="keyword">boolean</span> _verified;</span><br><span class="line">       <span class="keyword">private</span> <span class="keyword">byte</span>[] _userImage;</span><br><span class="line"></span><br><span class="line">       <span class="function"><span class="keyword">public</span> Name <span class="title">getName</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> _name; &#125;</span><br><span class="line">       <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isVerified</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> _isVerified; &#125;</span><br><span class="line">       <span class="function"><span class="keyword">public</span> Gender <span class="title">getGender</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> _gender; &#125;</span><br><span class="line">       <span class="keyword">public</span> <span class="keyword">byte</span>[] getUserImage() &#123; <span class="keyword">return</span> _userImage; &#125;</span><br><span class="line"></span><br><span class="line">       <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(Name n)</span> </span>&#123; _name = n; &#125;</span><br><span class="line">       <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setVerified</span><span class="params">(<span class="keyword">boolean</span> b)</span> </span>&#123; _isVerified = b; &#125;</span><br><span class="line">       <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setGender</span><span class="params">(Gender g)</span> </span>&#123; _gender = g; &#125;</span><br><span class="line">       <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUserImage</span><span class="params">(<span class="keyword">byte</span>[] b)</span> </span>&#123; _userImage = b; &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ObjectMapper mapper = <span class="keyword">new</span> ObjectMapper(); <span class="comment">// can reuse, share globally</span></span><br><span class="line"><span class="comment">// 读取json</span></span><br><span class="line">User user = mapper.readValue(<span class="keyword">new</span> File(<span class="string">"user.json"</span>), User.class); </span><br><span class="line"><span class="comment">// 写入json</span></span><br><span class="line">mapper.writeValue(<span class="keyword">new</span> File(<span class="string">"user-modified.json"</span>), user);</span><br></pre></td></tr></table></figure>
+<h3 id="Simple-Data-Binding"><a href="#Simple-Data-Binding" class="headerlink" title="Simple Data Binding"></a>Simple Data Binding</h3><p>如果我们没有或者不想创建一个单独的类来做JSON和POJO之间的转换，那么可以使用Simple Data Binding</p>
+<p>JSON转换成java对象实例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String,Object&gt; userData = mapper.readValue(<span class="keyword">new</span> File(<span class="string">"user.json"</span>), Map.class);</span><br></pre></td></tr></table></figure>
+<p>java对象实例转换成JSON:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String,Object&gt; userData = <span class="keyword">new</span> HashMap&lt;String,Object&gt;();</span><br><span class="line">Map&lt;String,String&gt; nameStruct = <span class="keyword">new</span> HashMap&lt;String,String&gt;();</span><br><span class="line">nameStruct.put(<span class="string">"first"</span>, <span class="string">"Joe"</span>);</span><br><span class="line">nameStruct.put(<span class="string">"last"</span>, <span class="string">"Sixpack"</span>);</span><br><span class="line">userData.put(<span class="string">"name"</span>, nameStruct);</span><br><span class="line">userData.put(<span class="string">"gender"</span>, <span class="string">"MALE"</span>);</span><br><span class="line">userData.put(<span class="string">"verified"</span>, Boolean.FALSE);</span><br><span class="line">userData.put(<span class="string">"userImage"</span>, <span class="string">"Rm9vYmFyIQ=="</span>);</span><br><span class="line">mapper.writeValue(<span class="keyword">new</span> File(<span class="string">"user-modified.json"</span>), userData);</span><br></pre></td></tr></table></figure>
+<p>你会发现在JSON转成Map.class的过程中没有指定Map的泛型类型，但是jackson也能正确的转换。<br>jackson有一个自己的转换关系，能够对json数据进行默认转换。默认转换关系如下：<br>JSON TypeJava TypeobjectLinkedHashMap</p>
+<p>如果我们想指定具体的Key和Value类型，也是可以的。比如，想转换成Map</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String,User&gt; result = mapper.readValue(src, </span><br><span class="line">                                           <span class="keyword">new</span> TypeReference&lt;Map&lt;String,User&gt;&gt;() &#123; &#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="Tree-Model"><a href="#Tree-Model" class="headerlink" title="Tree Model"></a>Tree Model</h3><p>树模型和XML的DOM方式类似。jackson会构建一课由JsonNode组成的树，里面的JsonNode暴露了一般需要用到的取值接口。当然，树里面的Node是JsonNode的子类，只有需要修改值的时候，你才有必要转换到子类型。</p>
+<p><strong>把json文本读取到一棵树</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">ObjectMapper m = <span class="keyword">new</span> ObjectMapper();</span><br><span class="line"><span class="comment">// can either use mapper.readTree(source), or mapper.readValue(source, JsonNode.class);</span></span><br><span class="line">JsonNode rootNode = m.readTree(<span class="keyword">new</span> File(<span class="string">"user.json"</span>));</span><br><span class="line"><span class="comment">// ensure that "last name" isn't "Xmler"; if is, change to "Jsoner"</span></span><br><span class="line">JsonNode nameNode = rootNode.path(<span class="string">"name"</span>);</span><br><span class="line">String lastName = nameNode.path(<span class="string">"last"</span>).getTextValue().</span><br><span class="line"><span class="keyword">if</span> (<span class="string">"xmler"</span>.equalsIgnoreCase(lastName)) &#123;</span><br><span class="line"> ((ObjectNode)nameNode).put(<span class="string">"last"</span>, <span class="string">"Jsoner"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// and write it out:</span></span><br><span class="line">m.writeValue(<span class="keyword">new</span> File(<span class="string">"user-modified.json"</span>), rootNode);</span><br></pre></td></tr></table></figure>
+<p><strong>直接在内存创建一棵树</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">TreeMapper treeMapper = <span class="keyword">new</span> TreeMapper();</span><br><span class="line">ObjectNode userOb = treeMapper.objectNode();</span><br><span class="line">Object nameOb = userRoot.putObject(<span class="string">"name"</span>);</span><br><span class="line">nameOb.put(<span class="string">"first"</span>, <span class="string">"Joe"</span>);</span><br><span class="line">nameOb.put(<span class="string">"last"</span>, <span class="string">"Sixpack"</span>);</span><br><span class="line">userOb.put(<span class="string">"gender"</span>, User.Gender.MALE.toString());</span><br><span class="line">userOb.put(<span class="string">"verified"</span>, <span class="keyword">false</span>);</span><br><span class="line"><span class="keyword">byte</span>[] imageData = getImageData(); <span class="comment">// or wherever it comes from</span></span><br><span class="line">userOb.put(<span class="string">"userImage"</span>, imageData);</span><br></pre></td></tr></table></figure>
+<h3 id="Streaming-API"><a href="#Streaming-API" class="headerlink" title="Streaming API"></a>Streaming API</h3><p>很少用，这里不讲</p>
+<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><p>当POJO里面包含isXXX这样的字段的时候，gson转出来的结果是is_xxx，但是jackson转出来的是xxx，也就是自动抹掉了is。解决办法有一个就是在对应属性上添加@JsonPropety(“is_xxx”)注解，指名属性名。就算如此，在一个些复杂的项目里面也会有其他的坑，所以尽量不要用isXXX来做属性名！！</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/Java/JavaWeb/0.基础知识/2.session/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/31/Java/JavaWeb/0.基础知识/2.session/" itemprop="url">2.Session</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-31T00:00:00+08:00">
+                2018-10-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/基础知识/" itemprop="url" rel="index">
+                    <span itemprop="name">基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h1><h2 id="Session-1"><a href="#Session-1" class="headerlink" title="Session"></a>Session</h2><h3 id="什么是Session"><a href="#什么是Session" class="headerlink" title="什么是Session"></a>什么是Session</h3><p>对Tomcat而言，Session是一块在服务器开辟的内存空间，其存储结构为ConcurrentHashMap；</p>
+<h3 id="Session的作用"><a href="#Session的作用" class="headerlink" title="Session的作用"></a>Session的作用</h3><p>Http协议是一种无状态协议，即每次服务端接收到客户端的请求时，都是一个全新的请求，服务器并不知道客户端的历史请求记录；Session的主要目的就是为了弥补Http的无状态特性。简单的说，就是服务器可以利用session存储客户端在同一个会话期间的一些操作记录；</p>
+<h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p><strong>1、服务器如何判断客户端发送过来的请求是属于同一个会话？</strong></p>
+<p>答：用Session id区分，Session id相同的即认为是同一个会话，在Tomcat中Session id用JSESSIONID表示；</p>
+<p><strong>2、服务器、客户端如何获取Session id？Session id在其之间是如何传输的呢？</strong></p>
+<p>答：服务器第一次接收到请求时，开辟了一块Session空间（创建了Session对象），同时生成一个Session id，并通过响应头的Set-Cookie：“JSESSIONID=XXXXXXX”命令，向客户端发送要求设置cookie的响应；</p>
+<p>客户端收到响应后，在本机客户端设置了一个JSESSIONID=XXXXXXX的cookie信息，该cookie的过期时间为浏览器会话结束；</p>
+<p>接下来客户端每次向同一个网站发送请求时，请求头都会带上该cookie信息（包含Session id）；</p>
+<p>然后，服务器通过读取请求头中的Cookie信息，获取名称为JSESSIONID的值，得到此次请求的Session id；</p>
+<p>ps：服务器只会在客户端第一次请求响应的时候，在响应头上添加Set-Cookie：“JSESSIONID=XXXXXXX”信息，接下来在同一个会话的第二第三次响应头里，是不会添加Set-Cookie：“JSESSIONID=XXXXXXX”信息的；而客户端是会在每次请求头的cookie中带上JSESSIONID信息；</p>
+<h3 id="Tomcat中Session的实现"><a href="#Tomcat中Session的实现" class="headerlink" title="Tomcat中Session的实现"></a>Tomcat中Session的实现</h3><p>Tomcat中使用Session接口代表Session，Session接口的实现类是StandardSession，查看源码有一个叫attributes的实例变量，类型为ConcurrentHashMap，用于存储session的数据结构；</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * The collection of user data attributes associated with this Session.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> ConcurrentMap&lt;String, Object&gt; attributes = <span class="keyword">new</span> ConcurrentHashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
+<p>那么，tomcat中多个会话对应的session是由谁来维护的呢？ManagerBase类，查看其代码，可以发现其有一个sessions成员属性，存储着各个会话的session信息：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * The set of currently active Sessions for this Manager, keyed by</span></span><br><span class="line"><span class="comment"> * session identifier.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">protected</span> Map&lt;String, Session&gt; sessions = <span class="keyword">new</span> ConcurrentHashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
+<h3 id="实战"><a href="#实战" class="headerlink" title="实战"></a>实战</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SessionDemo</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">		resp.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">		resp.setContentType(<span class="string">"text/html;charset=UTF-8"</span>);</span><br><span class="line">		<span class="comment">// 获取session</span></span><br><span class="line">		HttpSession session = req.getSession();</span><br><span class="line">		String sessionId = session.getId();</span><br><span class="line">		<span class="keyword">if</span> (session.isNew()) &#123;</span><br><span class="line">			session.setAttribute(<span class="string">"name"</span>, <span class="string">"黄大仁"</span>);</span><br><span class="line">			resp.getWriter().print(<span class="string">"session创建成功,session的Id是："</span> + sessionId);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			resp.getWriter().print(<span class="string">"session已存在,session的Id是:"</span> + sessionId);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">		doGet(req, resp);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Session存在的问题"><a href="#Session存在的问题" class="headerlink" title="Session存在的问题"></a>Session存在的问题</h3><p>1、session劫持,知道你的sessionId，那么就能利用的sessionId冒充你登录你的账号；</p>
+<p>2、如果存在多台服务器的话，还存在session同步问题，同一个会话有可能会被分配到不同的tomcat服务器，因此很可能出现session不一致问题；解决session同步问题，实际上主要是保证能够抽离出一块共享空间存放session信息，且这块空间不同的tomcat服务器都可以访问到；一般这块共享的空间可以是数据库，或者某台服务器的内存空间，甚至硬盘空间，或者客户端的cookie也是可以的；</p>
+<h2 id="Spring-Seesion"><a href="#Spring-Seesion" class="headerlink" title="Spring Seesion"></a>Spring Seesion</h2><h3 id="配置Spring-Session"><a href="#配置Spring-Session" class="headerlink" title="配置Spring Session"></a>配置Spring Session</h3><p>在Web项目中配置Spring Session分为四步：</p>
+<ul>
+<li>搭建用于Spring Session的数据存储</li>
+<li>将Spring Session的jar文件添加到web应用中</li>
+<li>将Spring Session filter添加到web应用的配置中</li>
+<li>配置Spring Session如何选择session数据存储的连接</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/Java/JavaSE/ch4_类与对象的生命周期/3.对象的生命周期/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/31/Java/JavaSE/ch4_类与对象的生命周期/3.对象的生命周期/" itemprop="url">3.对象的生命周期</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-31T00:00:00+08:00">
+                2018-10-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/ch4类与对象的生命周期/" itemprop="url" rel="index">
+                    <span itemprop="name">ch4类与对象的生命周期</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="对象的生命周期"><a href="#对象的生命周期" class="headerlink" title="对象的生命周期"></a>对象的生命周期</h1><p>对象的生命周期就是对象从创建到销毁这一个过程。</p>
+<h2 id="1-对象的创建方式与过程"><a href="#1-对象的创建方式与过程" class="headerlink" title="1.对象的创建方式与过程"></a>1.对象的创建方式与过程</h2><p><strong>1.1有4种显式地创建对象的方式：</strong></p>
+<ul>
+<li>new</li>
+<li>反射</li>
+<li>对象的clone方法</li>
+<li>反序列化手段</li>
+</ul>
+<p><strong>1.2对象的创建过程</strong></p>
+<ol>
+<li>给对象分配内存</li>
+<li>将对象的实例变量自动初始化为其变量类型的默认值</li>
+<li>初始化对象，主要负责给实例变量赋予正确的初始值</li>
+</ol>
+<p>对于第3步，不同方法创建对象其初始化不一样</p>
+<ul>
+<li>clone方法创建的，那就把被克隆对象的实例变量的值复制到新对象中</li>
+<li>如果对象是通过反序列化方式创建了，那就从输入流中读入数据来初始化</li>
+</ul>
+<h2 id="2-对象的销毁：垃圾回收"><a href="#2-对象的销毁：垃圾回收" class="headerlink" title="2.对象的销毁：垃圾回收"></a>2.对象的销毁：垃圾回收</h2><p>当对象被创建后，就会在Java虚拟机的堆区中拥有一块内存，如果对象没用了，那么就Java虚拟机的垃圾回收器就会回收对象。</p>
+<h3 id="2-1对象的触及状性"><a href="#2-1对象的触及状性" class="headerlink" title="2.1对象的触及状性"></a>2.1对象的触及状性</h3><ul>
+<li>可触及状态：对象被创建后，有引用变量引用它。</li>
+<li>可复活状态：对象没有被任何引用变量引用。在这个状态下，垃圾回收器会准备释放它占用的内存，在释放之前会调用它及其其它该状态下的对象的<code>finalize</code>方法，这些方法有可能使对象转为可触及状态。</li>
+<li>不可触及状态：对象执行了<code>finalize</code>方法后没有恢复成可触及状态，就会变成不可触及状态，这时候垃圾回收器才会真正的收回它占用的内存。</li>
+</ul>
+<h3 id="2-2finalize方法"><a href="#2-2finalize方法" class="headerlink" title="2.2finalize方法"></a>2.2finalize方法</h3><p><code>finalize</code>方法定义在Object类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">finalize</span><span class="params">()</span> <span class="keyword">throws</span> Throwable </span>&#123; &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="3-深入垃圾回收"><a href="#3-深入垃圾回收" class="headerlink" title="3.深入垃圾回收"></a>3.深入垃圾回收</h2><h3 id="3-1无用对象的判定"><a href="#3-1无用对象的判定" class="headerlink" title="3.1无用对象的判定"></a>3.1无用对象的判定</h3><p><strong>引用计数算法</strong></p>
+<p>给对象添加一个引用计数器，没当有一个地方引用它，引用次数加1。</p>
+<p>缺点：难以解决相互循环引用问题。</p>
+<p><strong>可达性分析算法</strong></p>
+<p>通过一系列称为<code>GC Roots</code>的对象作为起始点，从这些节点开始向下搜索，搜索所走过的路径称为引用链，当一个对象到<code>GC Roots</code>之间没有那么的引用链，则说明该对象不可用。</p>
+<p><strong>关于GC Root</strong>：GC Root不是垃圾回收目标区域的对象，譬如你要回收年轻代，那年老代必然是Root之一。</p>
+<h3 id="3-2垃圾收集算法"><a href="#3-2垃圾收集算法" class="headerlink" title="3.2垃圾收集算法"></a>3.2垃圾收集算法</h3><h4 id="3-2-1标记-清除算法"><a href="#3-2-1标记-清除算法" class="headerlink" title="3.2.1标记-清除算法"></a>3.2.1标记-清除算法</h4><p>原理：标记出需要回收的对象，然后统一回收所有被标记的对象。</p>
+<p>缺点：效率不高、而且清除后产生大量不连续的内存碎片。</p>
+<h4 id="3-2-2复制算法"><a href="#3-2-2复制算法" class="headerlink" title="3.2.2复制算法"></a>3.2.2复制算法</h4><p>原理：把内存分为两部分，当其中一块内存用完，就把该内存中存活的对象复制到另一块内存中。</p>
+<h4 id="3-2-3标记-整理-清除算法"><a href="#3-2-3标记-整理-清除算法" class="headerlink" title="3.2.3标记-整理-清除算法"></a>3.2.3标记-整理-清除算法</h4><p>原理：标记出需要回收的对象，让所有存活的对象往一端移动，然后直接清除掉端边界以外的内存。</p>
+<h4 id="3-2-4分代收集算法"><a href="#3-2-4分代收集算法" class="headerlink" title="3.2.4分代收集算法"></a>3.2.4分代收集算法</h4><p>原理：根据对象存活周期的不同将内存划分为几块。一般分为新生代和老年代，然后根据各个年代的特点采用合适的收集算法。新生代死得快，所以采用复制算法，老年代则采用标记-整理算法。</p>
+<p>关于新生代、老年代请看<a href="https://www.cnblogs.com/snowwhite/p/9532311.html" target="_blank" rel="noopener">新生代、老年代、永久代</a>。</p>
+<h3 id="3-3垃圾收集器"><a href="#3-3垃圾收集器" class="headerlink" title="3.3垃圾收集器"></a>3.3垃圾收集器</h3><p>如果说收集算法是内存回收的方法论，那么垃圾收集器就是内存回收的具体实现。</p>
+<p>下面以JDK1.7Update14之后的HostSpot虚拟机为例，讲解这个虚拟机包含的收集器。</p>
+<p><img src alt></p>
+<p>上图展示了7种作用于不同分代的收集器，如果两个收集器之间存在连线，就说明它们可以搭配使用。</p>
+<p><strong>并发与并行</strong></p>
+<p>并发的关键是你有处理多个任务的能力，不一定要同时。<br>并行的关键是你有同时处理多个任务的能力。<br>它们最关键的点就是：是否是『同时』。</p>
+<h4 id="3-3-1Serial收集器"><a href="#3-3-1Serial收集器" class="headerlink" title="3.3.1Serial收集器"></a>3.3.1Serial收集器</h4><p>Serial（串行）收集器是最基本、发展历史最悠久的收集器。是单线程的收集器。它在进行垃圾收集时，必须暂停其他所有的工作线程，直到它收集完成。</p>
+<p><strong>缺点：</strong>需要暂停所有用户线程，用户体验不好。</p>
+<p><strong>优点：</strong>简单而高效（与其他垃圾收集器在中单线程运行中比较）</p>
+<p>Serial收集器对于运行在Client模式下的虚拟机来说是一个很好的选择。</p>
+<h4 id="3-3-2ParNew收集器"><a href="#3-3-2ParNew收集器" class="headerlink" title="3.3.2ParNew收集器"></a>3.3.2ParNew收集器</h4><p>ParNe收集器其实就是Serial收集器的多线程版本，除了使用多线程进行垃圾收集之外，其余行为包括Serial收集器可用的所有控制参数、收集算法、Stop The Worl、对象分配规则、回收策略等都与Serial 收集器完全一样，在实现上两者也公用了相当多的代码。</p>
+<p>ParNew收集器是许多运行在Server模式下的虚拟机中首选新生代收集器，其中有一个与性能无关但很重要的原因是，除Serial收集器之外，目前只有ParNew它能与CMS收集器配合工作。</p>
+<h4 id="3-3-3CMS收集器"><a href="#3-3-3CMS收集器" class="headerlink" title="3.3.3CMS收集器"></a>3.3.3CMS收集器</h4><p>CMS(Concurrent Mark Sweep)收集器是一种以获取最短回收停顿时间为目标的收集器。这款收集器是HotSpot虚拟机中第一款真正意义上的并发收集器，它第一次实现了让垃圾回收线程和用户线程同时工作。</p>
+<p>目前很大一部分的Java应用集中在互联网站或者B/S系统的服务端上，这类应用尤其重视服务器的响应速度，希望系统停顿时间最短，以给用户带来较好的体验。CMS收集器就非常符合这类应用的需求。</p>
+<p>CMS收集器是基于“标记-清除”算法实现的。它的运作过程相对前面几种收集器来说更复杂一些，整个过程分为4个步骤：</p>
+<ol>
+<li><p>初始标记</p>
+<p> 标记一下GCRoot能直接关联到的对象</p>
+</li>
+<li><p>并发标记</p>
+<p> GCRoot Tracing</p>
+</li>
+<li><p>重新标记</p>
+</li>
+<li><p>并发清除</p>
+</li>
+</ol>
+<p>其中，初始标记、重新标记这两个步骤仍然需要“Stop The World”.</p>
+<p><strong>优点</strong>：并发收集，低停顿。</p>
+<p><strong>缺点</strong>：</p>
+<p>（1）CMS收集器对CPU资源非常敏感。CPU个数少于4个时，CMS对于用户程序的影响就可能变得很大，为了应付这种情况，虚拟机提供了一种称为“增量式并发收集器”的CMS收集器变种。所做的事情和单CPU年代PC机操作系统使用抢占式来模拟多任务机制的思想</p>
+<p>（2）CMS收集器无法处理浮动垃圾，可能出现“Concurrent Mode Failure”失败而导致另一次Full GC的产生。</p>
+<p>​    浮动垃圾：CMS运行的时候，用户线程还在继续工作，会产生一些没有被标记的垃圾，这些垃圾只有在下一次GC时再清掉。</p>
+<p>（3）CMS是基于“标记-清除”算法实现的收集器，收集结束时会有大量空间碎片产生。空间碎片过多，可能会出现老年代还有很大空间剩余，但是无法找到足够大的连续空间来分配当前对象，不得不提前触发FullGC。为了解决这个问题，CMS收集器提供了一个-XX:+UseCMSCompactAtFullCollection开关参数（默认就是开启的），用于在CMS收集器顶不住要进行FullGC时开启内存碎片合并整理过程，内存整理的过程是无法并发的，空间碎片问题没有了，但停顿时间变长了。虚拟机设计者还提供了另外一个参数-XX:CMSFullGCsBeforeCompaction,这个参数是用于设置执行多少次不压缩的Full GC后，跟着来一次带压缩的（默认值为0，标识每次进入Full GC时都进行碎片整理）</p>
+<h4 id="3-3-4Parallel-Scavenge收集器"><a href="#3-3-4Parallel-Scavenge收集器" class="headerlink" title="3.3.4Parallel Scavenge收集器"></a>3.3.4Parallel Scavenge收集器</h4><p>Parallel Scavenge收集器是一个新生代收集器，它也是使用复制算法的收集器，又是并行的多线程收集器。该收集器的目标是达到一个可控制的吞吐量（Throughput）。所谓吞吐量就是CPU用于运行用户代码的时间与CPU总消耗时间的比值，即 吞吐量=运行用户代码时间/（运行用户代码时间+垃圾收集时间）。</p>
+<p>停顿时间越短就越适合需要与用户交互的程序，良好的响应速度能提升用户体验，而高吞吐量则可用高效率地利用CPU，尽快完成程序的运算任务，主要适合在后台运算而不需要太多交互的任务。</p>
+<p>Parallel Scavenge收集器提供两个参数用于精确控制吞吐量</p>
+<ul>
+<li><p>控制最大垃圾收集停顿时间的<code>-XX:MaxGCPauseMillis</code>参数</p>
+<p>  通过牺牲吞吐量和降低新生代空间来降低垃圾回收的停顿时间</p>
+</li>
+<li><p>设置吞吐量大小的<code>-XX:GCTimeRatio</code>参数</p>
+<p>  参数值应该是一个0到100的整数，代表垃圾回收时间占总时间的百分比。</p>
+</li>
+</ul>
+<p>Parallel Scavenge收集器还有一个参数：<code>-XX:+UseAdaptiveSizePolicy</code>。这是一个开关参数，当这个参数打开后，就不需要手工指定新生代的大小（-Xmn）、Eden与Survivor区的比例（-XX:SurvivorRatio）、晋升老年代对象年龄（-XX:PretenureSizeThreshold）等细节参数，只需要把基本的内存数据设置好（如-Xmx设置最大堆），然后使用MaxGVPauseMillis参数或GCTimeRation参数给虚拟机设立一个优化目标。</p>
+<h4 id="3-3-5Serial-Old-收集器"><a href="#3-3-5Serial-Old-收集器" class="headerlink" title="3.3.5Serial Old 收集器"></a>3.3.5Serial Old 收集器</h4><p>Serial Old是Serial收集器的老年代版本，它同样是一个单线程收集器，使用标记整理算法。</p>
+<p>这个收集器的主要意义也是在于给Client模式下的虚拟机使用。</p>
+<p>如果在Server模式下，主要两大用途：</p>
+<ul>
+<li>在JDK1.5以及之前的版本中与Parallel Scavenge收集器搭配使用</li>
+<li>作为CMS收集器的后备预案，在并发收集发生Concurrent Mode Failure时使用</li>
+</ul>
+<h4 id="3-3-6Parallel-Old-收集器"><a href="#3-3-6Parallel-Old-收集器" class="headerlink" title="3.3.6Parallel Old 收集器"></a>3.3.6Parallel Old 收集器</h4><p>Parallel Old 是Parallel Scavenge收集器的老年代版本，使用多线程和“标记-整理”算法。这个收集器在1.6中才开始提供。</p>
+<p>在注重吞吐量以及CPU资源敏感的场合，都可以优先考虑Parallel Scavenger 加 Parallel Old收集器。</p>
+<h4 id="3-3-7G1收集器"><a href="#3-3-7G1收集器" class="headerlink" title="3.3.7G1收集器"></a>3.3.7G1收集器</h4><p>优点：</p>
+<ul>
+<li>并行与并发<br>  利用多CPU来缩短停顿时间，可以通过并发的方式让Java程序继续执行。</li>
+<li>分代收集</li>
+<li>空间整理 （标记整理算法，复制算法）</li>
+<li>可预测的停顿（G1处处理追求低停顿外，还能建立可预测的停顿时间模型，能让使用者明确指定在一个长度为M毫秒的时间片段内，消耗在垃圾收集上的时间不得超过N毫秒）</li>
+</ul>
+<h4 id="3-3-8垃圾收集器参数总结"><a href="#3-3-8垃圾收集器参数总结" class="headerlink" title="3.3.8垃圾收集器参数总结"></a>3.3.8垃圾收集器参数总结</h4><h4 id="3-3-9总结："><a href="#3-3-9总结：" class="headerlink" title="3.3.9总结："></a>3.3.9总结：</h4><p>新生代收集器：Serial、ParNew、Parallel Scavenge</p>
+<p>老年代收集器：Serial Old、Parallel Old、CMS</p>
+<h3 id="3-4内存分配与回收策略"><a href="#3-4内存分配与回收策略" class="headerlink" title="3.4内存分配与回收策略"></a>3.4内存分配与回收策略</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/30/Java/JavaSE/ch4_类与对象的生命周期/2.JVM运行时数据区/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/30/Java/JavaSE/ch4_类与对象的生命周期/2.JVM运行时数据区/" itemprop="url">1.JVM运行时数据区</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-30T00:00:00+08:00">
+                2018-10-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/ch4类与对象的生命周期/" itemprop="url" rel="index">
+                    <span itemprop="name">ch4类与对象的生命周期</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="JVM运行时数据区"><a href="#JVM运行时数据区" class="headerlink" title="JVM运行时数据区"></a>JVM运行时数据区</h1><p>Java虚拟机在执行Java程序的时候，会把它所管理的内存划分为若干个不同的数据区域。</p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/Java%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png?raw=true" alt></p>
+<h2 id="1-程序计数器（program-counter）"><a href="#1-程序计数器（program-counter）" class="headerlink" title="1.程序计数器（program counter）"></a>1.程序计数器（program counter）</h2><p>程序计数器，线程私有，在执行非本地方法时，记录当前正在执行的指令的地址，如果是本地方法（Native Method），值为<code>undefined</code>。</p>
+<ul>
+<li>可以看作是当前线程所执行字节码的行号指示器</li>
+<li>字节码解释器工作时就是通过改变这个计数器的值来获取下一条需要执行的字节码指令</li>
+</ul>
+<p>我们学过多线程，有两个线程，其中一个线程可以暂停使用，让其他线程运行，然后等自己获得cpu资源时，又能从暂停的地方开始运行，那么为什么能够记住暂停的位置的，这就依靠了程序计数器。</p>
+<h2 id="2-虚拟机栈"><a href="#2-虚拟机栈" class="headerlink" title="2.虚拟机栈"></a>2.虚拟机栈</h2><p>虚拟机栈，线程私有，用来存放栈帧。</p>
+<p>每个方法在执行的同时都会创建一个<strong>栈帧</strong>用来存放存储局部变量表、操作数表、动态连接、方法出口等信息，每一个方法从调用直至执行完成的过程，就对应着一个栈帧在虚拟机栈中入栈到出栈的过程。比如执行一个类(类中有main方法)时，执行到main方法，就会把为main方法创建一个栈帧，然后在加到虚拟机栈中，栈帧中会存放这main方法中的各种局部变量，对象引用等东西。我们常常听说的栈存储局部变量，说的就是这个。</p>
+<p>在某些情况下虚拟机栈会出现以下异常：</p>
+<ul>
+<li>线程请求的虚拟机栈大小超出了虚拟机的许可，出现栈溢出（<code>StackOverflowError</code>）</li>
+<li>虚拟机栈的大小可以动态扩展，但是已经没有内容可以给它使用了，出现<code>OutOfMemoryError</code></li>
+</ul>
+<h3 id="2-1-内存模型"><a href="#2-1-内存模型" class="headerlink" title="2.1.内存模型"></a>2.1.内存模型</h3><p>虚拟机栈描述的是Java方法执行的内存模型。什么是内存模型？ 有兴趣的可以看看着两篇文章</p>
+<ul>
+<li><a href="https://www.cnblogs.com/adinosaur/p/6243605.html" target="_blank" rel="noopener">什么是内存模型？</a></li>
+<li><a href="http://developer.51cto.com/art/201807/579744.htm" target="_blank" rel="noopener">终于有人把Java内存模型说清楚了</a></li>
+</ul>
+<h2 id="3-本地方法栈"><a href="#3-本地方法栈" class="headerlink" title="3.本地方法栈"></a>3.本地方法栈</h2><p>本地方法栈与虚拟机栈所发挥的作用是非常相似的，只不过一个是为Java方法服务，一个是为Native方法服务。</p>
+<h2 id="4-Java堆"><a href="#4-Java堆" class="headerlink" title="4.Java堆"></a>4.Java堆</h2><p>Java堆，所有线程共享的一块内存区域，在虚拟机启动时创建。</p>
+<p>它存储的对象由垃圾回收器进行回收。对象永远不会被显式释放。</p>
+<p>堆的大小可以是固定的，也可以动态扩展，具体看它的实现。</p>
+<h2 id="5-方法区"><a href="#5-方法区" class="headerlink" title="5.方法区"></a>5.方法区</h2><p>方法区域类似于传统语言的编译代码的存储区域或类似于操作系统进程中的“文本”段。</p>
+<ul>
+<li>各个线程共享的内存区域</li>
+<li>存储类结构：例如运行时常量池、字段、方法数据、方法、构造器、类和实例和接口初始化使用的特殊方法（<code>special methods</code>）</li>
+</ul>
+<p>虽然方法区域在逻辑上是堆的一部分，但是简单的实现可能选择不垃圾收集或压缩它。</p>
+<h3 id="5-1-运行时常量池"><a href="#5-1-运行时常量池" class="headerlink" title="5.1.运行时常量池"></a>5.1.运行时常量池</h3><ul>
+<li>运行时常量池是方法区的一部分。</li>
+<li>运行时常量池用于存放编译期生成的各种字面量和符号引用。</li>
+<li>符号引用：用一组符号来描述所引用的目标，符号可以是任意形式的字面量，只要使用时能无歧义的定位到目标即可。</li>
+<li>运行时常量池包含几种常量，从编译时已知的数字文字到必须在运行时解析的方法和字段引用。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/29/Java/JavaSE/ch4_类与对象的生命周期/1.类的生命周期/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/29/Java/JavaSE/ch4_类与对象的生命周期/1.类的生命周期/" itemprop="url">1.类与对象</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-29T00:00:00+08:00">
+                2018-10-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/ch4类与对象的生命周期/" itemprop="url" rel="index">
+                    <span itemprop="name">ch4类与对象的生命周期</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="类的生命周期"><a href="#类的生命周期" class="headerlink" title="类的生命周期"></a>类的生命周期</h1><p>一个类从被加载、连接和初始化开始，到被使用，最后被卸载，这整个过程称为类的生命周期。</p>
+<h2 id="1-类加载机制"><a href="#1-类加载机制" class="headerlink" title="1.类加载机制"></a>1.类加载机制</h2><p>类加载机制：虚拟机把Class文件中的数据加载进内存，进过一系列处理后，最终形成可以被虚拟机直接使用的Java类型，这就是虚拟机的类加载机制。</p>
+<p>类加载的全过程由加载、连接、初始化三部分所组成。其中连接又由验证、准备、解析三部分组成。</p>
+<p><strong>注意：这些过程不是按部就班的执行的，有可能在执行一个过程的途中，执行另一个过程。</strong></p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%E8%BF%9E%E6%8E%A5%E5%88%9D%E5%A7%8B%E5%8C%96.png?raw=true" alt="1540873591543"></p>
+<h3 id="1-1加载"><a href="#1-1加载" class="headerlink" title="1.1加载"></a>1.1加载</h3><p><strong>注意：加载是类加载过程的一个阶段，别混淆了。</strong></p>
+<p>加载（Loading）是一个过程，通过类的全限定名来获取该类或接口的二进制表示，然后根据该二进制表示创建类或接口。</p>
+<p>在加载阶段，虚拟机需要完成以下三个任务：</p>
+<ul>
+<li><p>通过类的全限定名来获取定义此类的二进制字节流。</p>
+</li>
+<li><p>把类的数据结构存放在方法区中</p>
+</li>
+<li><p>在内存里创建一个<code>java.lang.Class</code>对象，作为在方法区中的这个类的各种数据结构的访问入口。</p>
+<p>  （一般来说对象都是存放在Java堆里面，但是Class对象有点特殊，有些虚拟机的实现会把它放到方法区中）</p>
+</li>
+</ul>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD.png?raw=true" alt="1540878379661"></p>
+<p><strong>注意：加载阶段和连接阶段的部分内容其实是交叉进行的，例如一部分字节码文件格式的验证。</strong></p>
+<p>Java虚拟机能够从多种来源加载类的二进制数据</p>
+<ul>
+<li>从本地文件系统加载类的.class文件</li>
+<li>通过网络下载类的.class文件</li>
+<li>从ZIP、JAR或其他归档文件中提取.class文件</li>
+<li>从一个专有数据库中提取.class文件</li>
+<li>把一个java源文件动态编译为.class文件</li>
+</ul>
+<h3 id="1-2连接"><a href="#1-2连接" class="headerlink" title="1.2连接"></a>1.2连接</h3><h4 id="1-2-1类的验证"><a href="#1-2-1类的验证" class="headerlink" title="1.2.1类的验证"></a>1.2.1类的验证</h4><p>验证的目的是确保Class文件的字节流中信息符合虚拟机的要求,不会危害虚拟机安全.</p>
+<p>大致完成以下四个校验动作:</p>
+<ul>
+<li>文件格式验证</li>
+<li>源数据验证</li>
+<li>字节码验证</li>
+<li>符号引用验证</li>
+</ul>
+<h4 id="1-2-2类的准备"><a href="#1-2-2类的准备" class="headerlink" title="1.2.2类的准备"></a>1.2.2类的准备</h4><p>在方法区中为类变量分配内存，并设置默认初始值；</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> value = <span class="number">123</span>；</span><br><span class="line"><span class="comment">// 这时候value的值为0，类初始化以后value才为123</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> value = <span class="number">123</span>；</span><br><span class="line"><span class="comment">// 被final修饰的类变量会在准备阶段进行正确的赋值，所以这里的value是123</span></span><br></pre></td></tr></table></figure>
+<h4 id="1-2-3类的解析"><a href="#1-2-3类的解析" class="headerlink" title="1.2.3类的解析"></a>1.2.3类的解析</h4><p>解析阶段是虚拟机把常量池内的符号引用替换为直接引用的过程。</p>
+<p><strong>符号引用</strong>：符号引用以一组符号来描述所引用的目标，符号可以是任何形式的字面量，只要使用时能无歧义地定位到目标即可。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">gotoWrok</span><span class="params">()</span></span>&#123;</span><br><span class="line">    car.run(); <span class="comment">// 这个car.run()就是符号引用，在解析阶段，会被替换成这个方法在内存位置的指针。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-3初始化"><a href="#1-3初始化" class="headerlink" title="1.3初始化"></a>1.3初始化</h3><p>在初始化阶段才是真正开始执行类中定义的Java程序代码（或者说是字节码）。</p>
+<p>在初始化阶段，Java虚拟机执行类的初始化语句，为类的静态变量赋予初始值。</p>
+<h4 id="1-3-1类的初始化时机"><a href="#1-3-1类的初始化时机" class="headerlink" title="1.3.1类的初始化时机"></a>1.3.1类的初始化时机</h4><p>前面讲过，Java虚拟机只有在程序首次主动使用一个类或接口时才会初始化它，下面行为属于主动使用</p>
+<ul>
+<li>创建类的实例，例如new、反射、克隆、反序列化</li>
+<li>调用类的静态方法</li>
+<li>访问或操作某个类或接口的静态变量</li>
+<li>启动Java虚拟机时，指定运行的类 例如 <code>java Sample</code></li>
+</ul>
+<p><strong>注意</strong></p>
+<p>对于final类型的静态变量，如果在编译时就能计算出变量的取值，那么这个变量会被看做是编译时常量，访问它不会导致类的初始化。</p>
+<h2 id="2-类加载器"><a href="#2-类加载器" class="headerlink" title="2.类加载器"></a>2.类加载器</h2><p><strong>作用</strong>：通过一个类的全限定名来获取描述此类的二进制字节流。</p>
+<p><strong>分类</strong>：</p>
+<ul>
+<li>Java虚拟机自带的加载器</li>
+<li>用户自定义的类加载器</li>
+</ul>
+<p>注意：类加载器可以在预料某个类将要被使用时就预先加载它，如果在预先加载过程，遇到.class文件缺失或存在错误，类加载器必须等到程序首次主动使用该类时才报告错误。如果该类没有被程序主动使用，则不报错。</p>
+<p>类的加载过程采用双亲委派模型，除了Java虚拟机自带的启动类加载器以外，其余的类加载器都有且只有一个父加载器。</p>
+<p>例如Java程序请求加载器A加载Sample类，加载器A会先委托自己的父类去加载Sample类，如果父类无法加载，那么才由加载器A来加载Sample类。</p>
+<h3 id="2-1类加载器的双亲委派模型"><a href="#2-1类加载器的双亲委派模型" class="headerlink" title="2.1类加载器的双亲委派模型"></a>2.1类加载器的双亲委派模型</h3><p>​    双亲委派模型是一种组织类加载器之间关系的一种规范,他的工作原理是:如果一个类加载器收到了类加载的请求,它不会自己去尝试加载这个类,而是把这个请求委派给父类加载器去完成,这样层层递进,最终所有的加载请求都被传到最顶层的启动类加载器中,只有当父类加载器无法完成这个加载请求(它的搜索范围内没有找到所需的类)时,才会交给子类加载器去尝试加载.</p>
+<p>​    这样的好处是:Java类随着它的类加载器一起具备了带有优先级的层次关系.这是十分必要的,比如<code>java.langObject</code>,它存放在<code>/jre/lib/rt.jar</code>中,它是所有Java类的父类,因此无论哪个类加载都要加载这个类,最终所有的加载请求都汇总到顶层的启动类加载器中,因此<code>Object</code>类会由启动类加载器来加载,所以加载的都是同一个类,如果不使用双亲委派模型,由各个类加载器自行去加载的话,系统中就会出现不止一个<code>Object</code>类,应用程序就会全乱了.</p>
+<h3 id="2-2Java虚拟机自带类加载器"><a href="#2-2Java虚拟机自带类加载器" class="headerlink" title="2.2Java虚拟机自带类加载器"></a>2.2Java虚拟机自带类加载器</h3><ul>
+<li>启动类加载器：没有父类加载器，负责加载核心类库，例如java.lang.*等</li>
+<li>扩展类加载器：启动类加载器是它的父加载器，它从java.ext.dirs系统属性所指定的目录下加载类库，或者从JDK的安装目录的jre\lib\ext子目录下加载。它是java.lang.ClassLoader类的子类。</li>
+<li>应用程序类加载器：扩展类加载器是它的父加载器，它从classpath环境变量或者系统属性java.class.path所指定的目录中加载类。它是java.lang.ClassLoader类的子类。是ClassLoader中的getSystemClassLoader方法的返回值。</li>
+</ul>
+<h3 id="2-3自定义类加载器"><a href="#2-3自定义类加载器" class="headerlink" title="2.3自定义类加载器"></a>2.3自定义类加载器</h3><p>要创建自己的类加载器，只需要继承<code>java.lang.ClassLoader</code>类，重写<code>findClass</code>方法即可。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> Class&lt;?&gt; findClass(String name) <span class="keyword">throws</span> ClassNotFoundException &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> ClassNotFoundException(name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> Class&lt;?&gt; loadClass(String name, <span class="keyword">boolean</span> resolve)</span><br><span class="line">    <span class="keyword">throws</span> ClassNotFoundException</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">synchronized</span> (getClassLoadingLock(name)) &#123;</span><br><span class="line">        <span class="comment">// First, check if the class has already been loaded</span></span><br><span class="line">        Class&lt;?&gt; c = findLoadedClass(name);</span><br><span class="line">        <span class="keyword">if</span> (c == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">long</span> t0 = System.nanoTime();</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (parent != <span class="keyword">null</span>) &#123;</span><br><span class="line">                    c = parent.loadClass(name, <span class="keyword">false</span>);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    c = findBootstrapClassOrNull(name);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">                <span class="comment">// ClassNotFoundException thrown if class not found</span></span><br><span class="line">                <span class="comment">// from the non-null parent class loader</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (c == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="comment">// If still not found, then invoke findClass in order</span></span><br><span class="line">                <span class="comment">// to find the class.</span></span><br><span class="line">                <span class="keyword">long</span> t1 = System.nanoTime();</span><br><span class="line">                c = findClass(name);</span><br><span class="line"></span><br><span class="line">                <span class="comment">// this is the defining class loader; record the stats</span></span><br><span class="line">                sun.misc.PerfCounter.getParentDelegationTime().addTime(t1 - t0);</span><br><span class="line">                sun.misc.PerfCounter.getFindClassTime().addElapsedTimeFrom(t1);</span><br><span class="line">                sun.misc.PerfCounter.getFindClasses().increment();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (resolve) &#123;</span><br><span class="line">            resolveClass(c);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> c;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-4Class-forname-与ClassLoader-loadClass"><a href="#2-4Class-forname-与ClassLoader-loadClass" class="headerlink" title="2.4Class.forname()与ClassLoader.loadClass()"></a>2.4Class.forname()与ClassLoader.loadClass()</h3><p>Class.forname():是一个静态方法,最常用的是Class.forname(String className);根据传入的类的全限定名返回一个Class对象.该方法在将Class文件加载到内存的同时,会执行类的初始化.</p>
+<p>ClassLoader.loadClass():这是一个实例方法,需要一个ClassLoader对象来调用该方法,该方法将Class文件加载到内存时,并不会执行类的初始化,直到这个类第一次使用时才进行初始化.该方法因为需要得到一个ClassLoader对象,所以可以根据需要指定使用哪个类加载器.</p>
+<h2 id="3-类的卸载"><a href="#3-类的卸载" class="headerlink" title="3.类的卸载"></a>3.类的卸载</h2><p>Java虚拟机自带的类加载器所加载的类，在虚拟机的生命周期中，始终不会被卸载。也就是用户自定义的类加载器所加载的类才会被卸载</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/25/Java/JavaSE/ch11_多线程与并发编程/x.线程的同步/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/25/Java/JavaSE/ch11_多线程与并发编程/x.线程的同步/" itemprop="url">4.线程的同步</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-25T00:00:00+08:00">
+                2018-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/ch11并发/" itemprop="url" rel="index">
+                    <span itemprop="name">ch11并发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="线程的同步"><a href="#线程的同步" class="headerlink" title="线程的同步"></a>线程的同步</h1><h2 id="为什么要同步？"><a href="#为什么要同步？" class="headerlink" title="为什么要同步？"></a>为什么要同步？</h2><p>当多个线程同时操作一个可共享的资源变量时，操作的结果会变得无法预测，这就是同步问题。</p>
+<p>为解决同步问题，Java引入了同步锁机制从而避免共享资源变量在线程没有完成操作之前，被其他线程的调用，从而保证了该变量的唯一性和准确性。</p>
+<h2 id="同步代码块"><a href="#同步代码块" class="headerlink" title="同步代码块"></a>同步代码块</h2><p>为了解决同步问题，Java引入了同步机制，具体的做法实在会出现同步问题的代码前加上<code>synchronized</code>标志，这样的代码被称为同步代码块。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">withdrawal</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="keyword">synchronized</span> (<span class="keyword">this</span>)&#123;</span><br><span class="line">      <span class="comment">// do something</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>每个Java对象都有且只有一个同步锁，在任何时刻，最多只允许一个线程拥有这把锁。</p>
+<p>如果对象<code>A</code>的锁已经被线程<code>T1</code>所使用，那么需要使用对象<code>A</code>的锁的线程<code>T2</code>就会被虚拟机放入对象A的锁池中，当线程<code>T1</code>执行释放锁以后，虚拟机再从对象A的锁池中随机抽取一个线程，使这个线程拥有锁，并转到就绪状态。</p>
+<h2 id="同步方法"><a href="#同步方法" class="headerlink" title="同步方法"></a>同步方法</h2><p>如果一个方法中所有代码都需要进行同步，那么可以直接用<code>synchronized</code>修饰这个方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">withdrawal</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="comment">// do something</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="线程同步需要注意的地方"><a href="#线程同步需要注意的地方" class="headerlink" title="线程同步需要注意的地方"></a>线程同步需要注意的地方</h2><ol>
+<li>如果同步代码和非同步代码共同操作共享资源，那么仍然会有同步问题。</li>
+<li>每个对象有且只有一把锁</li>
+<li><code>synchronized</code>还可以修饰静态方法</li>
+<li>在执行同步代码块时，<code>Thread.sleed</code>和<code>Thread.yield</code>方法并不会释放锁，它们只是让出了CPU的使用权</li>
+<li><code>synchronized</code>声明不会被继承</li>
+</ol>
+<h2 id="释放对象的锁"><a href="#释放对象的锁" class="headerlink" title="释放对象的锁"></a>释放对象的锁</h2><p>线程会在以下情况释放锁</p>
+<ul>
+<li>执行完同步代码</li>
+<li>执行同步代码的过程中，出现了异常导致线程终止</li>
+<li>执行同步代码的过程中，调用了锁所属对象的<code>wait()</code>方法</li>
+</ul>
+<h2 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h2><p>当线程A等待线程B的锁，线程B又等待线程A的锁，这种情况就是死锁。</p>
+<h2 id="生产者消费者模式"><a href="#生产者消费者模式" class="headerlink" title="生产者消费者模式"></a>生产者消费者模式</h2><p>synchronized 确保一个方法不能被多个线程同时执行。</p>
+<p>使用标记和Object.wait() Object.notify(),让线程在正确的时机运行。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> ThreadDemo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProducterConsumer</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Food food = <span class="keyword">new</span> Food();</span><br><span class="line">        Thread pt = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Producter(food));</span><br><span class="line">        Thread ct = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Consumer(food));</span><br><span class="line">        pt.start();</span><br><span class="line">        ct.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Food</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String desc;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">boolean</span> isReady = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">set</span><span class="params">(String name, String desc)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 判断</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.isReady) &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                System.out.println(<span class="string">"别急呢，食物还没吃完"</span>);</span><br><span class="line">                <span class="keyword">this</span>.wait();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 设值</span></span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Thread.sleep(<span class="number">500</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.desc = desc;</span><br><span class="line">        <span class="comment">// 修改</span></span><br><span class="line">        <span class="keyword">this</span>.isReady = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">this</span>.notify();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">get</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 判断</span></span><br><span class="line">        <span class="keyword">if</span> (!<span class="keyword">this</span>.isReady) &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                System.out.println(<span class="string">"别急呢，食物还没做好呢"</span>);</span><br><span class="line">                <span class="keyword">this</span>.wait();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 输出</span></span><br><span class="line">        System.out.println(<span class="keyword">this</span>.name + <span class="string">"--"</span> + <span class="keyword">this</span>.desc);</span><br><span class="line">        <span class="comment">// 设值</span></span><br><span class="line">        <span class="keyword">this</span>.isReady = <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">this</span>.notify();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Producter</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Food food;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String desc;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Producter</span><span class="params">(Food food)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.food = food;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">            name = i % <span class="number">2</span> == <span class="number">0</span> ? <span class="string">"叉烧"</span> : <span class="string">"饼干"</span>;</span><br><span class="line">            desc = i % <span class="number">2</span> == <span class="number">0</span> ? <span class="string">"美味可口"</span> : <span class="string">"充饥神器"</span>;</span><br><span class="line">            <span class="keyword">this</span>.food.set(name, desc);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Consumer</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Food food;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Consumer</span><span class="params">(Food food)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.food = food;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">this</span>.food.get();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/25/Java/JavaSE/ch11_多线程与并发编程/x.乐观锁与悲观锁/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/25/Java/JavaSE/ch11_多线程与并发编程/x.乐观锁与悲观锁/" itemprop="url">5.乐观锁与悲观锁</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-25T00:00:00+08:00">
+                2018-09-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/ch11并发/" itemprop="url" rel="index">
+                    <span itemprop="name">ch11并发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="乐观锁与悲观锁"><a href="#乐观锁与悲观锁" class="headerlink" title="乐观锁与悲观锁"></a>乐观锁与悲观锁</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>悲观锁</strong>：每次拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁。传统的关系型数据库里边就用到了很多这种锁机制，比如行锁，表锁等，读锁，写锁等，都是在做操作之前先上锁。Java中<code>synchronized</code>和<code>ReentrantLock</code>等独占锁就是悲观锁思想的实现。</p>
+<p><strong>悲观锁机制存在以下问题</strong>：</p>
+<ol>
+<li>在多线程竞争下，加锁、释放锁会导致比较多的上下文切换和调度延时，引起性能问题。</li>
+<li>一个线程持有锁会导致其它所有需要此锁的线程挂起。</li>
+<li>如果一个优先级高的线程等待一个优先级低的线程释放锁会导致优先级倒置，引起性能风险。</li>
+</ol>
+<p><strong>乐观锁</strong>：每次拿数据的时候都不会上锁，但是在更新的时候会对数据是否产生并发冲突进行检测，只有通过检测才对数据进行更新操作。</p>
+<p><strong>两种锁的使用场景</strong></p>
+<p>两种锁各有优缺点，<strong>乐观锁适用于写比较少的情况下（多读场景）</strong>，即冲突真的很少发生的时候，这样可以省去了锁的开销，加大了系统的整个吞吐量。但如果是多写的情况，一般会经常产生冲突，这就会导致上层应用会不断的进行retry，这样反倒是降低了性能，所以<strong>一般多写的场景下用悲观锁就比较合适。</strong></p>
+<h2 id="悲观锁的实现"><a href="#悲观锁的实现" class="headerlink" title="悲观锁的实现"></a>悲观锁的实现</h2><p>在Java中，你可以通过<code>synchronized</code>和<code>ReentrantLock</code>等独占锁的方式实现。</p>
+<p>在MySQL InnoDB中</p>
+<ul>
+<li>要使用悲观锁，我们必须关闭mysql数据库的自动提交属性，因为MySQL默认使用autocommit模式，也就是说，当你执行一个更新操作后，MySQL会立刻将结果进行提交。<code>set autocommit=0;</code></li>
+<li>使用<code>select…for update</code>会把数据给锁住，不过我们需要注意一些锁的级别，MySQL InnoDB默认<a href="http://www.hollischuang.com/archives/914" target="_blank" rel="noopener">行级锁</a>。行级锁都是基于索引的，如果一条SQL语句用不到索引是不会使用行级锁的，会使用表级锁把整张表锁住，这点需要注意。</li>
+</ul>
+<h2 id="乐观锁的实现"><a href="#乐观锁的实现" class="headerlink" title="乐观锁的实现"></a>乐观锁的实现</h2><p><strong>乐观锁一般会使用版本号机制或CAS算法实现</strong></p>
+<h3 id="版本号机制"><a href="#版本号机制" class="headerlink" title="版本号机制"></a>版本号机制</h3><p>一般是在数据表中加上一个数据版本号version字段，读取出数据时，将此版本号一同读出，之后更新时，对此版本号加一。此时，将提交数据的版本数据与数据库表对应记录的当前版本信息进行比对，如果提交的数据 版本号大于数据库表当前版本号，则予以更新，否则重试更新操作，直到更新成功。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> t_goods </span><br><span class="line"><span class="keyword">set</span> <span class="keyword">status</span> = <span class="number">2</span>,<span class="keyword">version</span> = <span class="keyword">version</span> + <span class="number">1</span></span><br><span class="line"><span class="keyword">where</span> <span class="keyword">id</span>=<span class="comment">#&#123;id&#125; and version=#&#123;version&#125;;</span></span><br></pre></td></tr></table></figure>
+<p><strong>举个例子：</strong> 假设数据库中帐户信息表中有一个 version 字段，当前值为 1 ；而当前帐户余额字段（ balance ）为 $100 。</p>
+<ol>
+<li>操作员 A 此时将其读出（ version=1 ），并从其帐户余额中扣除 $50（ $100-$50 ）。</li>
+<li>在操作员 A 操作的过程中，操作员B 也读入此用户信息（version=1），并从其帐户余额中扣除 $20 （$100-$20）。</li>
+<li>操作员 A 完成了修改工作，将数据版本号加一（version=2），连同帐户扣除后余额（ balance=$50 ），提交至数据库更新，此时由于提交数据版本大于数据库记录当前版本，数据被更新，数据库记录 version 更新为 2 。</li>
+<li>操作员 B 完成了操作，也将版本号加一（ version=2 ）试图向数据库提交数据（ balance=$80 ），但此时比对数据库记录版本时发现，操作员 B 提交的数据版本号为 2 ，数据库记录当前版本也为 2 ，不满足 “ 提交版本必须大于记录当前版本才能执行更新 “ 的乐观锁策略，因此，操作员 B 的提交被驳回。</li>
+</ol>
+<p>除了版本号我们也可以使用时间戳，原理也是类似的，也是在更新提交的时候检查当前数据库中数据的时间戳和自己更新前取到的时间戳进行对比，如果一致则OK，否则就是冲突。</p>
+<h3 id="CAS"><a href="#CAS" class="headerlink" title="CAS"></a>CAS</h3><p>CAS（Compare and Swap）是一种有名的<strong>无锁算法</strong>。无锁编程，即不使用锁的情况下实现多线程之间的变量同步，也就是在没有线程被阻塞的情况下实现变量的同步，所以也叫非阻塞同步（Non-blocking Synchronization）。</p>
+<p><a href="https://www.cnblogs.com/myopensource/p/8177074.html" target="_blank" rel="noopener">漫谈：什么是CAS机制 上</a></p>
+<p><a href="https://yq.aliyun.com/ziliao/307503" target="_blank" rel="noopener">漫谈：什么是CAS机制 下</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/24/Java/JavaSE/ch11_多线程与并发编程/3.并发问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/24/Java/JavaSE/ch11_多线程与并发编程/3.并发问题/" itemprop="url">3.并发问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-24T00:00:00+08:00">
+                2018-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/ch11并发/" itemprop="url" rel="index">
+                    <span itemprop="name">ch11并发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="并发问题"><a href="#并发问题" class="headerlink" title="并发问题"></a>并发问题</h1><h2 id="1-并发编程的基本知识"><a href="#1-并发编程的基本知识" class="headerlink" title="1.并发编程的基本知识"></a>1.并发编程的基本知识</h2><p><strong>并行</strong>：如果某个系统支持两个或以上个动作<strong>同时存在</strong>，那么这个系统就是一个<strong>并发系统</strong>。<br><strong>并发</strong>：如果某个系统支持两个或以上个动作<strong>同时执行</strong>，那么这个系统就是一个<strong>并行系统</strong>。</p>
+<p>并发系统与并行系统这两个定义之间的关键差异在于<strong>“执行”</strong>这个词。<br>在并发程序中可以同时拥有两个或以上个线程。这意味着，如果程序在单核处理器上运行，那么这些线程将交替的执行。这些线程是同时“存在”的——每个线程都处于执行过程中的某个状态。<br>如果程序能够并行执行，那么就一定是运行在多核处理器上。此时，程序中的每个线程都将分配到一个独立的处理器核上，因此可以同时运行。</p>
+<p><strong>高并发</strong>：通常是指，通过设计保证系统能够<strong>同时并行处理</strong>很多请求。</p>
+<h2 id="2-并发问题"><a href="#2-并发问题" class="headerlink" title="2.并发问题"></a>2.并发问题</h2><p>Java中的多线程编程属于并发编程的一种。并发编程能有效提高程序运行的效率，但同时也容易出现一些问题，下面我们来了解这些问题，只有把这些问题了解了，才能写出好的并发程序。</p>
+<h3 id="2-1可见性问题"><a href="#2-1可见性问题" class="headerlink" title="2.1可见性问题"></a>2.1可见性问题</h3><p><strong>可见性</strong>：一个线程对共享变量值的修改，能够及时的被其它线程看到。</p>
+<p><strong>共享变量</strong>：如果一个变量在多个线程的工作内存中存在副本，那么这个变量就是这几个线程的共享变量。</p>
+<p>知道了什么是可见性，那么顾名思义，可见性问题就是一个线程对共享变量值的修改，没有及时的被其它线程看到。</p>
+<p><strong>为什么会出现这种情况？</strong></p>
+<ol>
+<li>线程的交叉执行</li>
+<li>共享变量更新后的值没有及时在工作内存和主内存中更新</li>
+</ol>
+<p>网上有很多关于可见性问题的文章，都会说什么Java内存模型、CPU多级缓存等等，但是个人觉得都说的不太清楚，本人觉得如果要想真正的了解这个问题的本质，需要对JVM以及计算机组成原理，特别是内存和CPU相关的知识有一定的认识才可以。本人暂时没有这个能力，暂时就不讲这个了。</p>
+<p><strong>解决方案</strong></p>
+<p>要实现共享变量的可见性，必须保证两点：</p>
+<ul>
+<li>线程修改后的共享变量能够及时从工作内存刷新到主内存中</li>
+<li>其他线程能及时把共享变量的最新值从主内存中更新到自己的工作内存中</li>
+</ul>
+<p>Java解决可见性问题的方式包括</p>
+<ul>
+<li>synchronized</li>
+<li>volatile</li>
+<li>Lock</li>
+</ul>
+<h4 id="synchronized"><a href="#synchronized" class="headerlink" title="synchronized"></a>synchronized</h4><p>JMM关于synchronized的两条规定</p>
+<ul>
+<li>线程解锁前，必须把共享变量的最新值刷新到主内存中</li>
+<li>线程加锁时，将清空工作内存中共享变量的值，从而在使用共享变量时，需要从主内存中重新读取最新的值</li>
+</ul>
+<h4 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h4><p>通过内存屏障和禁止重排序优化来保证可见性。</p>
+<p>要在多线程中安全的使用volatile变量，必须同时满足</p>
+<ul>
+<li>对变量的写入操作不依赖其当前值</li>
+<li>该变量没有包含在具有其他变量的不变式中</li>
+</ul>
+<h3 id="2-2原子性问题"><a href="#2-2原子性问题" class="headerlink" title="2.2原子性问题"></a>2.2原子性问题</h3><p><strong>原子性操作</strong>：一般我们认为原子是不可再分的，在编程领域中，原子性操作指的是一组操作是不可再分的，这组操作是一个统一的整体，这组操作在执行的过程中不会其它因素干扰，例如执行过程中被中断、或者执行过程中所用到的值被偷偷修改了。在Java中，对基本数据类型的变量的读取和赋值操作是原子性操作。例如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">10</span>;</span><br><span class="line">y = x;</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong>：在32位平台下，对64位数据的读取和赋值是需要通过两个操作来完成的，不能保证其原子性。但是好像在最新的JDK中，JVM已经保证对64位数据的读取和赋值也是原子性操作了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x += <span class="number">1</span>；</span><br><span class="line">x = x + <span class="number">1</span>;</span><br><span class="line"><span class="comment">// 上面这种就不是原子性操作了，</span></span><br></pre></td></tr></table></figure>
+<p><strong>原子性问题</strong>：我想不到、也找不到一个正式的定义，只能通过例子来讲。</p>
+<p>例如 <code>x = x + 1;</code>这个操作。<br>假设当前<code>x = 9</code>，然后有两个线程同时执行上面这条语句。<br>由于两个线程都读到x的值为9，然后都执行递增操作，最后x的值变为10， 而不是预期的11。<br>这种问题就是原子性问题。</p>
+<h4 id="产生的原因"><a href="#产生的原因" class="headerlink" title="产生的原因"></a>产生的原因</h4><p>有些操作在被多个线程同时执行的时候，无法保证当前使用的数据的有效性。</p>
+<h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><ul>
+<li><p>原子类</p>
+</li>
+<li><p>synchronized</p>
+</li>
+<li>Lock</li>
+</ul>
+<h3 id="2-3有序性问题"><a href="#2-3有序性问题" class="headerlink" title="2.3有序性问题"></a>2.3有序性问题</h3><p><strong>有序性问题</strong>：程序执行的顺序与编写代码的先后顺序不一致。</p>
+<h4 id="产生的原因-1"><a href="#产生的原因-1" class="headerlink" title="产生的原因"></a>产生的原因</h4><ul>
+<li><p>编译器指令重排</p>
+<p>  编译器在不改变单线程程序语义的前提下，可以重新安排语句的执行顺序。 </p>
+</li>
+<li><p>CPU乱序执行</p>
+<p>  现代处理器采用了指令级并行技术（Instruction-Level Parallelism， ILP）来将多条指令重叠执行。如果不存在数据依赖性，处理器 可以改变语句对应机器指令的执行顺序。 </p>
+</li>
+<li><p>内存系统的重排序</p>
+<p>  由于处理器使用缓存和读/写缓冲区，这使得加载和存储操作看上去可能是在乱序执行。</p>
+</li>
+</ul>
+<h4 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h4><p>在Java中，可以使用<code>synchronized</code>和<code>volatile</code>来保证多线程之间操作的有序性。实现方式有所区别：</p>
+<p><code>volatile</code>关键字会禁止指令重排。</p>
+<p><code>synchronized</code>关键字保证同一时刻只允许一条线程操作。进出锁住的代码块是串行的，因为只能有一个线程拿到锁，这就使得使用同一个锁的两个执行过程A和B之间，A看B的操作是有序的，B看A的操作也是有序的，是因为执行过程内部无论会不会指令重排序，结果都是一致的。但是锁的内部代码依然会指令重排序。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="黄大仁">
+            
+              <p class="site-author-name" itemprop="name">黄大仁</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">181</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">黄大仁</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

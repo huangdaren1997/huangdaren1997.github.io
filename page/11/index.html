@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="黄大仁的博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄大仁的博客">
+<meta property="og:url" content="http://yoursite.com/page/11/index.html">
+<meta property="og:site_name" content="黄大仁的博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="黄大仁的博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/11/">
+
+
+
+
+
+  <title>黄大仁的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">黄大仁的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/Java/JavaSE/ch12_多线程与并发编程/2.线程间通信/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Java/JavaSE/ch12_多线程与并发编程/2.线程间通信/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="线程通信"><a href="#线程通信" class="headerlink" title="线程通信"></a>线程通信</h1><p><code>java.lang.Object</code>类提供了两个用于线程通信的方法</p>
+<ul>
+<li><code>wait()</code>：执行该方法的线程会释放对象的锁，并进入对象的等待池中，等待其它线程将他唤醒。</li>
+<li><code>notify()</code>：执行该方法的线程唤醒在对象的等待池中等待的一个线程。Java虚拟机从对象的等待池随机选择一个线程，把它转到对象的锁池中。</li>
+</ul>
+<p>假定线程<code>T1</code>和线程<code>T2</code>共同操作一个对象<code>obj</code>，这两个线程可以通过对象<code>obj</code>的<code>wait()</code>和<code>notify()</code>方法来进行通信。</p>
+<ol>
+<li>线程<code>T1</code>执行对象<code>obj</code>的同步代码块时，<code>T1</code>持有对象<code>obj</code>的锁，<code>T2</code>在对象<code>obj</code>的锁池中等待。</li>
+<li>线程<code>T1</code>在同步代码块中执行<code>obj.wait()</code>方法，线程<code>T1</code>释放<code>obj</code>的锁，进入<code>obj</code>的等待池。</li>
+<li>线程<code>T2</code>获得<code>obj</code>的锁，执行<code>obj</code>的另一个同步代码块。</li>
+<li>线程<code>T2</code>在同步代码中执行<code>obj.notify()</code>方法，Java虚拟机把<code>T1</code>从等待池放入锁池。</li>
+<li>线程<code>T2</code>执行完同步代码块后，释放锁。</li>
+</ol>
+<h1 id="ThreadLocal类"><a href="#ThreadLocal类" class="headerlink" title="ThreadLocal类"></a>ThreadLocal类</h1><p><code>java.lang.ThreadLocal</code>类可用来存放线程的局部变量，每个线程都有单独的局部变量，彼此之间不会共享。</p>
+<p><code>ThreadLocal&lt;T&gt;</code>类主要包括以下三个方法：</p>
+<ul>
+<li><code>public T get()</code>：返回当前线程的局部变量</li>
+<li><code>protected T initialValue()</code>：返回当前线程的局部变量的初始值</li>
+<li><code>public void set(T value)</code>：设置当前线程的局部变量</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/Java/JavaSE/ch12_多线程与并发编程/x.JMM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Java/JavaSE/ch12_多线程与并发编程/x.JMM/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="1-并行、并发、高并发、线程安全性"><a href="#1-并行、并发、高并发、线程安全性" class="headerlink" title="1.并行、并发、高并发、线程安全性"></a>1.并行、并发、高并发、线程安全性</h1><p><strong>并行、并发、高并发</strong></p>
+<p><strong>并行</strong>：如果某个系统支持两个或以上个动作<strong>同时存在</strong>，那么这个系统就是一个<strong>并发系统</strong>。<br><strong>并发</strong>：如果某个系统支持两个或以上个动作<strong>同时执行</strong>，那么这个系统就是一个<strong>并行系统</strong>。</p>
+<p>并发系统与并行系统这两个定义之间的关键差异在于<strong>“执行”</strong>这个词。<br>在并发程序中可以同时拥有两个或以上个线程。这意味着，如果程序在单核处理器上运行，那么这些线程将交替的执行。这些线程是同时“存在”的——每个线程都处于执行过程中的某个状态。<br>如果程序能够并行执行，那么就一定是运行在多核处理器上。此时，程序中的每个线程都将分配到一个独立的处理器核上，因此可以同时运行。</p>
+<p><strong>高并发</strong>：通常是指，通过设计保证系统能够<strong>同时并行处理</strong>很多请求。</p>
+<p><strong>线程安全性</strong>：一个类无论被多少个线程访问，该类始终能表现出正确的行为，那么就称这个类是线程安全的。</p>
+<h1 id="2-并发编程的问题"><a href="#2-并发编程的问题" class="headerlink" title="2.并发编程的问题"></a>2.并发编程的问题</h1><p>在并发编程中，我们会遇到某些问题，例如原子性问题、可见性问题、有序性问题等等。</p>
+<p>解决问题，我们要有方法论以及具体实现。在Java并发编程中，这个方法论就是Java内存模型，而具体实现就是Java提供的一系列和并发处理相关的关键字，比如<code>volatile</code>、<code>synchronized</code>、<code>final</code>以及<code>concurrent</code>包等等。</p>
+<p>我们先来学习其中的方法论，再来学习具体实现。</p>
+<p>Java内存模型，顾名思义就是一种内存模型，那么我们有必要先了解一下什么是内存模型。</p>
+<h2 id="2-1内存模型"><a href="#2-1内存模型" class="headerlink" title="2.1内存模型"></a>2.1内存模型</h2><p><strong>内存模型的作用是定义共享内存的正确性。具体的做法就是内存模型提供了一些关于内存读写的规则。通过这些规则来规范对内存的读写操作，从而保证指令执行的正确性。</strong></p>
+<h3 id="2-1CPU缓存一致性"><a href="#2-1CPU缓存一致性" class="headerlink" title="2.1CPU缓存一致性"></a>2.1CPU缓存一致性</h3><p><strong>背景知识：CPU的高速缓存</strong></p>
+<p>总所周知，CPU和内存并不是直接交换数据的，它们之间还隔着一个高速缓存。高速缓存是对程序员透明的，这意味在编程的时候是感知不到CPU的缓存的存在的。一般情况下确实如此，但在，在某些特殊的情形下（多核多线程），就不能忽略缓存的存在了。这其实是和缓存的设计有关系，一般多处理器下的每个CPU都有一个自己的缓存，存储在这个缓存的数据是其它CPU是无法查看的。</p>
+<p><strong>引入问题1：缓存一致性</strong></p>
+<p>问题来了，由于缓存是每个CPU私有的，那么在多线程环境下，某个CPU修改了变量x后保存在本地缓存，对于其它CPU，何时才能发现变量x被修改呢？如何保证其它CPU的缓存中持有的x的值是最新的呢？这就是缓存一致性问题。</p>
+<p>缓存一致性问题是由于引入缓存而导致的，所以，这是很多CPU厂商必须解决的问题。为了解决前面提到的缓存数据不一致的问题，人们提出过很多方案，通常来说有以下2种方案：</p>
+<ul>
+<li>通过在总线加<code>LOCK#</code>锁的方式。</li>
+<li>通过缓存一致性协议（Cache Coherence Protocol）。</li>
+</ul>
+<p><strong>LOCK#</strong></p>
+<p>在早期的CPU当中，是通过在总线上加<code>LOCK#</code>锁的形式来解决缓存不一致的问题。因为CPU和其他部件进行通信都是通过总线来进行的，如果对总线加<code>LOCK#</code>锁的话，也就是说阻塞了其他CPU对其他部件访问（如内存），从而使得只能有一个CPU能使用这个变量的内存。在总线上发出了<code>LCOK#</code>锁的信号，那么只有等待这段代码完全执行完毕之后，其他CPU才能从其内存读取变量，然后进行相应的操作。这样就解决了缓存不一致的问题。但是由于在锁住总线期间，其他CPU无法访问内存，会导致效率低下。因此出现了第二种解决方案，通过缓存一致性协议来解决缓存一致性问题。</p>
+<p><strong>缓存一致性协议</strong></p>
+<p>缓存一致性协议（Cache Coherence Protocol），最出名的就是Intel 的MESI协议，MESI协议的作用就是保证每个缓存中使用的共享变量的副本是一致的。MESI的核心的思想是：当CPU写数据时，如果发现操作的变量是共享变量，即在其他CPU中也存在该变量的副本，会发出信号通知其他CPU将该变量的缓存行置为无效状态，因此当其他CPU需要读取这个变量时，发现自己缓存中缓存该变量的缓存行是无效的，那么它就会从内存重新读取。</p>
+<p>在MESI协议中，每个缓存可能有有4个状态，它们分别是：</p>
+<ul>
+<li>M(Modified)：这行数据有效，数据被修改了，和内存中的数据不一致，数据只存在于本Cache中。</li>
+<li>E(Exclusive)：这行数据有效，数据和内存中的数据一致，数据只存在于本Cache中。</li>
+<li>S(Shared)：这行数据有效，数据和内存中的数据一致，数据存在于很多Cache中。</li>
+<li>I(Invalid)：这行数据无效。</li>
+</ul>
+<p>关于MESI的更多细节这里就不详细介绍了，我们只要知道，MESI是一种比较常用的缓存一致性协议，他可以用来解决缓存之间的数据一致性问题就可以了。</p>
+<p>通过缓存一致性协议之后，内存可见性问题似乎是得以解决了。但是，这里面还隐藏着另外一个问题：乱序执行！</p>
+<h3 id="2-1-2乱序执行"><a href="#2-1-2乱序执行" class="headerlink" title="2.1.2乱序执行"></a>2.1.2乱序执行</h3><p>乱序，指的是程序指令实际上执行的顺序，和我们书写的指令的顺序不一致。乱序分两种，分别是编译器的指令重排和CPU的乱序执行。本意上乱序是为了优化指令执行的速度而产生的。并且为了维护程序原来的语义，编译器和CPU不会对两个有数据依赖的指令重排（reorder）。这种保护在单线程的环境下是可以工作的，但是到了多线程，就可能出问题了。</p>
+<p>举个例子，CPU-0将要执行两条指令，分别是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. STORE x</span><br><span class="line">2. LOAD y</span><br></pre></td></tr></table></figure>
+<p>当CPU-0执行指令1的时候，发现这个变量x的当前状态为Shared，这意味着其它CPU也持有了x，因此根据缓存一致性协议，CPU-0在修改x之前必须通知其它CPU，直到收到来自其它CPU的ack才会执行真正的修改x。但是，事情没有这么简单。现代CPU缓存通常都有一个Store Buffer，其存在的目的是，先将要Store的变量记下来，注意此时并不真的执行Store操作，然后待时机合适的时候再执行实际的Store。有了这个Store Buffer，CPU-0在向其它CPU发出disable消息之后并不是干等着，而是转而执行指令2（由于指令1和指令2在CPU-0看来并不存在数据依赖）。这样做效率是有了，但是也带来了问题。虽然我们在写程序的时候，是先STORE x再执行LOAD y，但是实际上CPU却是先LOAD y再STORE x，这个便是CPU乱序执行（reorder）的一种情况！</p>
+<p>当你的程序要求指令1、2有逻辑上的先后顺序时，CPU这样的优化就是有问题的。但是，CPU并不知道指令之间蕴含着什么样的逻辑顺序，在你告诉它之前，它只是假设指令之间都没有逻辑关联，并且尽最大的努力优化执行速度。因此我们需要一种机制能告诉CPU：这段指令执行的顺序是不可被重排的！做这种事的就是内存屏障（memory barrier）！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">STORE x</span><br><span class="line">WMB (Write memory barrier)</span><br><span class="line">LOAD y</span><br></pre></td></tr></table></figure>
+<p>例如，通过在STORE x之后加上这个写内存屏障，就能保证在之后LOAD y指令不会被重排到STORE x之前了。</p>
+<h3 id="2-1-3总结"><a href="#2-1-3总结" class="headerlink" title="2.1.3总结"></a>2.1.3总结</h3><p>前面讲了那么多，那么内存模型是什么呢？由于每个CPU设计都是不同的，每个CPU对指令乱序的程度也是不一样的。比较保守的如x86仅会对Store Load乱序，但是一些优化激进的CPU（PS的Power）会允许更多情况的乱序产生。如果目标是写一个跨平台多线程的程序，那么势必要了解每一个CPU的细节，来插入确切的、足够的内存屏障来保证程序的正确性。这是多么的不科学啊！科学的做法应该是，编写一套抽象的程序，然后在不同的平台下让编程语言、编译器来生成合适的内存屏障以及处理缓存一致性问题。因此，我们有了内存模型的概念。我们只需要根据这个抽象的内存模型来编写程序即可。</p>
+<h2 id="2-2原子性、可见性、有序性"><a href="#2-2原子性、可见性、有序性" class="headerlink" title="2.2原子性、可见性、有序性"></a>2.2原子性、可见性、有序性</h2><ul>
+<li><strong>可见性</strong>：指当多个线程访问同一个变量时，一个线程修改了这个变量的值，其他线程能够立即看得到修改的值。</li>
+<li><strong>原子性</strong>：指在一个操作中cpu不可以在中途暂停然后再调度，既不被中断操作，要不执行完成，要不就不执行。</li>
+<li><strong>有序性</strong>：程序执行的顺序按照代码的先后顺序执行。</li>
+</ul>
+<p>有没有发现，<strong>缓存一致性问题</strong>其实就是<strong>可见性问题</strong>。<strong>CPU乱序执行</strong>就是<strong>原子性问题</strong>，<strong>编译器指令重排</strong>就是<strong>有序性问题</strong>。所以说Java内存模型是解决这些问题的方法论。</p>
+<h1 id="3-Java内存模型"><a href="#3-Java内存模型" class="headerlink" title="3.Java内存模型"></a>3.Java内存模型</h1><h2 id="3-1什么是Java内存模型"><a href="#3-1什么是Java内存模型" class="headerlink" title="3.1什么是Java内存模型"></a>3.1什么是Java内存模型</h2><p><strong>Java内存模型（Java Memory Model ,JMM）就是一种符合内存模型规范的，屏蔽了各种硬件和操作系统的访问差异的，保证了Java程序在各种平台下对内存的访问都能保证效果一致的机制及规范。</strong></p>
+<p>提到Java内存模型，一般指的是JDK 5 开始使用的新的内存模型，主要由<a href="http://www.cs.umd.edu/~pugh/java/memoryModel/jsr133.pdf" target="_blank" rel="noopener">JSR-133: JavaTM Memory Model and Thread Specification</a> 描述。</p>
+<p>Java内存模型规定了所有的变量都存储在主内存中，每条线程还有自己的工作内存，线程的工作内存保存了主内存中该线程使用到的变量的副本，线程对变量的所有操作都必须在工作内存中进行，而不能直接读写主内存。不同的线程之间也无法直接访问对方工作内存中的变量，线程间变量的传递均需要自己的工作内存和主存之间进行数据同步进行。</p>
+<h2 id="3-2Java内存模型的实现"><a href="#3-2Java内存模型的实现" class="headerlink" title="3.2Java内存模型的实现"></a>3.2Java内存模型的实现</h2><p>在Java中提供了一系列和并发处理相关的关键字，比如<code>volatile</code>、<code>synchronized</code>、<code>final</code>等等。其实这些就是Java内存模型封装了底层的实现后提供给程序员使用的一些关键字。</p>
+<p>在开发多线程的代码的时候，我们可以直接使用<code>synchronized</code>等关键字来控制并发，从来就不需要关心底层的编译器优化、缓存一致性等问题。所以，<strong>Java内存模型，除了定义了一套规范，还提供了一系列原语，封装了底层实现后，供开发者直接使用。</strong></p>
+<p>下面我们看看在Java中分别使用什么方式解决原子性、有序性和一致性等问题。</p>
+<h3 id="3-2-1原子性问题"><a href="#3-2-1原子性问题" class="headerlink" title="3.2.1原子性问题"></a>3.2.1原子性问题</h3><ul>
+<li>原子变量类</li>
+<li>synchronized</li>
+</ul>
+<p>在Java中，为了保证原子性，提供了两个高级的字节码指令<code>monitorenter</code>和<code>monitorexit</code>。在<a href="http://www.hollischuang.com/archives/1883" target="_blank" rel="noopener">synchronized的实现原理</a>文章中，介绍过，这两个字节码，在Java中对应的关键字就是<code>synchronized</code>。因此，在Java中可以使用<code>synchronized</code>来保证方法和代码块内的操作是原子性的。</p>
+<h3 id="3-2-2可见性问题"><a href="#3-2-2可见性问题" class="headerlink" title="3.2.2可见性问题"></a>3.2.2可见性问题</h3><p>Java内存模型是通过在变量修改后将新值同步回主内存，在变量读取前从主内存刷新变量值的这种依赖主内存作为传递媒介的方式来实现的。Java中的<code>volatile</code>关键字提供了一个功能，那就是被其修饰的变量在被修改后可以立即同步到主内存，被其修饰的变量在每次是用之前都从主内存刷新。因此，可以使用<code>volatile</code>来保证多线程操作时变量的可见性。除了<code>volatile</code>，Java中的<code>synchronized</code>和<code>final</code>两个关键字也可以实现可见性。只不过实现方式不同，这里不再展开了。</p>
+<h3 id="3-2-3有序性问题"><a href="#3-2-3有序性问题" class="headerlink" title="3.2.3有序性问题"></a>3.2.3有序性问题</h3><p>在Java中，可以使用<code>synchronized</code>和<code>volatile</code>来保证多线程之间操作的有序性。实现方式有所区别：</p>
+<p><code>volatile</code>关键字会禁止指令重排。</p>
+<p><code>synchronized</code>关键字保证同一时刻只允许一条线程操作。进出锁住的代码块是串行的，因为只能有一个线程拿到锁，这就使得使用同一个锁的两个执行过程A和B之间，A看B的操作是有序的，B看A的操作也是有序的，是因为执行过程内部无论会不会指令重排序，结果都是一致的。但是锁的内部代码依然会指令重排序。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/Java/JavaSE/ch12_多线程与并发编程/4.并发问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Java/JavaSE/ch12_多线程与并发编程/4.并发问题/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="并发问题"><a href="#并发问题" class="headerlink" title="并发问题"></a>并发问题</h1><h2 id="1-并发编程的基本知识"><a href="#1-并发编程的基本知识" class="headerlink" title="1.并发编程的基本知识"></a>1.并发编程的基本知识</h2><p><strong>并行</strong>：如果某个系统支持两个或以上个动作<strong>同时存在</strong>，那么这个系统就是一个<strong>并发系统</strong>。<br><strong>并发</strong>：如果某个系统支持两个或以上个动作<strong>同时执行</strong>，那么这个系统就是一个<strong>并行系统</strong>。</p>
+<p>并发系统与并行系统这两个定义之间的关键差异在于<strong>“执行”</strong>这个词。<br>在并发程序中可以同时拥有两个或以上个线程。这意味着，如果程序在单核处理器上运行，那么这些线程将交替的执行。这些线程是同时“存在”的——每个线程都处于执行过程中的某个状态。<br>如果程序能够并行执行，那么就一定是运行在多核处理器上。此时，程序中的每个线程都将分配到一个独立的处理器核上，因此可以同时运行。</p>
+<p><strong>高并发</strong>：通常是指，通过设计保证系统能够<strong>同时并行处理</strong>很多请求。</p>
+<h2 id="2-并发问题"><a href="#2-并发问题" class="headerlink" title="2.并发问题"></a>2.并发问题</h2><p>Java中的多线程编程属于并发编程的一种。并发编程能有效提高程序运行的效率，但同时也容易出现一些问题，下面我们来了解这些问题，只有把这些问题了解了，才能写出好的并发程序。</p>
+<h3 id="2-1可见性问题"><a href="#2-1可见性问题" class="headerlink" title="2.1可见性问题"></a>2.1可见性问题</h3><p><strong>可见性</strong>：一个线程对共享变量值的修改，能够及时的被其它线程看到。</p>
+<p><strong>共享变量</strong>：如果一个变量在多个线程的工作内存中存在副本，那么这个变量就是这几个线程的共享变量。</p>
+<p>知道了什么是可见性，那么顾名思义，可见性问题就是一个线程对共享变量值的修改，没有及时的被其它线程看到。</p>
+<p><strong>为什么会出现这种情况？</strong></p>
+<ol>
+<li>线程的交叉执行</li>
+<li>共享变量更新后的值没有及时在工作内存和主内存中更新</li>
+</ol>
+<p>网上有很多关于可见性问题的文章，都会说什么Java内存模型、CPU多级缓存等等，但是个人觉得都说的不太清楚，本人觉得如果要想真正的了解这个问题的本质，需要对JVM以及计算机组成原理，特别是内存和CPU相关的知识有一定的认识才可以。本人暂时没有这个能力，暂时就不讲这个了。</p>
+<p><strong>解决方案</strong></p>
+<p>要实现共享变量的可见性，必须保证两点：</p>
+<ul>
+<li>线程修改后的共享变量能够及时从工作内存刷新到主内存中</li>
+<li>其他线程能及时把共享变量的最新值从主内存中更新到自己的工作内存中</li>
+</ul>
+<p>Java解决可见性问题的方式包括</p>
+<ul>
+<li>synchronized</li>
+<li>volatile</li>
+<li>Lock</li>
+</ul>
+<h4 id="synchronized"><a href="#synchronized" class="headerlink" title="synchronized"></a>synchronized</h4><p>JMM关于synchronized的两条规定</p>
+<ul>
+<li>线程解锁前，必须把共享变量的最新值刷新到主内存中</li>
+<li>线程加锁时，将清空工作内存中共享变量的值，从而在使用共享变量时，需要从主内存中重新读取最新的值</li>
+</ul>
+<h4 id="volatile"><a href="#volatile" class="headerlink" title="volatile"></a>volatile</h4><p>通过内存屏障和禁止重排序优化来保证可见性。</p>
+<p>要在多线程中安全的使用volatile变量，必须同时满足</p>
+<ul>
+<li>对变量的写入操作不依赖其当前值</li>
+<li>该变量没有包含在具有其他变量的不变式中</li>
+</ul>
+<h3 id="2-2原子性问题"><a href="#2-2原子性问题" class="headerlink" title="2.2原子性问题"></a>2.2原子性问题</h3><p><strong>原子性操作</strong>：一般我们认为原子是不可再分的，在编程领域中，原子性操作指的是一组操作是不可再分的，这组操作是一个统一的整体，这组操作在执行的过程中不会其它因素干扰，例如执行过程中被中断、或者执行过程中所用到的值被偷偷修改了。在Java中，对基本数据类型的变量的读取和赋值操作是原子性操作。例如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">10</span>;</span><br><span class="line">y = x;</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong>：在32位平台下，对64位数据的读取和赋值是需要通过两个操作来完成的，不能保证其原子性。但是好像在最新的JDK中，JVM已经保证对64位数据的读取和赋值也是原子性操作了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x += <span class="number">1</span>；</span><br><span class="line">x = x + <span class="number">1</span>;</span><br><span class="line"><span class="comment">// 上面这种就不是原子性操作了，</span></span><br></pre></td></tr></table></figure>
+<p><strong>原子性问题</strong>：我想不到、也找不到一个正式的定义，只能通过例子来讲。</p>
+<p>例如 <code>x = x + 1;</code>这个操作。<br>假设当前<code>x = 9</code>，然后有两个线程同时执行上面这条语句。<br>由于两个线程都读到x的值为9，然后都执行递增操作，最后x的值变为10， 而不是预期的11。<br>这种问题就是原子性问题。</p>
+<h4 id="产生的原因"><a href="#产生的原因" class="headerlink" title="产生的原因"></a>产生的原因</h4><p>有些操作在被多个线程同时执行的时候，无法保证当前使用的数据的有效性。</p>
+<h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><ul>
+<li><p>原子类</p>
+</li>
+<li><p>synchronized</p>
+</li>
+<li>Lock</li>
+</ul>
+<h3 id="2-3有序性问题"><a href="#2-3有序性问题" class="headerlink" title="2.3有序性问题"></a>2.3有序性问题</h3><p><strong>有序性问题</strong>：程序执行的顺序与编写代码的先后顺序不一致。</p>
+<h4 id="产生的原因-1"><a href="#产生的原因-1" class="headerlink" title="产生的原因"></a>产生的原因</h4><ul>
+<li><p>编译器指令重排</p>
+<p>  编译器在不改变单线程程序语义的前提下，可以重新安排语句的执行顺序。 </p>
+</li>
+<li><p>CPU乱序执行</p>
+<p>  现代处理器采用了指令级并行技术（Instruction-Level Parallelism， ILP）来将多条指令重叠执行。如果不存在数据依赖性，处理器 可以改变语句对应机器指令的执行顺序。 </p>
+</li>
+<li><p>内存系统的重排序</p>
+<p>  由于处理器使用缓存和读/写缓冲区，这使得加载和存储操作看上去可能是在乱序执行。</p>
+</li>
+</ul>
+<h4 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h4><p>在Java中，可以使用<code>synchronized</code>和<code>volatile</code>来保证多线程之间操作的有序性。实现方式有所区别：</p>
+<p><code>volatile</code>关键字会禁止指令重排。</p>
+<p><code>synchronized</code>关键字保证同一时刻只允许一条线程操作。进出锁住的代码块是串行的，因为只能有一个线程拿到锁，这就使得使用同一个锁的两个执行过程A和B之间，A看B的操作是有序的，B看A的操作也是有序的，是因为执行过程内部无论会不会指令重排序，结果都是一致的。但是锁的内部代码依然会指令重排序。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/Java/JavaSE/ch10_基础类库/Scanner/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Java/JavaSE/ch10_基础类库/Scanner/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Scanner"><a href="#Scanner" class="headerlink" title="Scanner"></a>Scanner</h1><p>java.util.Scanner</p>
+<p>A simple text scanner which can parse primitive(原始的) types and strings using regular expressions.</p>
+<p>一个简单的文本扫描器,可以通过使用正则表达式解析基本数据类型和字符串,</p>
+<p>primitive types : 基本数据类型</p>
+<p>A Scanner breaks its input into tokens(记号) using a delimiter(分隔符) pattern,which by default matches whitespace.</p>
+<p>The resulting tokens may then be converted into values of different types using the various next methods.</p>
+<p>文本扫描器会根据你设置的分隔符,对输入的内容进行分隔,默认的分隔符是空格.</p>
+<p>你可以通过使用各种各样的 next 方法来读取内容.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/Java/JavaSE/ch10_基础类库/7.1_与用户互动/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Java/JavaSE/ch10_基础类库/7.1_与用户互动/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="与用户互动"><a href="#与用户互动" class="headerlink" title="与用户互动"></a>与用户互动</h1><h2 id="运行Java程序的参数"><a href="#运行Java程序的参数" class="headerlink" title="运行Java程序的参数"></a>运行Java程序的参数</h2><p>在运行Java程序时输入参数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(String arg : args)</span><br><span class="line">        &#123;</span><br><span class="line">            System.out.println(arg);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//------</span></span><br><span class="line"><span class="comment">// java Demo Hello World</span></span><br></pre></td></tr></table></figure>
+<h2 id="使用Scanner获取键盘参数"><a href="#使用Scanner获取键盘参数" class="headerlink" title="使用Scanner获取键盘参数"></a>使用Scanner获取键盘参数</h2><p>Scanner类可以方便的获取用户的键盘输入,它是一个基于正则表达式的文本扫描器.</p>
+<p>它可以从文件,输入流,字符串中解析出基本数据类型和字符串值.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// useDelimiter("定义分隔符"); hasNext();是否有内容; Next()输出内容; close(); 关闭扫描器</span></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    	sc.useDelimiter(<span class="string">"\n"</span>);</span><br><span class="line">    	<span class="keyword">while</span>(sc.hasNext())</span><br><span class="line">    	&#123;</span><br><span class="line">    		System.out.println(sc.next());</span><br><span class="line">    	&#125;</span><br><span class="line">    	sc.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/Java/JavaSE/ch10_基础类库/7.2_系统相关/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Java/JavaSE/ch10_基础类库/7.2_系统相关/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="系统相关"><a href="#系统相关" class="headerlink" title="系统相关"></a>系统相关</h1><h2 id="System类"><a href="#System类" class="headerlink" title="System类"></a>System类</h2><p>System类代表当前Java程序的运行平台,它是final修饰的类,你知道我在说什么吗? 就是它不能有子类.</p>
+<p>它提供了代表标准输入 输出 和错误输出的类变量,</p>
+<p>还提供了一些静态方法,用于访问环境变量、系统属性的方法、还提供了加载文件和动态链接库的方法.</p>
+<p><strong>常用方法:</strong></p>
+<p>① getenv() 以字典的形式返回系统所有环境变量</p>
+<p>② getProperty(“”)获取系统属性</p>
+<p>③getProperties()获取所有系统属性</p>
+<p>④currentTimeMillis()返回long型整数格式的时间.</p>
+<p>⑤identityHashCode(Object x) 获取某个对象的hashCode值. hashCode值相同,绝对是同一个对象.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// getenv();获取环境变量 getProperty("")获取系统属性 getProperties()获取系统所有属性.</span></span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.Properties;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 获取系统所有的环境变量.</span></span><br><span class="line">		Map&lt;String,String&gt; env = System.getenv();</span><br><span class="line">		<span class="keyword">for</span> (String name: env.keySet())</span><br><span class="line">		&#123;</span><br><span class="line">			System.out.println(name+<span class="string">":"</span>+env.get(name));</span><br><span class="line">		&#125;</span><br><span class="line">        <span class="comment">// 获取系统所有属性</span></span><br><span class="line">		Properties props = System.getProperties();</span><br><span class="line">		System.out.println(props);</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Runtime类"><a href="#Runtime类" class="headerlink" title="Runtime类"></a>Runtime类</h2><p>Runtime类代表着Java程序运行时环境,每个Java程序都有一个与之对应的Runtime实例.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/Java/JavaSE/ch11_注解/注解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Java/JavaSE/ch11_注解/注解/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h1><h2 id="自定义注解类型"><a href="#自定义注解类型" class="headerlink" title="自定义注解类型"></a>自定义注解类型</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面的代码等价于</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyAnnotation</span> <span class="keyword">implements</span> <span class="title">java</span>.<span class="title">lang</span>.<span class="title">annotation</span>.<span class="title">Annotation</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="标识型注解"><a href="#标识型注解" class="headerlink" title="标识型注解"></a>标识型注解</h3><p>注解体为空时，不包含任何成员的注解就是标识型注解。</p>
+<h3 id="成员的可选类型"><a href="#成员的可选类型" class="headerlink" title="成员的可选类型"></a>成员的可选类型</h3><ul>
+<li>String</li>
+<li>Class</li>
+<li>基本类型</li>
+<li>枚举类型</li>
+<li>注解类型</li>
+<li>以及上述类型的数组</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">   </span><br><span class="line">   <span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> "默认构造方法"</span>;</span><br><span class="line"></span><br><span class="line">   <span class="function">Class <span class="title">type</span><span class="params">()</span> <span class="keyword">default</span> <span class="keyword">void</span>.class</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="用于注解类的注解"><a href="#用于注解类的注解" class="headerlink" title="用于注解类的注解"></a>用于注解类的注解</h3><p>JDK内置了一些注解，让我们可以对自定义的注解类进行更加灵活的配置</p>
+<h4 id="Target"><a href="#Target" class="headerlink" title="@Target"></a>@Target</h4><p>指出该注解类适用于那些目标</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Target</span>(&#123;ElementType.TYPE,ElementType.METHOD&#125;)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line"></span><br><span class="line">	<span class="function">String <span class="title">value</span><span class="params">()</span> <span class="keyword">default</span> "默认构造方法"</span>;</span><br><span class="line"></span><br><span class="line">	<span class="function">Class <span class="title">type</span><span class="params">()</span> <span class="keyword">default</span> <span class="keyword">void</span>.class</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ANNOTATION_TYPE</td>
+<td>注解类型</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>各种Java类型，包括类、接口、枚举类、注解类型</td>
+</tr>
+<tr>
+<td>CONSTRUCTOR</td>
+<td>构造方法</td>
+</tr>
+<tr>
+<td>FIELD</td>
+<td>成员变量</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>成员方法</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>方法参数</td>
+</tr>
+<tr>
+<td>LOCAL_VARIABLE</td>
+<td>局部变量</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td>包</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Retention"><a href="#Retention" class="headerlink" title="@Retention"></a>@Retention</h4><p>指定当前注解的有效范围</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SOURCE</td>
+<td>仅保存在源码中，不会引入到编译后的class文件中</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>会把程序中对注解类型的引用编译到类文件中</td>
+</tr>
+<tr>
+<td>RUNTIME</td>
+<td>包含以上CLASS的范围，并且还能在运行时把注解加载到虚拟机中</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Document"><a href="#Document" class="headerlink" title="@Document"></a>@Document</h4><p>标识型注解。表示注解类型包含的信息会被加入到<code>JavaDoc</code>文档中。</p>
+<h4 id="Inherited"><a href="#Inherited" class="headerlink" title="@Inherited"></a>@Inherited</h4><p>表示该注解类可被继承</p>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><h3 id="SuppressWarnings"><a href="#SuppressWarnings" class="headerlink" title="@SuppressWarnings"></a>@SuppressWarnings</h3><p>用于关闭编译时产生的特定警告信息</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deprecation</td>
+<td>使用了过时的类或方法的警告</td>
+</tr>
+<tr>
+<td>unchecked</td>
+<td>使用了未检查的类型转换的警告</td>
+</tr>
+<tr>
+<td>fallthrough</td>
+<td>switch语句中没有Break的警告</td>
+</tr>
+<tr>
+<td>path</td>
+<td></td>
+</tr>
+<tr>
+<td>serial</td>
+<td></td>
+</tr>
+<tr>
+<td>final</td>
+<td></td>
+</tr>
+<tr>
+<td>all</td>
+<td>以上所有警告</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/Java/JavaSE/ch10_基础类库/7.3_常用类/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/Java/JavaSE/ch10_基础类库/7.3_常用类/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="常用类"><a href="#常用类" class="headerlink" title="常用类"></a>常用类</h1><h2 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h2><p>Object类常用方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">equlas</span><span class="params">(Object obj)</span></span>; <span class="comment">// 判断两个对象是否同一个对象</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">finalize</span><span class="params">()</span></span>; <span class="comment">//当系统中没有引用变量引用到该对象时,垃圾回收器来该方法回收对象.</span></span><br><span class="line"><span class="function">Class&lt;T&gt; <span class="title">getClass</span><span class="params">()</span><span class="comment">//获取该对象的运行时类</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span> <span class="comment">// 返回该对象的hashCode值.结果默认跟System那个方法一致.</span></span></span><br><span class="line"><span class="function">String <span class="title">toString</span><span class="params">()</span><span class="comment">//默认返回字符串,运行时类名@十六进制hashCode</span></span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="title">clone</span><span class="params">()</span> <span class="comment">// 对对象进行浅克隆</span></span></span><br></pre></td></tr></table></figure>
+<p>clone()方法</p>
+<p>①自定义类实现Cloneable接口</p>
+<p>②自定义类实现自己的clone()方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">implements</span> <span class="title">Cloneable</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> User <span class="title">clone</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (User) <span class="keyword">super</span>.clone();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> CloneNotSupportedException </span>&#123;</span><br><span class="line"></span><br><span class="line">		User u1 = <span class="keyword">new</span> User();</span><br><span class="line">		User u2 = u1.clone();</span><br><span class="line">		System.out.println(u1 == u2); <span class="comment">//不是同一个对象</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Objects类"><a href="#Objects类" class="headerlink" title="Objects类"></a>Objects类</h2><hr>
+<h2 id="String、StringBuffer、StringBuilder类"><a href="#String、StringBuffer、StringBuilder类" class="headerlink" title="String、StringBuffer、StringBuilder类"></a>String、StringBuffer、StringBuilder类</h2><p>String类是不可变类.</p>
+<p>StringBuffer类代表一个字符序列可变的字符串.该对象具有append() insert() reverse() setCharAt() setLength()等方法.</p>
+<p>一旦通过StringBuffer类生成了最终想要的字符串,就可以通过toString()方法获得一个String对象.</p>
+<p>## </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/31/Java/JavaWeb/0.基础知识/3.Cookie/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/31/Java/JavaWeb/0.基础知识/3.Cookie/" itemprop="url">3.Cookie</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-31T00:00:00+08:00">
+                2018-12-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/基础知识/" itemprop="url" rel="index">
+                    <span itemprop="name">基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h1><h2 id="什么是Cookie"><a href="#什么是Cookie" class="headerlink" title="什么是Cookie"></a>什么是Cookie</h2><p>Web应用程序是使用HTTP协议传输数据的。HTTP协议是无状态的协议。一旦数据交换完毕，客户端与服务器端的连接就会关闭，再次交换数据需要建立新的连接。这就意味着服务器无法从连接上跟踪会话。即用户A购买了一件商品放入购物车内，当再次购买商品时服务器已经无法判断该购买行为是属于用户A的会话还是用户B的会话了。要跟踪该会话，必须引入一种机制。Cookie就是这样的一种机制。它可以弥补HTTP协议无状态的不足。在Session出现之前，基本上所有的网站都采用Cookie来跟踪会话。</p>
+<p>如果你把Cookies看成为http协议的一个扩展的话，理解起来就容易的多了，其实本质上cookies就是http的一个扩展。有两个http头部是专门负责设置以及发送cookie的,它们分别是Set-Cookie以及Cookie。当服务器返回给客户端一个http响应信息时，其中如果包含Set-Cookie这个头部时，意思就是指示客户端建立一个cookie，并且在后续的http请求中自动发送这个cookie到服务器端，直到这个cookie过期。如果cookie的生存时间是整个会话期间的话，那么浏览器会将cookie保存在内存中，浏览器关闭时就会自动清除这个cookie。另外一种情况就是保存在客户端的硬盘中，浏览器关闭的话，该cookie也不会被清除，下次打开浏览器访问对应网站时，这个cookie就会自动再次发送到服务器端。</p>
+<p>一个cookie的设置以及发送过程分为以下四步：</p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/cookie%E7%9A%84%E8%AE%BE%E7%BD%AE%E4%B8%8E%E5%8F%91%E9%80%81.png?raw=true" alt></p>
+<h2 id="Cookie的不可跨域名性"><a href="#Cookie的不可跨域名性" class="headerlink" title="Cookie的不可跨域名性"></a>Cookie的不可跨域名性</h2><p>很多网站都会使用Cookie。例如，Google会向客户端颁发Cookie，Baidu也会向客户端颁发Cookie。那浏览器访问Google会不会也携带上Baidu颁发的Cookie呢？或者Google能不能修改Baidu颁发的Cookie呢？</p>
+<p>答案是否定的。Cookie具有不可跨域名性。根据Cookie规范，浏览器访问Google只会携带Google的Cookie，而不会携带Baidu的Cookie。Google也只能操作Google的Cookie，而不能操作Baidu的Cookie。</p>
+<p>Cookie在客户端是由浏览器来管理的。浏览器能够保证Google只会操作Google的Cookie而不会操作Baidu的Cookie，从而保证用户的隐私安全。浏览器判断一个网站是否能操作另一个网站Cookie的依据是域名。Google与Baidu的域名不一样，因此Google不能操作Baidu的Cookie。</p>
+<p>需要注意的是，虽然网站images.google.com与网站<code>www.google.com</code>同属于Google，但是域名不一样，二者同样不能互相操作彼此的Cookie。</p>
+<p>注意：用户登录网站<code>www.google.com</code>之后会发现访问images.google.com时登录信息仍然有效，而普通的Cookie是做不到的。这是因为Google做了特殊处理，设置Cookie的domain参数。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Cookie cookie = <span class="keyword">new</span> Cookie(<span class="string">"time"</span>,<span class="string">"20080808"</span>); <span class="comment">// 新建Cookie</span></span><br><span class="line">cookie.setDomain(<span class="string">".google.com"</span>); <span class="comment">// 设置域名</span></span><br><span class="line">cookie.setPath(<span class="string">"/"</span>); <span class="comment">// 设置路径</span></span><br><span class="line">cookie.setMaxAge(Integer.MAX_VALUE); <span class="comment">// 设置有效期</span></span><br><span class="line">response.addCookie(cookie); <span class="comment">// 输出到客户端</span></span><br></pre></td></tr></table></figure>
+<h2 id="Unicode编码：保存中文"><a href="#Unicode编码：保存中文" class="headerlink" title="Unicode编码：保存中文"></a>Unicode编码：保存中文</h2><p>中文与英文字符不同，中文属于Unicode字符，在内存中占4个字符，而英文属于ASCII字符，内存中只占2个字节。Cookie中使用Unicode字符时需要对Unicode字符进行编码，否则会乱码。</p>
+<p>提示：Cookie中保存中文只能编码。一般使用UTF-8编码即可。不推荐使用GBK等中文编码，因为浏览器不一定支持，而且JavaScript也不支持GBK编码。</p>
+<h2 id="BASE64编码：保存二进制图片"><a href="#BASE64编码：保存二进制图片" class="headerlink" title="BASE64编码：保存二进制图片"></a>BASE64编码：保存二进制图片</h2><p>Cookie不仅可以使用ASCII字符与Unicode字符，还可以使用二进制数据。例如在Cookie中使用数字证书，提供安全度。使用二进制数据时也需要进行编码。</p>
+<p>注意：Cookie中存储二进制内容并不实用。由于浏览器每次请求服务器都会携带Cookie，因此Cookie内容不宜过多，否则影响速度。Cookie的内容应该少而精。</p>
+<h2 id="Java中的cookie"><a href="#Java中的cookie" class="headerlink" title="Java中的cookie"></a>Java中的cookie</h2><p>Java中把Cookie封装成了javax.servlet.http.Cookie类。每个Cookie都是该Cookie类的对象。服务器通过操作Cookie类对象对客户端Cookie进行操作。通过request.getCookie()获取客户端提交的所有Cookie（以Cookie[]数组形式返回），通过response.addCookie(Cookie cookie)向客户端设置Cookie。</p>
+<p>Cookie对象使用key-value属性对的形式保存用户状态，一个Cookie对象保存一个属性对，一个request或者response同时使用多个Cookie。因为Cookie类位于包javax.servlet.http.*下面，所以JSP中不需要import该类。</p>
+<h2 id="Cookie的有效期"><a href="#Cookie的有效期" class="headerlink" title="Cookie的有效期"></a>Cookie的有效期</h2><p><strong>正数</strong></p>
+<p>Cookie的maxAge决定着Cookie的有效期，单位为秒（Second）。Cookie中通过getMaxAge()方法与setMaxAge(int maxAge)方法来读写maxAge属性。 如果maxAge属性为正数，则表示该Cookie会在maxAge秒之后自动失效。浏览器会将maxAge为正数的Cookie持久化，即写到对应的Cookie文件中。无论客户关闭了浏览器还是电脑，只要还在maxAge秒之前，登录网站时该Cookie仍然有效。下面代码中的Cookie信息将永远有效。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Cookie cookie = <span class="keyword">new</span> Cookie(<span class="string">"username"</span>,<span class="string">"helloweenvsfei"</span>); <span class="comment">// 新建Cookie</span></span><br><span class="line">cookie.setMaxAge(Integer.MAX_VALUE); <span class="comment">// 设置生命周期为MAX_VALUE</span></span><br><span class="line">response.addCookie(cookie); <span class="comment">// 输出到客户端</span></span><br></pre></td></tr></table></figure>
+<p><strong>负数</strong></p>
+<p>如果maxAge为负数，则表示该Cookie仅在本浏览器窗口以及本窗口打开的子窗口内有效，关闭窗口后该Cookie即失效。maxAge为负数的Cookie，为临时性Cookie，不会被持久化，不会被写到Cookie文件中。Cookie信息保存在浏览器内存中，因此关闭浏览器该Cookie就消失了。Cookie默认的maxAge值为–1。</p>
+<p><strong>零</strong></p>
+<p>如果maxAge为0，则表示删除该Cookie。Cookie机制没有提供删除Cookie的方法，因此通过设置该Cookie即时失效实现删除Cookie的效果。失效的Cookie会被浏览器从Cookie文件或者内存中删除：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Cookie cookie = <span class="keyword">new</span> Cookie(<span class="string">"username"</span>,<span class="string">"helloweenvsfei"</span>); <span class="comment">// 新建Cookie</span></span><br><span class="line">cookie.setMaxAge(<span class="number">0</span>); <span class="comment">// 设置生命周期为0，不能为负数</span></span><br><span class="line">response.addCookie(cookie); <span class="comment">// 必须执行这一句</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong>：从客户端读取Cookie时，包括maxAge在内的其他属性都是不可读的，也不会被提交。浏览器提交Cookie时只会提交name与value属性。maxAge属性只被浏览器用来判断Cookie是否过期。</p>
+<h2 id="Cookie的修改、删除"><a href="#Cookie的修改、删除" class="headerlink" title="Cookie的修改、删除"></a>Cookie的修改、删除</h2><p>Cookie并不提供修改、删除操作。如果要修改某个Cookie，只需要新建一个同名的Cookie，添加到response中覆盖原来的Cookie。如果要删除某个Cookie，只需要新建一个同名的Cookie，并将maxAge设置为0，并添加到response中覆盖原来的Cookie。注意是0而不是负数。负数代表其他的意义。读者可以通过上例的程序进行验证，设置不同的属性。</p>
+<p>注意：修改、删除Cookie时，新建的Cookie除value、maxAge之外的所有属性，例如name、path、domain等，都要与原Cookie完全一样。否则，浏览器将视为两个不同的Cookie不予覆盖，导致修改、删除失败。</p>
+<h2 id="Cookie的路径"><a href="#Cookie的路径" class="headerlink" title="Cookie的路径"></a>Cookie的路径</h2><p>domain属性决定运行访问Cookie的域名，而path属性决定允许访问Cookie的路径（ContextPath）。例如，如果只允许/sessionWeb/下的程序使用Cookie，可以这么写：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Cookie cookie = <span class="keyword">new</span> Cookie(<span class="string">"time"</span>,<span class="string">"20080808"</span>); <span class="comment">// 新建Cookie</span></span><br><span class="line">cookie.setPath(<span class="string">"/session/"</span>); <span class="comment">// 设置路径</span></span><br><span class="line">response.addCookie(cookie); <span class="comment">// 输出到客户端</span></span><br></pre></td></tr></table></figure>
+<p>设置为“/”时允许所有路径使用Cookie。path属性需要使用符号“/”结尾。</p>
+<p>name相同但domain不同的两个Cookie也是两个不同的Cookie。</p>
+<p>注意：页面只能获取它属于的Path的Cookie。例如/session/test/a.jsp不能获取到路径为/session/abc/的Cookie。使用时一定要注意。</p>
+<ol>
+<li>domain表示的是cookie所在的域，默认为请求的地址，如网址为<a href="http://www.test.com/test/test.aspx，那么domain默认为www.test.com。而跨域访问，如域A为t1.test.com，域B为t2.test.com，那么在域A生产一个令域A和域B都能访问的cookie就要将该cookie的domain设置为.test.com；如果要在域A生产一个令域A不能访问而域B能访问的cookie就要将该cookie的domain设置为t2.test.com。" target="_blank" rel="noopener">www.test.com/test/test.aspx，那么domain默认为www.test.com。而跨域访问，如域A为t1.test.com，域B为t2.test.com，那么在域A生产一个令域A和域B都能访问的cookie就要将该cookie的domain设置为.test.com；如果要在域A生产一个令域A不能访问而域B能访问的cookie就要将该cookie的domain设置为t2.test.com。</a></li>
+<li>path表示cookie所在的目录，默认为/，就是根目录。在同一个服务器上有目录如下：/test/,/test/cd/,/test/dd/，现设一个cookie1的path为/test/，cookie2的path为/test/cd/，那么test下的所有页面都可以访问到cookie1，而/test/和/test/dd/的子页面不能访问cookie2。这是因为cookie能让其path路径下的页面访问。</li>
+<li>浏览器会将domain和path都相同的cookie保存在一个文件里，cookie间用*隔开。</li>
+</ol>
+<h2 id="Cookie的安全属性"><a href="#Cookie的安全属性" class="headerlink" title="Cookie的安全属性"></a>Cookie的安全属性</h2><p>HTTP协议不仅是无状态的，而且是不安全的。使用HTTP协议的数据不经过任何加密就直接在网络上传播，有被截获的可能。使用HTTP协议传输很机密的内容是一种隐患。如果不希望Cookie在HTTP等非安全协议中传输，可以设置Cookie的secure属性为true。浏览器只会在HTTPS和SSL等安全协议中传输此类Cookie。下面的代码设置secure属性为true：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Cookie cookie = <span class="keyword">new</span> Cookie(<span class="string">"time"</span>, <span class="string">"20080808"</span>); <span class="comment">// 新建Cookie</span></span><br><span class="line">cookie.setSecure(<span class="keyword">true</span>); <span class="comment">// 设置安全属性</span></span><br><span class="line">response.addCookie(cookie); <span class="comment">// 输出到客户端</span></span><br></pre></td></tr></table></figure>
+<p>提示：secure属性并不能对Cookie内容加密，因而不能保证绝对的安全性。如果需要高安全性，需要在程序中对Cookie内容加密、解密，以防泄密。</p>
+<h2 id="永久登录"><a href="#永久登录" class="headerlink" title="永久登录"></a>永久登录</h2><p>如果用户是在自己家的电脑上上网，登录时就可以记住他的登录信息，下次访问时不需要再次登录，直接访问即可。实现方法是把登录信息如账号、密码等保存在Cookie中，并控制Cookie的有效期，下次访问时再验证Cookie中的登录信息即可。</p>
+<p>保存登录信息有多种方案。最直接的是把用户名与密码都保持到Cookie中，下次访问时检查Cookie中的用户名与密码，与数据库比较。这是一种比较危险的选择，一般不把密码等重要信息保存到Cookie中。</p>
+<p>还有一种方案是把密码加密后保存到Cookie中，下次访问时解密并与数据库比较。这种方案略微安全一些。如果不希望保存密码，还可以把登录的时间戳保存到Cookie与数据库中，到时只验证用户名与登录时间戳就可以了。</p>
+<p>这几种方案验证账号时都要查询数据库。</p>
+<p>本例将采用另一种方案，只在登录时查询一次数据库，以后访问验证登录信息时不再查询数据库。实现方式是把账号按照一定的规则加密后，连同账号一块保存到Cookie中。下次访问时只需要判断账号的加密规则是否正确即可。本例把账号保存到名为account的Cookie中，把账号连同密钥用MD5算法加密后保存到名为ssid的Cookie中。验证时验证Cookie中的账号与密钥加密后是否与Cookie中的ssid相等。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/29/Java/JavaWeb/6.业务层/Spring/6.AOP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/29/Java/JavaWeb/6.业务层/Spring/6.AOP/" itemprop="url">6.AOP</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-29T00:00:00+08:00">
+                2018-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Spring/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h1><h2 id="1-什么是AOP"><a href="#1-什么是AOP" class="headerlink" title="1.什么是AOP"></a>1.什么是AOP</h2><h3 id="1-1横切关注点与AOP"><a href="#1-1横切关注点与AOP" class="headerlink" title="1.1横切关注点与AOP"></a>1.1横切关注点与AOP</h3><p><strong>1.1.1横切关注点（crosscutting concern）</strong></p>
+<p>在了解横切关注点之前，我们首先要了解什么是关注点（<code>concern</code>）。</p>
+<p>关注点（<code>concern</code>）：根据功能对系统进行划分，划分出来的结果就是关注点。例如我们常常会把一个系统分为表示层、业务层、持久层，这每一层就是一个关注点。</p>
+<p>其中，关注点又分为两种类型：</p>
+<ul>
+<li>核心关注点（<code>core concerns</code>）</li>
+<li>横切关注点（<code>crosscutting concerns</code>）</li>
+</ul>
+<p>核心关注点：表示主要需求的单一和特定功能的关注点称为核心关注点。例如在一个银行系统，你会关注用户管理、账户管理、贷款管理，还有对持久层和表示层的实现等等，这些都是核心关注点。</p>
+<p>横切关注点：适用于整个应用程序，并影响整个应用程序的关注点称为横切关注点。例如安全认证、日志、缓存、性能监控、并发控制、事务管理等等。</p>
+<p><strong>1.1.2AOP</strong></p>
+<p>​       随着项目的迭代，项目必然会变得越来越复杂，应对复杂，我们的解决方案就是模块化。通过把大问题分解成一个个小问题，然后再逐个击破。利用OOP很容易对核心关注点进行模块化。例如我们常常会看到类似的<code>LoanManagementService</code>类来实现业务逻辑，<code>AccountRepository</code>类来实现数据获取。对于横切关注点呢？传统上我们并没有对那些横切关注点进行模块化，就拿日志来说把，我们需要在每个类都写入一个日志字段，通过它实现日志记录功能，这就造成不同功能的代码纠缠（<code>Code tangling</code>）和代码分散（<code>Code scattering</code>）。然后很明显，OOP没办法帮我们处理这个问题，因为我们就是用了OOP所以才导致这个问题。</p>
+<p>​    这时候就轮到AOP出场了，AOP是一种思想，它引入了新的模块化单元—切面(aspect)—来实现横切关注点的分离。例如日志记录的代码作为一个切面，事务管理的代码又作为一个切面，然后通过一些技术把这些切面（在编译时期或者在运行时）切入到核心关注点中，从而实现完整的功能。</p>
+<p>下图是没有使用AOP时的情况</p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/Spring/%E6%B2%A1%E6%9C%89%E4%BD%BF%E7%94%A8AOP%E6%97%B6.png?raw=true" alt></p>
+<p>下图是使用AOP时的情况</p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/Spring/%E4%BD%BF%E7%94%A8AOP%E6%97%B6.png?raw=true" alt="1543651196231"></p>
+<p>可以看出，在没有使用AOP时，安全模块处于被动调用的情况，我们很难对它的调用者进行统一管理。</p>
+<p>而使用AOP时，安全模块通过切面可以主动选择它的调用者，从而实现对调用者的统一管理。</p>
+<p>总之：AOP提供横切关注点的模块化。</p>
+<h3 id="1-2AOP基本术语"><a href="#1-2AOP基本术语" class="headerlink" title="1.2AOP基本术语"></a>1.2AOP基本术语</h3><ul>
+<li>join point：在程序运行期间，程序会暴露出一些点（<code>point</code>），例如方法的执行、创建对象、抛出异常等等。这些点就叫做<code>joint point</code>。</li>
+<li>pointcut：<code>join point</code>有很多，我们要从中选择出满足我们需求的点，根据某些条件选出来的点，就叫做<code>pointcut</code>。</li>
+<li>advice：<code>advice</code>是在<code>joint point</code>中执行的行为，例如安全认证，事务管理等等。</li>
+<li>aspect：<code>aspect</code>（切面）是一个实现横切关注点的模块单元。<code>aspect</code>里面包含了<code>advice</code>和<code>join point</code>。（做什么？对谁做？）</li>
+<li>weaving：<code>把核心功能和切面组合在一起的过程叫做weaving</code>（编织）。</li>
+</ul>
+<h2 id="2-AspectJ"><a href="#2-AspectJ" class="headerlink" title="2.AspectJ"></a>2.AspectJ</h2><p>未完待续。。。。。。。。。。。。。。。</p>
+<h3 id="2-x-AspectJ"><a href="#2-x-AspectJ" class="headerlink" title="2.x@AspectJ"></a>2.x@AspectJ</h3><h3 id="Mapping-pointcuts"><a href="#Mapping-pointcuts" class="headerlink" title="Mapping pointcuts"></a>Mapping pointcuts</h3><p>定义好切面后，我们就需要添加pointcuts。我们通过@Pointcut注解表示一个pointcut。这个注解的值就是pointcut表达式。</p>
+<p>举例说明:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">execution(<span class="string">"修饰符 类路径 方法名(方法参数)"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">// 任意公共方法的执行：</span></span><br><span class="line">execution(<span class="string">"public * *(..)"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">// 任何一个以“set”开始的方法的执行：</span></span><br><span class="line">execution(<span class="string">"* set*(..)"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">// AccountService 接口的任意方法的执行：</span></span><br><span class="line">execution(<span class="string">"* com.xyz.service.AccountService.*(..)"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">// 定义在service包里的任意方法的执行：</span></span><br><span class="line">execution(<span class="string">"* com.xyz.service.*.*(..)"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">//定义在service包和所有子包里的任意类的任意方法的执行：</span></span><br><span class="line">execution(<span class="string">"* com.xyz.service..*.*(..)"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">//定义在pointcutexp包和所有子包里的JoinPointObjP2类的任意方法的执行：</span></span><br><span class="line">execution(<span class="string">"* com.test.spring.aop.pointcutexp..JoinPointObjP2.*(..))"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="3-Spring-AOP"><a href="#3-Spring-AOP" class="headerlink" title="3.Spring AOP"></a>3.Spring AOP</h2><h3 id="3-1例子"><a href="#3-1例子" class="headerlink" title="3.1例子"></a>3.1例子</h3><p><strong>配置</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableAspectJAutoProxy</span> <span class="comment">// 启动AOP配置</span></span><br><span class="line"><span class="meta">@ComponentScan</span>(<span class="string">"com.hdr.learn.spring.aop"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AppConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Bean</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Speaker <span class="title">speaker</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> Speaker();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Bean</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> MethodLogAspect <span class="title">aspect</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> MethodLogAspect();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>核心关注点</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Speaker</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayHello</span><span class="params">(String name)</span> <span class="keyword">throws</span> IllegalAccessException </span>&#123;</span><br><span class="line">      System.out.println(String.format(<span class="string">"hello %s"</span>,name));</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>切面</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Aspect</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MethodLogAspect</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Pointcut</span>(<span class="string">"execution(public void com.hdr.learn.spring.aop.Speaker.sayHello(..))"</span>)</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">pointCut</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Before</span>(<span class="string">"pointCut()"</span>)</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Execute Method："</span> + joinPoint.getSignature().getName());</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@AfterReturning</span>(<span class="string">"pointCut()"</span>)</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">finish</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"方法执行完毕"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>测试</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IllegalAccessException </span>&#123;</span><br><span class="line">   AnnotationConfigApplicationContext ctx = <span class="keyword">new</span> </span><br><span class="line">       AnnotationConfigApplicationContext(AppConfig.class);</span><br><span class="line">   Speaker speaker = (Speaker) ctx.getBean(<span class="string">"speaker"</span>);</span><br><span class="line">   speaker.sayHello(<span class="string">"hdr"</span>);</span><br><span class="line">   ctx.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-2SpringAOP底层原理"><a href="#3-2SpringAOP底层原理" class="headerlink" title="3.2SpringAOP底层原理"></a>3.2SpringAOP底层原理</h3><p>Spring AOP是一个基于动态代理来对横切关注点进行模块化的AOP系统。</p>
+<p>根据我们编写的配置，Spring自动为<code>pointcut</code>生成代理。</p>
+<p>关于代理的知识，可以看这篇文章。</p>
+<p>可以看出使用代理其实还是挺繁琐的，所以Spring帮我们封装好了。</p>
+<p>下图是Spring AOP 的实现机制</p>
+<p><img src="/home/hdr/Documents/pictures/Spring/SpringAOP内部.png" alt="1543815396110"></p>
+<p>未完待续。。。。。。。。。。。。。。。。。。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/10/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" href="/page/12/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="黄大仁">
+            
+              <p class="site-author-name" itemprop="name">黄大仁</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">181</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">黄大仁</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

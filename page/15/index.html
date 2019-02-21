@@ -1,0 +1,2661 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="黄大仁的博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄大仁的博客">
+<meta property="og:url" content="http://yoursite.com/page/15/index.html">
+<meta property="og:site_name" content="黄大仁的博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="黄大仁的博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/15/">
+
+
+
+
+
+  <title>黄大仁的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">黄大仁的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/07/Java/JavaWeb/模板引擎/4.JSP/1.JSP基础/2.JSP指令详解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/07/Java/JavaWeb/模板引擎/4.JSP/1.JSP基础/2.JSP指令详解/" itemprop="url">2.JSP指令详解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-07T00:00:00+08:00">
+                2018-07-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Jsp/" itemprop="url" rel="index">
+                    <span itemprop="name">Jsp</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Jsp/Jsp基础/" itemprop="url" rel="index">
+                    <span itemprop="name">Jsp基础</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="JSP指令详解"><a href="#JSP指令详解" class="headerlink" title="JSP指令详解"></a>JSP指令详解</h1><h2 id="编译指令"><a href="#编译指令" class="headerlink" title="编译指令"></a>编译指令</h2><h3 id="指令page"><a href="#指令page" class="headerlink" title="指令page"></a>指令page</h3><p>用于定义整个页面相关的属性.</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page</span><br><span class="line">language=<span class="string">"java"</span>, <span class="comment">// 当前JSP页面使用的脚本语言</span></span><br><span class="line">extends = <span class="string">""</span>, <span class="comment">//指定JSP页面编译产生的Java类继承的父类或实现的接口</span></span><br><span class="line"><span class="keyword">import</span> = <span class="string">"java.sql.*"</span>, <span class="comment">// 导包 默认的有 Java.lang.* , Javax.servlet.* , Javax.servlet.jsp* Javax.servlet.http.*</span></span><br><span class="line">session = <span class="string">"True/False"</span>, <span class="comment">//是否开启HTTP回话</span></span><br><span class="line">errorPage = <span class="string">"地址"</span>, <span class="comment">//指定错误处理页面</span></span><br><span class="line">pageEncoding = <span class="string">"UTF-8"</span>, <span class="comment">//指定网页变编码</span></span><br><span class="line">buffer = <span class="string">"none|8kb|size kb"</span> ,<span class="comment">//指定输出缓冲区大小.</span></span><br><span class="line">autoFlush = <span class="string">"True/False"</span>, <span class="comment">//当输出缓冲区快溢出,自动输出缓冲区内容.</span></span><br><span class="line">isTrheadSafe = <span class="string">"True/False"</span>, <span class="comment">// 默认线程安全</span></span><br><span class="line">info = <span class="string">"text"</span>,</span><br><span class="line">isErrorPage = <span class="string">"True/False"</span>, <span class="comment">// 当前JSP页面可当另一个JSP页面的错误页面</span></span><br><span class="line">contentType = <span class="string">"text/xml"</span>, <span class="comment">//MIME类型</span></span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="指令include"><a href="#指令include" class="headerlink" title="指令include"></a>指令include</h3><p>将一个外部文件引入到当前JSP文件中,同时解析这个页面中的JSP语句.</p>
+<p>include指令分为动态指令和静态指令.</p>
+<h4 id="静态指令"><a href="#静态指令" class="headerlink" title="静态指令"></a>静态指令</h4><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ include file=<span class="string">"相对路径"</span> %&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="动态指令"><a href="#动态指令" class="headerlink" title="动态指令"></a>动态指令</h4><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:include page=”/user/test” /&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="指令taglib"><a href="#指令taglib" class="headerlink" title="指令taglib"></a>指令taglib</h3><h2 id="动作指令"><a href="#动作指令" class="headerlink" title="动作指令"></a>动作指令</h2><p>在JSP中主要包含以下7个动作指令.</p>
+<h3 id="响应转发-指令forward"><a href="#响应转发-指令forward" class="headerlink" title="响应转发 指令forward"></a>响应转发 指令forward</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:forward page=<span class="string">"other_page.jsp"</span>&gt;</span><br><span class="line">	&lt;jsp:param name=<span class="string">"parameterName"</span> value=<span class="string">"parameterValue"</span>/&gt;</span><br><span class="line">&lt;/jsp:forward&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="动态include指令"><a href="#动态include指令" class="headerlink" title="动态include指令"></a>动态include指令</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:include page = <span class="string">"page"</span> flush=<span class="string">"ture"</span>&gt;</span><br><span class="line">	&lt;jsp:param name = <span class="string">"name"</span> value=<span class="string">"hdr"</span>&gt;</span><br><span class="line">&lt;/jsp:include&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="useBean、setProperty、getProperty指令"><a href="#useBean、setProperty、getProperty指令" class="headerlink" title="useBean、setProperty、getProperty指令"></a>useBean、setProperty、getProperty指令</h3><p>useBean:在JSP页面中实例化一个Java实例.</p>
+<p>setProperty:用于为JavaBean实例的属性设置值.</p>
+<p>getProperty:用于输出JavaBean实例的属性.</p>
+<h4 id="useBean"><a href="#useBean" class="headerlink" title="useBean"></a>useBean</h4><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:useBean id=<span class="string">"name"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"classname"</span> scope=<span class="string">"page/request/session/application"</span>/&gt;</span><br></pre></td></tr></table></figure>
+<p>page:该JavaBean实例仅在该页面有效.</p>
+<p>request:该JavaBean实例在本次请求有效.</p>
+<p>seesion:该JavaBean实例在本次session内有效.</p>
+<p>application:该JavaBean实例在本应用内一直有效.</p>
+<h4 id="setProperty"><a href="#setProperty" class="headerlink" title="setProperty"></a>setProperty</h4><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:setProperty name=<span class="string">"BeanName"</span> proterty=<span class="string">"propertyName"</span> value=<span class="string">"value"</span>/&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="getProperty"><a href="#getProperty" class="headerlink" title="getProperty"></a>getProperty</h5><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:getProperty name=<span class="string">"BeanName"</span> property=<span class="string">"propertyName"</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/05/Java/JavaWeb/3.Servlet/3_Servlet处理表单/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/05/Java/JavaWeb/3.Servlet/3_Servlet处理表单/" itemprop="url">3.Servlet处理表单</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-05T00:00:00+08:00">
+                2018-07-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Servlet/" itemprop="url" rel="index">
+                    <span itemprop="name">Servlet</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Servlets-Form-Data"><a href="#Servlets-Form-Data" class="headerlink" title="Servlets - Form Data"></a>Servlets - Form Data</h1><p>You must have come across many situations when you need to pass some information from your browser to web server and ultimately to your backend program. The browser uses two methods to pass this information to web server. These methods are GET Method and POST Method.</p>
+<h2 id="GET-Method"><a href="#GET-Method" class="headerlink" title="GET Method"></a>GET Method</h2><p>The GET method sends the encoded user information appended to the page request. The page and the encoded information are separated by the <strong>?</strong>(question mark) symbol as follows −</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.test.com/hello?key1 = value1&amp;key2 = value2</span><br></pre></td></tr></table></figure>
+<p>The GET method is the default method to pass information from browser to web server and it produces a long string that appears in your browser’s Location:box. Never use the GET method if you have password or other sensitive information to pass to the server. The GET method has size limitation: only 1024 characters can be used in a request string.</p>
+<p>This information is passed using QUERY_STRING header and will be accessible through QUERY_STRING environment variable and Servlet handles this type of requests using <strong>doGet()</strong> method.</p>
+<h2 id="POST-Method"><a href="#POST-Method" class="headerlink" title="POST Method"></a>POST Method</h2><p>A generally more reliable method of passing information to a backend program is the POST method. This packages the information in exactly the same way as GET method, but instead of sending it as a text string after a ? (question mark) in the URL it sends it as a separate message. This message comes to the backend program in the form of the standard input which you can parse and use for your processing. Servlet handles this type of requests using <strong>doPost()</strong> method.</p>
+<h2 id="Reading-Form-Data-using-Servlet"><a href="#Reading-Form-Data-using-Servlet" class="headerlink" title="Reading Form Data using Servlet"></a>Reading Form Data using Servlet</h2><p>Servlets handles form data parsing automatically using the following methods depending on the situation −</p>
+<ul>
+<li><strong>getParameter()</strong> − You call request.getParameter() method to get the value of a form parameter.</li>
+<li><strong>getParameterValues()</strong> − Call this method if the parameter appears more than once and returns multiple values, for example checkbox.</li>
+<li><strong>getParameterNames()</strong> − Call this method if you want a complete list of all parameters in the current request.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hdr.firstWeb;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.PrintWriter;</span><br><span class="line"></span><br><span class="line"><span class="meta">@WebServlet</span>(name = <span class="string">"HelloGet"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloGet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        response.setContentType(<span class="string">"text/html"</span>);</span><br><span class="line">        PrintWriter writer = response.getWriter();</span><br><span class="line">        String title = <span class="string">"Using GET Method to Read Form Data"</span>;</span><br><span class="line">        String docType =</span><br><span class="line">                <span class="string">"&lt;!doctype html public \"-//w3c//dtd html 4.0 "</span> + <span class="string">"transitional//en\"&gt;\n"</span>;</span><br><span class="line"></span><br><span class="line">        writer.println(docType +</span><br><span class="line">                <span class="string">"&lt;html&gt;\n"</span> +</span><br><span class="line">                <span class="string">"&lt;head&gt;&lt;title&gt;"</span> + title + <span class="string">"&lt;/title&gt;&lt;/head&gt;\n"</span> +</span><br><span class="line">                <span class="string">"&lt;body bgcolor = \"#f0f0f0\"&gt;\n"</span> +</span><br><span class="line">                <span class="string">"&lt;h1 align = \"center\"&gt;"</span> + title + <span class="string">"&lt;/h1&gt;\n"</span> +</span><br><span class="line">                <span class="string">"&lt;ul&gt;\n"</span> +</span><br><span class="line">                <span class="string">"  &lt;li&gt;&lt;b&gt;First Name&lt;/b&gt;: "</span> +</span><br><span class="line">                request.getParameter(<span class="string">"first_name"</span>) + <span class="string">"\n"</span> +</span><br><span class="line">                <span class="string">"  &lt;li&gt;&lt;b&gt;Last Name&lt;/b&gt;: "</span> +</span><br><span class="line">                request.getParameter(<span class="string">"last_name"</span>) + <span class="string">"\n"</span> +</span><br><span class="line">                <span class="string">"&lt;/ul&gt;\n"</span> +</span><br><span class="line">                <span class="string">"&lt;/body&gt;&lt;/html&gt; "</span></span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Reading-All-Form-Parameters"><a href="#Reading-All-Form-Parameters" class="headerlink" title="Reading All Form Parameters"></a>Reading All Form Parameters</h2><p>Following is the generic example which uses <strong>getParameterNames()</strong> method of HttpServletRequest to read all the available form parameters. This method returns an Enumeration that contains the parameter names in an unspecified order</p>
+<p>Once we have an Enumeration, we can loop down the Enumeration in standard way by, using <em>hasMoreElements()</em> method to determine when to stop and using <em>nextElement()</em> method to get each parameter name.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/04/Java/JavaWeb/3.Servlet/2_Servlet生命周期/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/04/Java/JavaWeb/3.Servlet/2_Servlet生命周期/" itemprop="url">2.Servlet生命周期</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-04T00:00:00+08:00">
+                2018-07-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Servlet/" itemprop="url" rel="index">
+                    <span itemprop="name">Servlet</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Servlet-life-cycle"><a href="#Servlet-life-cycle" class="headerlink" title="Servlet life cycle"></a>Servlet life cycle</h1><p>A servlet life cycle can be defined as the entire process from its creation till the destruction. The following are the paths followed by a servlet.</p>
+<ul>
+<li>The servlet is initialized by calling the <strong>init()</strong> method.</li>
+<li>The servlet calls <strong>service()</strong> method to process a client’s request.</li>
+<li>The servlet is terminated by calling the <strong>destroy()</strong> method.</li>
+<li>Finally, servlet is garbage collected by the garbage collector of the JVM.</li>
+</ul>
+<p>Now let us discuss the life cycle methods in detail.</p>
+<h2 id="The-init-Method"><a href="#The-init-Method" class="headerlink" title="The init() Method"></a>The init() Method</h2><p>The init method is called only once. It is called only when the servlet is created, and not called for any user requests afterwards. So, it is used for one-time initializations, just as with the init method of applets.</p>
+<p>The servlet is normally created when a user first invokes a URL corresponding to the servlet, but you can also specify that the servlet be loaded when the server is first started.</p>
+<p>When a user invokes a servlet, a single instance of each servlet gets created, with each user request resulting in a new thread that is handed off to doGet or doPost as appropriate. The init() method simply creates or loads some data that will be used throughout the life of the servlet.</p>
+<p>The init method definition looks like this −</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> <span class="keyword">throws</span> ServletException </span>&#123;</span><br><span class="line">   <span class="comment">// Initialization code...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="The-service-Method"><a href="#The-service-Method" class="headerlink" title="The service() Method"></a>The service() Method</h2><p>The service() method is the main method to perform the actual task. The servlet container (i.e. web server) calls the service() method to handle requests coming from the client( browsers) and to write the formatted response back to the client.</p>
+<p>Each time the server receives a request for a servlet, the server spawns a new thread and calls service. The service() method checks the HTTP request type (GET, POST, PUT, DELETE, etc.) and calls doGet, doPost, doPut, doDelete, etc. methods as appropriate.</p>
+<p>Here is the signature of this method −</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest request, ServletResponse response)</span> </span></span><br><span class="line"><span class="function">   <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The service () method is called by the container and service method invokes doGet, doPost, doPut, doDelete, etc. methods as appropriate. So you have nothing to do with service() method but you override either doGet() or doPost() depending on what type of request you receive from the client.</p>
+<p>The doGet() and doPost() are most frequently used methods with in each service request. Here is the signature of these two methods.</p>
+<h2 id="The-doGet-Method"><a href="#The-doGet-Method" class="headerlink" title="The doGet() Method"></a>The doGet() Method</h2><p>A GET request results from a normal request for a URL or from an HTML form that has no METHOD specified and it should be handled by doGet() method.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span></span></span><br><span class="line"><span class="function">   <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">   <span class="comment">// Servlet code</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="The-doPost-Method"><a href="#The-doPost-Method" class="headerlink" title="The doPost() Method"></a>The doPost() Method</h2><p>A POST request results from an HTML form that specifically lists POST as the METHOD and it should be handled by doPost() method.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span></span></span><br><span class="line"><span class="function">   <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">   <span class="comment">// Servlet code</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="The-destroy-Method"><a href="#The-destroy-Method" class="headerlink" title="The destroy() Method"></a>The destroy() Method</h2><p>The destroy() method is called only once at the end of the life cycle of a servlet. This method gives your servlet a chance to close database connections, halt（停止） background threads, write cookie lists or hit counts to disk, and perform other such cleanup activities.</p>
+<p>After the destroy() method is called, the servlet object is marked for garbage collection. The destroy method definition looks like this −</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="comment">// Finalization code...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Architecture-Diagram"><a href="#Architecture-Diagram" class="headerlink" title="Architecture Diagram"></a>Architecture Diagram</h2><p>The following figure（图表） depicts（描述） a typical servlet life-cycle scenario（方案/情节）.</p>
+<ul>
+<li>First the HTTP requests coming to the server are delegated to（委托给） the servlet container.</li>
+<li>The servlet container loads the servlet before invoking the service() method.</li>
+<li>Then the servlet container handles multiple requests by spawning（大量生成） multiple threads, each thread executing the service() method of a single instance of the servlet.</li>
+</ul>
+<p><img src="https://www.tutorialspoint.com/servlets/images/servlet-lifecycle.jpg" alt></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/04/Java/JavaWeb/3.Servlet/4_Client Request/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/04/Java/JavaWeb/3.Servlet/4_Client Request/" itemprop="url">4.Servlet请求</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-04T00:00:00+08:00">
+                2018-07-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Servlet/" itemprop="url" rel="index">
+                    <span itemprop="name">Servlet</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Client-Request"><a href="#Client-Request" class="headerlink" title="Client Request"></a>Client Request</h1><h2 id="Methods-to-read-HTTP-Header"><a href="#Methods-to-read-HTTP-Header" class="headerlink" title="Methods to read HTTP Header"></a>Methods to read HTTP Header</h2><p>There are following methods which can be used to read HTTP header in your servlet program. These methods are available with <em>HttpServletRequest</em> object.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/03/Java/JavaWeb/3.Servlet/1_Servlet概述/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/03/Java/JavaWeb/3.Servlet/1_Servlet概述/" itemprop="url">1.Servlet概述</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-03T00:00:00+08:00">
+                2018-07-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Servlet/" itemprop="url" rel="index">
+                    <span itemprop="name">Servlet</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h1><h2 id="什么是Servlet？"><a href="#什么是Servlet？" class="headerlink" title="什么是Servlet？"></a>什么是Servlet？</h2><p>Java Servlets 是一个运行在Web服务器或Application服务器上的程序，是浏览器或HTTP客户端与HTTP服务器上的数据库或应用进行交互的中间人。</p>
+<p>Servlets是一种实现了 <strong>javax.servlet.Servlet</strong> 接口用来处理HTTP请求的类。<br>Web application developers typically write servlets that extend javax.servlet.http.HttpServlet, an abstract class that implements the Servlet interface and is specially designed to handle HTTP requests. </p>
+<h2 id="Servlets-Architecture"><a href="#Servlets-Architecture" class="headerlink" title="Servlets Architecture"></a>Servlets Architecture</h2><p>下图向你展示Servlets在Web应用中的位置。</p>
+<p><img src="https://www.tutorialspoint.com/servlets/images/servlet-arch.jpg" alt></p>
+<h2 id="Servlets-Tasks"><a href="#Servlets-Tasks" class="headerlink" title="Servlets Tasks"></a>Servlets Tasks</h2><p>Servlets主要任务</p>
+<ol>
+<li>读取显式（explicit）发送到服务器的数据。This includes an HTML form on a Web page or it could also come from an applet or a custom HTTP client program. </li>
+<li>读取隐式（implicit）发送到服务器的数据。This includes cookies, media types and compression schemes the browser understands, and so forth. </li>
+<li>处理数据并且返回结果。This process may require talking to a database, executing an RMI or CORBA call, invoking a Web service, or computing the response directly. </li>
+<li>发送显式数据回客户端。This document can be sent in a variety of formats, including text (HTML or XML), binary (GIF images), Excel, etc. </li>
+<li>发送隐式数据回客户端。 This includes telling the browsers or other clients what type of document is being returned (e.g., HTML), setting cookies and caching parameters, and other such tasks. </li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/02/Java/JavaWeb/1.Tomcat/tomcat/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/02/Java/JavaWeb/1.Tomcat/tomcat/" itemprop="url">Tomcat安装与基本配置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-02T00:00:00+08:00">
+                2018-07-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Tomcat/" itemprop="url" rel="index">
+                    <span itemprop="name">Tomcat</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h1><p>Tomcat是一个执行Java Servlet然后渲染包含JSP代码网页的应用服务器。</p>
+<h2 id="Tomcat安装与运行"><a href="#Tomcat安装与运行" class="headerlink" title="Tomcat安装与运行"></a>Tomcat安装与运行</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装:"></a>安装:</h3><p><a href>https://tomcat.apache.org/download-90.cgi</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置:"></a>配置:</h3><ol>
+<li>在环境变量中添加JAVA_HOME</li>
+</ol>
+<p><img src="https://github.com/HuangYiCheng1997/create-picture-url/blob/master/java/Tomcat%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png?raw=true" alt></p>
+<ol start="2">
+<li>在环境变量中添加CATALINA_HTOM</li>
+</ol>
+<p><img src="https://github.com/HuangYiCheng1997/create-picture-url/blob/master/java/catalina_home.png?raw=true" alt></p>
+<p>3.添加环境变量</p>
+<p><img src="https://github.com/HuangYiCheng1997/create-picture-url/blob/master/java/tomcat%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F2.png?raw=true" alt></p>
+<h3 id="运行"><a href="#运行" class="headerlink" title="运行:"></a>运行:</h3><p>打开tomcat安装路径下的bin文件夹,双击start.bat.</p>
+<h3 id="检验"><a href="#检验" class="headerlink" title="检验:"></a>检验:</h3><p>打开浏览器,输入127.0.0.1:8080,看看是否出现了Tomcat的网页.</p>
+<h2 id="Tomcat目录结构"><a href="#Tomcat目录结构" class="headerlink" title="Tomcat目录结构"></a>Tomcat目录结构</h2><ol>
+<li>bin:     存放着启动和关闭tomcat的脚本</li>
+<li>conf: 存放着tomcat的配置文件</li>
+<li>lib:    存放着tomcat服务器和web应用依赖的jar文件</li>
+<li>logs:  存放着tomcat运行产生的日志文件</li>
+<li>temp: 运行产生的临时文件</li>
+<li>webapps: web应用目录以及他的资源文件</li>
+<li>work:  tomcat将JSP文件翻译成servlet源码以及编译字节码</li>
+</ol>
+<h2 id="Web应用基础知识"><a href="#Web应用基础知识" class="headerlink" title="Web应用基础知识"></a>Web应用基础知识</h2><h3 id="什么是web应用"><a href="#什么是web应用" class="headerlink" title="什么是web应用?"></a>什么是web应用?</h3><p>​    浏览器访问的程序.</p>
+<ol>
+<li><p>组成web应用的资源有哪些?</p>
+<ol>
+<li><p>html css js image</p>
+<ol start="2">
+<li><p>JSP Java 支持的jar</p>
+</li>
+<li><p>配置文件</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>什么是网站的根目录?</p>
+<ol>
+<li>包裹全部web应用资源的目录</li>
+</ol>
+</li>
+<li><p>虚拟目录的映射</p>
+<p><a href="http://127.0.0.1:8080/" target="_blank" rel="noopener">http://127.0.0.1:8080/</a> 对应的就是tomcat/webapps这个目录</p>
+</li>
+<li><p>虚拟目录的配置</p>
+<p>因为我们不可能所有东西都放到webapss这个目录里面,所以我们需要修改虚拟目录的映射</p>
+</li>
+</ol>
+<p>   配置方式1:</p>
+<p>   ​    修改tomcat/conf/server.xml</p>
+<p>   ​    在Host标签中插入Content标签</p>
+   <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">path</span>=<span class="string">"/blog"</span> <span class="attr">docBase</span>=<span class="string">"D:\apache-tomcat-9.0.7\webapps\FirstWebProject"</span>&gt;</span><span class="tag">&lt;/<span class="name">Context</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- path虚拟目录名称  docBase Web应用所在的目录 --&gt;</span></span><br></pre></td></tr></table></figure>
+<p>   <strong>注意:官方不推荐这种配置方式</strong></p>
+<p>   ​</p>
+<p>   配置方式2:</p>
+<p>   ​    在tomcat/conf/catalina/localhost目录下创建一个xml</p>
+<p>   ​    xml文件的名字会作为虚拟目录名</p>
+   <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">docBase</span>=<span class="string">"D:\apache-tomcat-9.0.7\webapps\FirstWebProject"</span>&gt;</span><span class="tag">&lt;/<span class="name">Context</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>   ​    缺省配置:ROOT.xml(需要重启)</p>
+<h2 id="JavaWeb动态项目的目录结构"><a href="#JavaWeb动态项目的目录结构" class="headerlink" title="JavaWeb动态项目的目录结构"></a>JavaWeb动态项目的目录结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">|-- webapp                         # 站点根目录</span><br><span class="line">    |--html,css,js image 可以被外界直接访问</span><br><span class="line">    |--WEB-INF 浏览器无法访问的目录 </span><br><span class="line">    	|--lib 存放web依赖的jar文件</span><br><span class="line">    	|--classes 存放当前web项目源码生成的class文件</span><br><span class="line">    	|--web.xml web项目配置文件(必须的)</span><br></pre></td></tr></table></figure>
+<p><strong>注意:webapp是存放在tomcat安装目录下的webapps目录中</strong></p>
+<h2 id="网络资源访问流程"><a href="#网络资源访问流程" class="headerlink" title="网络资源访问流程"></a>网络资源访问流程</h2><p><img src="https://github.com/HuangYiCheng1997/create-picture-url/blob/master/java/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E7%9A%84%E8%AE%BF%E9%97%AE%E8%BF%87%E7%A8%8B.png?raw=true" alt></p>
+<h3 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h3><p><a href>https://www.bilibili.com/video/av19008301/?p=10</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/01/Java/JavaWeb/0.基础知识/1.Web请求的过程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/01/Java/JavaWeb/0.基础知识/1.Web请求的过程/" itemprop="url">1.Web请求的过程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-01T00:00:00+08:00">
+                2018-07-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/基础知识/" itemprop="url" rel="index">
+                    <span itemprop="name">基础知识</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Web请求的过程"><a href="#Web请求的过程" class="headerlink" title="Web请求的过程"></a>Web请求的过程</h1><h2 id="打开网页的基本流程"><a href="#打开网页的基本流程" class="headerlink" title="打开网页的基本流程"></a>打开网页的基本流程</h2><ul>
+<li>浏览器输入网址</li>
+<li>对网址进行域名解析,获取IP地址</li>
+<li>根据IP地址对服务器发起HTTP请求</li>
+<li>服务接受请求、处理请求、返回响应</li>
+</ul>
+<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><h2 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h2><p>DNS是Domain Name System域名系统的简称，它是域名和IP地址相互映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。</p>
+<p>根据域名获取对应IP地址的行为叫做域名解析。</p>
+<p>浏览器会对域名解析进行缓存。</p>
+<p>操作系统会对域名解析进行缓存。</p>
+<ul>
+<li>windows系统域名解析缓存文件: C:\Windows\System32\drivers\etc\hosts</li>
+<li>linux系统域名解析缓存文件: /etc/hosts</li>
+</ul>
+<p>如果浏览器,和操作系统都没有对该域名的解析缓存。</p>
+<p><img src="../images/DNS域名解析.png" alt></p>
+<ul>
+<li>LDNS 本地区的域名服务器,网络供应提供的对域名解析进行缓存的服务器。</li>
+<li>gTLDS  generic Top level 域名服务器,如.com .cn等等</li>
+<li>Name Server 通常就是你注册的域名服务器。例如你在阿里云买了域名,这个域名解析任务就由域名提高商的服务器来完成。</li>
+<li>TTL time to live 保留时间</li>
+</ul>
+<h2 id="几种域名解析方式"><a href="#几种域名解析方式" class="headerlink" title="几种域名解析方式"></a>几种域名解析方式</h2><ul>
+<li>A记录</li>
+<li>MX记录</li>
+<li>CNAME记录</li>
+<li>NS记录</li>
+<li>TXT记录</li>
+</ul>
+<p>A记录,A是Address的意思,就是把该域名指向一个IP地址。</p>
+<p>MX记录,MX是 Mail Exchange的意思,它指向一个邮件服务器，用于电子邮件系统发邮件时根据 收信人的地址后缀来定位邮件服务器。</p>
+<p>CNAME记录,Canonical Name(别名解析),把该域名指向另一个域名。</p>
+<p>NS记录,为某个域名指定DNS解析服务器</p>
+<p>TXT记录,为某个主机名/域名设置说明</p>
+<h2 id="CDN工作机制"><a href="#CDN工作机制" class="headerlink" title="CDN工作机制"></a>CDN工作机制</h2><p>CDN content delivery network(内容传输网络),</p>
+<p>CDN主要功能是在不同的地点缓存内容，通过负载均衡技术，将用户的请求定向到最合适的缓存服务器上去获取内容，比如说，是北京的用户，我们让他访问北京的节点，深圳的用户，我们让他访问深圳的节点。通过就近访问，加速用户对网站的访问。解决Internet网络拥堵状况，提高用户访问网络的响应速度。</p>
+<p>CDN网络是在用户和服务器之间增加缓存层，将用户的访问请求引导到最优的缓存节点而不是服务器源站点，从而加速访问速度。</p>
+<p><strong>完整的CDN工作流程：</strong></p>
+<p><img src="../images/CDN工作流程.jpg" alt></p>
+<h1 id="Servlet与Web容器"><a href="#Servlet与Web容器" class="headerlink" title="Servlet与Web容器"></a>Servlet与Web容器</h1><h2 id="什么是Servlet"><a href="#什么是Servlet" class="headerlink" title="什么是Servlet?"></a>什么是Servlet?</h2><p>servlet是能完成特定功能的Java代码,这个特定功能就是接收HttpServletRequest对象,返回HttpServletResponse对象。</p>
+<h2 id="什么是Web容器"><a href="#什么是Web容器" class="headerlink" title="什么是Web容器?"></a>什么是Web容器?</h2><p>Web应用服务器,是一个Servlet/JSP容器</p>
+<p>拆包装:接收客户发来的http请求文本并解析，然后转化成Java servlet能处理的HttpServletRequest类型对象.</p>
+<p>打包装:把Java servlet返回的HttpResponse类型对象包装成响应文本的格式,然后返回给客户.</p>
+<p><strong>总结</strong></p>
+<ul>
+<li>Java Servlet运行在Tomcat中,Tomcat运行在服务器中.</li>
+<li>服务器接收请求,把请求交给Tomcat,Tomcat对请求进行解析后,把内容交给Java Servlet处理，然后Servlet返回响应，容器再对响应进行处理，然后返回给用户。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/01/Java/JavaWeb/6.业务层/Spring/1.前言/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/01/Java/JavaWeb/6.业务层/Spring/1.前言/" itemprop="url">1.Spring的学习路线</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-01T00:00:00+08:00">
+                2018-07-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Spring/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Spring的学习路线"><a href="#Spring的学习路线" class="headerlink" title="Spring的学习路线"></a>Spring的学习路线</h1><ol>
+<li>IOC<ul>
+<li>什么是IOC</li>
+<li>Spring的IoC容器与Bean</li>
+<li>如何创建,使用容器</li>
+<li>如何配置Bean</li>
+</ul>
+</li>
+<li>Spring AOP<ul>
+<li>什么是AOP 《AspectJ in action》<ul>
+<li>横切关注点与AOP</li>
+<li>AOP术语</li>
+</ul>
+</li>
+<li>Spring AOP<ul>
+<li>例子</li>
+<li>Spring AOP原理</li>
+<li>@AspectJ注解详解</li>
+</ul>
+</li>
+<li>Spring AOP实战</li>
+<li>更多<ul>
+<li>《AspectJ in action》、《Pro Spring 5》</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resource &amp; Environment</li>
+<li>注解驱动与常用注解</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/Java/JavaSE/ch8_泛型/1.泛型的引入/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/23/Java/JavaSE/ch8_泛型/1.泛型的引入/" itemprop="url">1.泛型的引入</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T00:00:00+08:00">
+                2018-05-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/ch8泛型/" itemprop="url" rel="index">
+                    <span itemprop="name">ch8泛型</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="泛型的引入"><a href="#泛型的引入" class="headerlink" title="泛型的引入"></a>泛型的引入</h1><p><strong>以Java集合框架为例，介绍泛型的作用与使用方法</strong></p>
+<p>在JDK5之前，集合中的元素都是<code>Object</code>类型，从集合中获取对象以后常常需要进行强制类型转化。</p>
+<p>下面代码向<code>ArrayList</code>中加入一个<code>String</code>，接下去取出这个<code>String</code>对象，然后再把它强制转换成<code>Integer</code>对象。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">List arrayList = <span class="keyword">new</span> ArrayList();</span><br><span class="line">arrayList.add(<span class="string">"hello"</span>);</span><br><span class="line">Integer num = (Integer) arrayList.get(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+<p>上面的代码编译时不会报错，会在运行时报错。为了尽可能早的发现这种错误，JDK5中引入了泛型机制。</p>
+<p>就是在生命集合变量和创建集合对象时，可以用<code>&lt;&gt;</code>指定集合中元素的类型：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;(); <span class="comment">// 这是JDK5的写法</span></span><br><span class="line">List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;(); <span class="comment">//  具体我忘了，反正JDK8的话已经有类型推断了</span></span><br></pre></td></tr></table></figure>
+<p>这时候如果你往<code>list</code>添加其它类型数据，编译就会报错，从而避免了运行时类型转化错误。</p>
+<h1 id="定义泛型类和泛型接口"><a href="#定义泛型类和泛型接口" class="headerlink" title="定义泛型类和泛型接口"></a>定义泛型类和泛型接口</h1><p>泛型的本质其实就是把类参数化，由于事先并不知道运行时会接受一个什么样的类，因此用一个参数来代表类，等运行时再用传递过来的实际类赋给参数，本质就跟方法参数的作用一样。</p>
+<p><strong>定义泛型类</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 类名后面使用&lt;T&gt;  T只是一个参数名，具体用什么随你喜欢</span></span><br><span class="line"><span class="comment">* 在运行时T的值就会变成传递过来的类</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bag</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> T content;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Bag</span><span class="params">(T content)</span></span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.content = content;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> T <span class="title">getContent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> content;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setContent</span><span class="params">(T content)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.content = content;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>定义泛型接口</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 定义泛型接口也一样</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Bag</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">    <span class="comment">// 不多讲了</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="定义泛型方法"><a href="#定义泛型方法" class="headerlink" title="定义泛型方法"></a>定义泛型方法</h1><p>注意：泛型方法不一定定义在泛型类中。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayAlg</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">T <span class="title">getMiddle</span><span class="params">(T... a)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> a[a.length / <span class="number">2</span>];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 调用泛型方法</span></span><br><span class="line">String middle = ArrayAlg.&lt;String&gt;getMiddle(<span class="string">"J"</span>, <span class="string">"k"</span>, <span class="string">"L"</span>);</span><br><span class="line"><span class="comment">// 不过其实也没必要写&lt;String&gt;，因为编译器能推断出它的类型</span></span><br><span class="line">String middle = ArrayAlg.getMiddle(<span class="string">"J"</span>, <span class="string">"k"</span>, <span class="string">"L"</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="extends和Super关键字"><a href="#extends和Super关键字" class="headerlink" title="extends和Super关键字"></a>extends和Super关键字</h1><p>在定义泛型类时，可以用<code>extends</code>和<code>Super</code>关键字来限定类型参数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bag</span>&lt;<span class="title">T</span> <span class="keyword">extends</span> <span class="title">Food</span>&gt; </span>&#123;</span><br><span class="line">	<span class="comment">// 指名T必须是Food或Food的子类</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bag</span>&lt;<span class="title">T</span> <span class="title">super</span> <span class="title">Food</span>&gt; </span>&#123;</span><br><span class="line">	<span class="comment">// 指名T必须是Apple或Apple的父类</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="使用？通配符"><a href="#使用？通配符" class="headerlink" title="使用？通配符"></a>使用？通配符</h1><p><code>?</code>和<code>T</code>区别：<code>？</code>是一个不确定类，<code>？</code>和<code>T</code>都表示不确定的类型 ，但如果是<code>T</code>的话，函数里面可以对<code>T</code>进行操作，比方 <code>T car = getCar()</code>，而不能用<code>？ car = getCar()</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDifferenceBetweenObjectAndT</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printObjectList</span><span class="params">(List&lt;Object&gt; list)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">for</span> (Object elem : list) &#123;</span><br><span class="line">         System.out.println(elem + <span class="string">" "</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function"><span class="keyword">void</span> <span class="title">printTList</span><span class="params">(List&lt;T&gt; list)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">for</span> (T elem : list) &#123;</span><br><span class="line">         System.out.println(elem + <span class="string">" "</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printWildCastList</span><span class="params">(List&lt;?&gt; list)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; list.size(); i++) &#123;</span><br><span class="line">         System.out.println(list.get(i) + <span class="string">" "</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      System.out.println();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      List&lt;Integer&gt; integerList = Arrays.asList(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line">      List&lt;String&gt; stringList = Arrays.asList(<span class="string">"one"</span>, <span class="string">"two"</span>, <span class="string">"three"</span>);</span><br><span class="line">      List&lt;Object&gt; objectList = Arrays.asList(<span class="number">1</span>, <span class="string">"two"</span>, <span class="number">1.23</span>);</span><br><span class="line">      List&lt;Fruit&gt; fruitList = Arrays.asList(<span class="keyword">new</span> Apple(), <span class="keyword">new</span> Banana());</span><br><span class="line">      <span class="comment">/*</span></span><br><span class="line"><span class="comment">       * 下面这句会编译报错，因为参数不能转化成功</span></span><br><span class="line"><span class="comment">       * */</span></span><br><span class="line">      printObjectList(fruitList);</span><br><span class="line"></span><br><span class="line">      printObjectList(objectList);</span><br><span class="line">      printTList(integerList);</span><br><span class="line">      printTList(stringList);</span><br><span class="line">      printTList(objectList);</span><br><span class="line">      printWildCastList(integerList);</span><br><span class="line">      printWildCastList(stringList);</span><br><span class="line">      printWildCastList(objectList);</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/22/Java/JavaSE/ch7_集合框架/7.集合工具类/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/22/Java/JavaSE/ch7_集合框架/7.集合工具类/" itemprop="url">7.集合的工具类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-22T00:00:00+08:00">
+                2018-05-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaSE</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaSE/ch7Java容器/" itemprop="url" rel="index">
+                    <span itemprop="name">ch7Java容器</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="集合的工具类"><a href="#集合的工具类" class="headerlink" title="集合的工具类"></a>集合的工具类</h1><p>Array有工具类Arrays，集合也不落后，集合也有个Collections类。</p>
+<p>Collections类有一部分静态方法用于操作List，有一部分可以操作所有Collection，还有一部分可以操作Map。</p>
+<h1 id="线程安全的集合"><a href="#线程安全的集合" class="headerlink" title="线程安全的集合"></a>线程安全的集合</h1><p>Set、List、Queue和Map的实现类都是没有采用同步机制的，在多线程的情况下会有并发问题。</p>
+<p>有一下解决方案</p>
+<ul>
+<li>对程序中有可能出现并发问题的代码块进行同步。</li>
+<li>利用Collections的synchronizedXXX()方法获得原始集合的同步版本。</li>
+<li>。。。。。。。。。。。。。</li>
+</ul>
+<h1 id="集合与数组的互换"><a href="#集合与数组的互换" class="headerlink" title="集合与数组的互换"></a>集合与数组的互换</h1><h2 id="数组转集合"><a href="#数组转集合" class="headerlink" title="数组转集合"></a>数组转集合</h2><p>Arrays.asList(array)</p>
+<h2 id="集合转数组"><a href="#集合转数组" class="headerlink" title="集合转数组"></a>集合转数组</h2><ul>
+<li>Object[] toArray();</li>
+<li><t> T[] toArray(T[] a);  Integer[] arr = list.toArray(new Integer[0]);  new Integer[0] 只是表明类型的作用</t></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/14/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><span class="page-number current">15</span><a class="page-number" href="/page/16/">16</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" href="/page/16/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="黄大仁">
+            
+              <p class="site-author-name" itemprop="name">黄大仁</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">181</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">黄大仁</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

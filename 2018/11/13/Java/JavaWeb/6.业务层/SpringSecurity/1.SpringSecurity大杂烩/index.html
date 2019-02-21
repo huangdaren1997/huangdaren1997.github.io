@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="黄大仁的博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="Spring Secuirty 大杂烩Spring Security是一个企业级应用中用来用户验证、鉴权以及安全保护的Java框架。   Authentication：认证 Authenticated：已认证 Authorize：授权  通过一个个Authentication Filter(认证过滤器)组成的链，来对用户进行验证，最后进入FilterSecurity拦截器，如果认真过程出现异常就交">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1.Spring Secuirty 大杂烩">
+<meta property="og:url" content="http://yoursite.com/2018/11/13/Java/JavaWeb/6.业务层/SpringSecurity/1.SpringSecurity大杂烩/index.html">
+<meta property="og:site_name" content="黄大仁的博客">
+<meta property="og:description" content="Spring Secuirty 大杂烩Spring Security是一个企业级应用中用来用户验证、鉴权以及安全保护的Java框架。   Authentication：认证 Authenticated：已认证 Authorize：授权  通过一个个Authentication Filter(认证过滤器)组成的链，来对用户进行验证，最后进入FilterSecurity拦截器，如果认真过程出现异常就交">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.png?raw=true">
+<meta property="og:image" content="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E8%A1%A8%E5%8D%95%E8%AE%A4%E8%AF%81%E6%B5%81%E7%A8%8B.png?raw=true">
+<meta property="og:image" content="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.png?raw=true">
+<meta property="og:image" content="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E8%A1%A8%E5%8D%95%E8%AE%A4%E8%AF%81%E6%B5%81%E7%A8%8B.png?raw=true">
+<meta property="og:updated_time" content="2019-01-12T12:53:45.705Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="1.Spring Secuirty 大杂烩">
+<meta name="twitter:description" content="Spring Secuirty 大杂烩Spring Security是一个企业级应用中用来用户验证、鉴权以及安全保护的Java框架。   Authentication：认证 Authenticated：已认证 Authorize：授权  通过一个个Authentication Filter(认证过滤器)组成的链，来对用户进行验证，最后进入FilterSecurity拦截器，如果认真过程出现异常就交">
+<meta name="twitter:image" content="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.png?raw=true">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/11/13/Java/JavaWeb/6.业务层/SpringSecurity/1.SpringSecurity大杂烩/">
+
+
+
+
+
+  <title>1.Spring Secuirty 大杂烩 | 黄大仁的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">黄大仁的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/13/Java/JavaWeb/6.业务层/SpringSecurity/1.SpringSecurity大杂烩/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">1.Spring Secuirty 大杂烩</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-13T00:00:00+08:00">
+                2018-11-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaWeb</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaWeb/Spring-Security/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring Security</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Spring-Secuirty-大杂烩"><a href="#Spring-Secuirty-大杂烩" class="headerlink" title="Spring Secuirty 大杂烩"></a>Spring Secuirty 大杂烩</h1><p>Spring Security是一个企业级应用中用来用户验证、鉴权以及安全保护的Java框架。</p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.png?raw=true" alt="1541988651265"></p>
+<ul>
+<li>Authentication：认证</li>
+<li>Authenticated：已认证</li>
+<li>Authorize：授权</li>
+</ul>
+<p>通过一个个Authentication Filter(认证过滤器)组成的链，来对用户进行验证，最后进入FilterSecurity拦截器，如果认真过程出现异常就交由ExceptionTranslationFilter处理。</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p><img src="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E8%A1%A8%E5%8D%95%E8%AE%A4%E8%AF%81%E6%B5%81%E7%A8%8B.png?raw=true" alt="1541989918171"></p>
+<p>通过表单提交了一个登录请求，请求就会进入用户名密码认证过滤器（<code>UsernamePasswordAuthenticationFilter</code>），该过滤器获取表单提交的用户名和密码然后生成一个用户名密码认证令牌（<code>UsernamePasswordAuthenticationToken</code>）然后调用认证管理器（<code>AuthenticationManager</code>）的认证方法（<code>authentication</code>），认证管理器(<code>AuthenticationManager</code>)只是个接口，它的实现类(<code>ProviderManager</code>)本身不会对token进行验证，它负责找出相应的认证提供者（<code>AuthenticationProvider</code>），让它进行认证工作。</p>
+<p>在表单登录中，认证提供者（<code>AuthenticationProvider</code>）是DAO认证提供者（<code>DaoAuthenticationProvider</code>），它负责根据输入的用户名查找出相应的用户信息，然后对密码进行验证，验证通过后返回一个新的带有全名用户信息的token，（未完成待续）</p>
+<h2 id="UsernamePasswordAuthenticationFilter"><a href="#UsernamePasswordAuthenticationFilter" class="headerlink" title="UsernamePasswordAuthenticationFilter"></a>UsernamePasswordAuthenticationFilter</h2><p>对一次提交进行认证处理。</p>
+<p>登录表单需要提交两个参数给该过滤器，默认是<code>username</code>和<code>password</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String SPRING_SECURITY_FORM_USERNAME_KEY = <span class="string">"username"</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String SPRING_SECURITY_FORM_PASSWORD_KEY = <span class="string">"password"</span>;</span><br></pre></td></tr></table></figure>
+<p>当然，可以通过修改<code>usernameParameter</code> 和 <code>passwordParameter</code>属性制定我们想要的参数名</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> String usernameParameter = SPRING_SECURITY_FORM_USERNAME_KEY;</span><br><span class="line"><span class="keyword">private</span> String passwordParameter = SPRING_SECURITY_FORM_PASSWORD_KEY;</span><br></pre></td></tr></table></figure>
+<h2 id="ExceptionTranslationFilter"><a href="#ExceptionTranslationFilter" class="headerlink" title="ExceptionTranslationFilter"></a>ExceptionTranslationFilter</h2><p>处理所有在过滤器链中抛出的<code>AccessDeniedException</code> 和 <code>AuthenticationException</code>。</p>
+<p>该过滤器在Java异常和HTTP响应之间建立一座桥梁。</p>
+<p>如果是<code>AuthenticationException</code>，那么过滤器会运行<code>authenticationEntryPoint</code>，它允许共同处理源自<code>AbstractSecurityInterceptor</code>的任何子类的身份验证失败。</p>
+<p>如果是<code>AccessDeniedException</code> ，过滤器首先判断用户是不是匿名用户，如果是则运行<code>authenticationEntryPoint</code>，否则调用<code>AccessDeniedHandler</code>。</p>
+<h2 id="FilterSecurityInterceptor"><a href="#FilterSecurityInterceptor" class="headerlink" title="FilterSecurityInterceptor"></a>FilterSecurityInterceptor</h2><p>通过实现过滤器接口（Filter）对HTTP资源进行安全处理。具体的工作流程需要查看它所继承的抽象类<code>AbstractSecurityInterceptor</code></p>
+<p>## </p>
+<h1 id="自定义用户认证逻辑"><a href="#自定义用户认证逻辑" class="headerlink" title="自定义用户认证逻辑"></a>自定义用户认证逻辑</h1><ul>
+<li>处理用户信息获取逻辑：UserDetailsService</li>
+<li>处理用户校验逻辑：UserDetails</li>
+<li>处理密码加密解密：PasswordEncoder</li>
+</ul>
+<h2 id="UserDetailsService"><a href="#UserDetailsService" class="headerlink" title="UserDetailsService"></a>UserDetailsService</h2><p>加载用户相关信息的核心接口。</p>
+<p>框架中用它作为User DAO，以及使用了策略模式，它的具体策略会被<code>DaoAuthenticationProvider</code>所调用。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDetailsService</span> </span>&#123;</span><br><span class="line">   <span class="function">UserDetails <span class="title">loadUserByUsername</span><span class="params">(String username)</span> <span class="keyword">throws</span> UsernameNotFoundException</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="DaoAuthenticationProvider"><a href="#DaoAuthenticationProvider" class="headerlink" title="DaoAuthenticationProvider"></a>DaoAuthenticationProvider</h3><p>从UserDetailsService中获取用户信息</p>
+<h2 id="UserDetails"><a href="#UserDetails" class="headerlink" title="UserDetails"></a>UserDetails</h2><p>定义了需要存储那些用户信息的接口。</p>
+<table>
+<thead>
+<tr>
+<th>方法类型</th>
+<th>f方法描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>java.util.Collection&lt;? extends GrantedAuthority&gt;</code></td>
+<td><code>getAuthorities()</code>Returns the authorities granted to the user.</td>
+</tr>
+<tr>
+<td><code>java.lang.String</code></td>
+<td><code>getPassword()</code></td>
+</tr>
+<tr>
+<td><code>java.lang.String</code></td>
+<td><code>getUsername()</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>isAccountNonExpired()</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>isAccountNonLocked()</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>isCredentialsNonExpired()</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>isEnabled()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="PasswordEncoder"><a href="#PasswordEncoder" class="headerlink" title="PasswordEncoder"></a>PasswordEncoder</h2><p>对密码进行编码的服务接口，推荐使用其实现类<code>BCryptPasswordEncoder</code></p>
+<h1 id="自定义登录界面"><a href="#自定义登录界面" class="headerlink" title="自定义登录界面"></a>自定义登录界面</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">configure</span><span class="params">(HttpSecurity http)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="comment">// 该方法返回一个 FormLoginConfigurer</span></span><br><span class="line">    http.formLogin()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="FormLoginConfigurer"><a href="#FormLoginConfigurer" class="headerlink" title="FormLoginConfigurer"></a>FormLoginConfigurer</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">FormLoginConfigurer</span>&lt;<span class="title">H</span> <span class="keyword">extends</span> <span class="title">HttpSecurityBuilder</span>&lt;<span class="title">H</span>&gt;&gt; </span></span><br><span class="line"><span class="class">	<span class="keyword">extends</span> <span class="title">AbstractAuthenticationFilterConfigurer</span>&lt;<span class="title">H</span>,<span class="title">FormLoginConfigurer</span>&lt;<span class="title">H</span>&gt;,</span></span><br><span class="line"><span class="class">		<span class="title">UsernamePasswordAuthenticationFilter</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>添加基于表单的身份验证。所有属性都有合理的默认值，所有参数都是可选的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 根据loginProcessingUrl创建RequestMatcher </span></span><br><span class="line"><span class="comment">// RequestMatcher 匹配HttpServletRequest的简单策略。</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> RequestMatcher <span class="title">createLoginProcessingUrlMatcher</span><span class="params">(String loginProcessingUrl)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">new</span> AntPathRequestMatcher(loginProcessingUrl, <span class="string">"POST"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> FormLoginConfigurer&lt;H&gt; <span class="title">successForwardUrl</span><span class="params">(String forwardUrl)</span> </span>&#123;</span><br><span class="line">	successHandler(<span class="keyword">new</span> ForwardAuthenticationSuccessHandler(forwardUrl));</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> FormLoginConfigurer&lt;H&gt; <span class="title">failureForwardUrl</span><span class="params">(String forwardUrl)</span> </span>&#123;</span><br><span class="line">   failureHandler(<span class="keyword">new</span> ForwardAuthenticationFailureHandler(forwardUrl));</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>它继承自AbstractAuthenticationFilterConfigurer，所以更多的方法在AbstractAuthenticationFilterConfigurer上。</p>
+<h2 id="loginPage-string-path"><a href="#loginPage-string-path" class="headerlink" title="loginPage(string path)"></a>loginPage(string path)</h2><p>重定向到这个路径，可以直接返回文件，也可以到达Controller再进行处理。</p>
+<h2 id="loginProcessingUrl-“-authentication-login”"><a href="#loginProcessingUrl-“-authentication-login”" class="headerlink" title="loginProcessingUrl(“/authentication/login”)"></a>loginProcessingUrl(“/authentication/login”)</h2><p>表单中action的值</p>
+<h1 id="SpringSecurity表单登录验证流程"><a href="#SpringSecurity表单登录验证流程" class="headerlink" title="SpringSecurity表单登录验证流程"></a>SpringSecurity表单登录验证流程</h1><p><img src="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.png?raw=true" alt="1541988651265"></p>
+<p><img src="https://github.com/huangdaren1997/pictures/blob/master/SpringSecurity%E8%A1%A8%E5%8D%95%E8%AE%A4%E8%AF%81%E6%B5%81%E7%A8%8B.png?raw=true" alt="1541989918171"></p>
+<ol>
+<li>表单登录请求进入<code>UsernamePasswordAuthenticationFilter</code>，</li>
+<li><code>UsernamePasswordAuthenticationFilter</code>使用传递过来的用户名和密码创建一个<code>UsernamePasswordAuthenticationToken</code>对象，</li>
+<li><code>UsernamePasswordAuthenticationFilter</code>调用<code>getAuthenticationManager()</code>获得<code>ProviderManager</code>对象</li>
+<li>调用<code>ProviderManager</code>对象的<code>authenticate(Authentication authentication)</code>方法</li>
+<li><code>authenticate(Authentication authentication)</code>方法找到<code>DaoAuthenticationProvider</code>类进行<code>authenticate</code></li>
+<li></li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/01/Java/JavaWeb/工具类库/Jackson/" rel="next" title="Jackson">
+                <i class="fa fa-chevron-left"></i> Jackson
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/29/工具/Git/Git基础/" rel="prev" title="2.Git基础">
+                2.Git基础 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="黄大仁">
+            
+              <p class="site-author-name" itemprop="name">黄大仁</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">181</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Secuirty-大杂烩"><span class="nav-text">Spring Secuirty 大杂烩</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#流程"><span class="nav-text">流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UsernamePasswordAuthenticationFilter"><span class="nav-text">UsernamePasswordAuthenticationFilter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ExceptionTranslationFilter"><span class="nav-text">ExceptionTranslationFilter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FilterSecurityInterceptor"><span class="nav-text">FilterSecurityInterceptor</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义用户认证逻辑"><span class="nav-text">自定义用户认证逻辑</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UserDetailsService"><span class="nav-text">UserDetailsService</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DaoAuthenticationProvider"><span class="nav-text">DaoAuthenticationProvider</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UserDetails"><span class="nav-text">UserDetails</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PasswordEncoder"><span class="nav-text">PasswordEncoder</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义登录界面"><span class="nav-text">自定义登录界面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#FormLoginConfigurer"><span class="nav-text">FormLoginConfigurer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#loginPage-string-path"><span class="nav-text">loginPage(string path)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#loginProcessingUrl-“-authentication-login”"><span class="nav-text">loginProcessingUrl(“/authentication/login”)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SpringSecurity表单登录验证流程"><span class="nav-text">SpringSecurity表单登录验证流程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">黄大仁</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

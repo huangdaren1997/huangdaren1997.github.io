@@ -1,0 +1,2426 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="黄大仁的博客" type="application/atom+xml">
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄大仁的博客">
+<meta property="og:url" content="http://yoursite.com/page/4/index.html">
+<meta property="og:site_name" content="黄大仁的博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="黄大仁的博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/4/">
+
+
+
+
+
+  <title>黄大仁的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">黄大仁的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/数据库/MySQL/2.索引/索引/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/数据库/MySQL/2.索引/索引/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><p>什么是索引？</p>
+<p>数据库索引是帮助数据库高效获取数据的一种数据结构。在MySQL中有B+Tree索引、Hash索引。</p>
+<p>Hash索引的优点：在元素分布均匀的时候，查询速度是最快的。</p>
+<p>Hash索引的缺点：无法进行范围查找，在Hash碰撞严重的情况，性能还不如B+Tree索引。</p>
+<h2 id="1-索引的类型"><a href="#1-索引的类型" class="headerlink" title="1.索引的类型"></a>1.索引的类型</h2><p><strong>PRIMARY KEY主键索引</strong></p>
+<p>不允许出现相同的值,且不能为NULL值,一个表只能有一个主键索引</p>
+<p><strong>UNIQUE唯一索引</strong></p>
+<p>不可以出现相同的值,可以有NULL值</p>
+<p><strong>INDEX普通索引</strong></p>
+<p>允许出现相同的索引内容</p>
+<p><strong>FULLTEXT INDEX 全文索引</strong></p>
+<p>上述三种索引都是针对列的值发挥作用,但全文索引,可以针对值中的某个单词,比如一篇文章中的某个词.</p>
+<p>只有myisam以及英文支持,并且效率让人不敢恭维,可以用coreseek和xunsearch等第三方应用来完成这个需求</p>
+<h2 id="2-索引的CURD"><a href="#2-索引的CURD" class="headerlink" title="2.索引的CURD"></a>2.索引的CURD</h2><h3 id="2-1创建索引"><a href="#2-1创建索引" class="headerlink" title="2.1创建索引"></a>2.1创建索引</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name (index_columns)；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> index_name (index_columns)；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> index_name (index_columns)；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> FULLTEXT index_name (index_columns)；</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`test1`</span> (</span><br><span class="line">  <span class="string">`id`</span> <span class="built_in">smallint</span>(<span class="number">5</span>) <span class="keyword">UNSIGNED</span> AUTO_INCREMENT <span class="keyword">NOT</span> <span class="literal">NULL</span>, <span class="comment">-- 注意,下面创建了主键索引,这里就不用创建了</span></span><br><span class="line">  <span class="string">`username`</span> <span class="built_in">varchar</span>(<span class="number">64</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'用户名'</span>,</span><br><span class="line">  <span class="string">`nickname`</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span> <span class="keyword">COMMENT</span> <span class="string">'昵称/姓名'</span>,</span><br><span class="line">  <span class="string">`intro`</span> <span class="built_in">text</span>,</span><br><span class="line">  PRIMARY <span class="keyword">KEY</span> (<span class="string">`id`</span>), </span><br><span class="line">  <span class="keyword">UNIQUE</span> <span class="keyword">KEY</span> <span class="string">`unique1`</span> (<span class="string">`username`</span>), <span class="comment">-- 索引名称,可要可不要,不要就是和列名一样</span></span><br><span class="line">  <span class="keyword">KEY</span> <span class="string">`index1`</span> (<span class="string">`nickname`</span>),</span><br><span class="line">  FULLTEXT <span class="keyword">KEY</span> <span class="string">`intro`</span> (<span class="string">`intro`</span>)</span><br><span class="line">) <span class="keyword">ENGINE</span>=MyISAM AUTO_INCREMENT=<span class="number">4</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8 <span class="keyword">COMMENT</span>=<span class="string">'后台用户表'</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="2-2查看索引"><a href="#2-2查看索引" class="headerlink" title="2.2查看索引"></a>2.2查看索引</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> <span class="keyword">INDEX</span> <span class="keyword">FROM</span> tablename；</span><br></pre></td></tr></table></figure>
+<h3 id="2-3删除索引"><a href="#2-3删除索引" class="headerlink" title="2.3删除索引"></a>2.3删除索引</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">DROP</span> <span class="keyword">INDEX</span> index_name;</span><br></pre></td></tr></table></figure>
+<h3 id="2-4修改索引"><a href="#2-4修改索引" class="headerlink" title="2.4修改索引"></a>2.4修改索引</h3><p>在MySQL中并没有提供修改索引的直接指令，一般情况下，我们需要先删除掉原索引，再根据需要创建一个同名的索引，从而变相地实现修改索引操作。</p>
+<h2 id="3-深入理解B-Tree索引"><a href="#3-深入理解B-Tree索引" class="headerlink" title="3.深入理解B-Tree索引"></a>3.深入理解B-Tree索引</h2><p>B-Tree是为磁盘等外存储设备设计的一种平衡查找树。</p>
+<p>机械硬盘的逻辑结构主要分为磁道、扇区和拄面。</p>
+<p>硬盘的磁道密度非常高，通常一面上就有上千个磁道。但是相邻的磁道之间并不是紧挨着的，这是因为磁化单元相隔太近会相互产生影响。</p>
+<p>在磁盘上每个同心圆是磁道，从圆心向外呈放射状地产生分割线（扇骨），将每个磁道等分为若干弧段，每个弧段就是一个扇区。每个扇区的大小是固定的，为 512Byte。扇区也是磁盘的最小存储单位。</p>
+<p>柱面又是什么呢？如果硬盘是由多个盘片组成的，每个盘面都被划分为数目相等的磁道，那么所有盘片都会从外向内进行磁道编号，最外侧的就是 0 磁道。具有相同编号的磁道会形成一个圆柱，这个圆柱就被称作磁盘的柱面。</p>
+<p><strong>块：</strong>块是一个虚拟概念，并不是真是存在于磁盘上，操作系统从磁盘读取数据到内存时是以块（block）为基本单位的，位于同一个磁盘块中的数据会被一次性读取出来。因为磁盘进行读写的基本单位是扇区，而操作系统与磁盘之间是块，所以系统想进行读写，最节省的方式就是扇区的整数倍。现在块的大小一般都是4096kb（4M）。</p>
+<p><a href="https://www.youtube.com/watch?v=aZjYr87r1b8" target="_blank" rel="noopener">直接看这个视频吧</a></p>
+<p><a href="https://www.cnblogs.com/vianzhang/p/7922426.html" target="_blank" rel="noopener">BTree和B+Tree详解</a></p>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzIxMjE5MTE1Nw==&amp;mid=2653190965&amp;idx=1&amp;sn=53f78fa037386f85531832cd5322d2a0&amp;chksm=8c9909efbbee80f90512f0c36356c31cc74c388c46388dc2317d43c8f8597298f233ca9c29e9&amp;mpshare=1&amp;scene=1&amp;srcid=0208vXq0iykJaOwBpC4bU3yg&amp;pass_ticket=qVqRQ6IA2qnC2lusXuKfz2YsImRgP4BK3i4JjVNiMtdxqCK6NdhpP%2BNLsI0I39hk#rd" target="_blank" rel="noopener">漫画：什么是B-树</a></p>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MzIxMjE5MTE1Nw==&amp;mid=2653191027&amp;idx=1&amp;sn=4ba22e3ec8bd149f69fc0aba72e4347e&amp;chksm=8c9909a9bbee80bfa1d8497ff0525df130414c1731b5aa5287bf16ea1cf86c8d8e6f20782184&amp;mpshare=1&amp;scene=1&amp;srcid=0208vH4JXmzbpOV8odFaAi8D&amp;pass_ticket=qVqRQ6IA2qnC2lusXuKfz2YsImRgP4BK3i4JjVNiMtdxqCK6NdhpP%2BNLsI0I39hk#rd" target="_blank" rel="noopener">漫画：什么是B+树</a></p>
+<p><a href="http://blog.codinglabs.org/articles/theory-of-mysql-index.html" target="_blank" rel="noopener">MySQL索引背后的数据结构与算法原理</a></p>
+<h2 id="4-创建索引的技巧"><a href="#4-创建索引的技巧" class="headerlink" title="4.创建索引的技巧"></a>4.创建索引的技巧</h2><ol>
+<li><p>维度高的列创建索引</p>
+<p> 数据列中<strong>不重复值</strong>的个数越多,维度就越高，如数据表中存在8行数据a ,b ,c,d,a,b,c,d这个表的维度为4。<br> 要为维度高的列创建索引,如性别和年龄,那年龄的维度就高于性别，性别这样的列不适合创建索引,因为维度过低。</p>
+</li>
+<li><p>对 <strong>where,on,group by,order by</strong> 中出现的列使用索引</p>
+</li>
+<li><p>对较小的数据列使用索引,这样会使索引文件更小,同时内存中也可以装载更多的索引键</p>
+</li>
+<li><p>为较长的字符串使用<strong>前缀索引</strong></p>
+</li>
+<li><p>不要过多创建索引,除了增加额外的磁盘空间外,对于<code>DML</code>操作的速度影响很大,因为其每增删改一次就得从新建立索引</p>
+</li>
+<li><p>使用<strong>组合索引</strong>,可以减少文件索引大小,在使用时速度要优于多个单列索引</p>
+</li>
+</ol>
+<h3 id="4-1组合索引与前缀索引"><a href="#4-1组合索引与前缀索引" class="headerlink" title="4.1组合索引与前缀索引"></a>4.1组合索引与前缀索引</h3><p><strong>注意,这两种称呼是对建立索引技巧的一种称呼,并非索引的类型。</strong></p>
+<h4 id="4-1-1组合索引"><a href="#4-1-1组合索引" class="headerlink" title="4.1.1组合索引"></a>4.1.1组合索引</h4><p>MySQL单列索引和组合索引究竟有何区别呢？</p>
+<p>为了形象地对比两者,先建一个表：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`myIndex`</span> (</span><br><span class="line">  <span class="string">`i_testID`</span> <span class="built_in">INT</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT, </span><br><span class="line">  <span class="string">`vc_Name`</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>, </span><br><span class="line">  <span class="string">`vc_City`</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>, </span><br><span class="line">  <span class="string">`i_Age`</span> <span class="built_in">INT</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>, </span><br><span class="line">  <span class="string">`i_SchoolID`</span> <span class="built_in">INT</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>, </span><br><span class="line">  PRIMARY <span class="keyword">KEY</span> (<span class="string">`i_testID`</span>) </span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>假设表内已有1000条数据,在这 10000 条记录里面分布了 5 条<code>vc_Name=&quot;erquan&quot;</code> 的记录,只不过 city,age,school 的组合各不相同。<br>来看这条 T-SQL：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="string">`i_testID`</span> <span class="keyword">FROM</span> <span class="string">`myIndex`</span> <span class="keyword">WHERE</span> <span class="string">`vc_Name`</span>=<span class="string">'erquan'</span> <span class="keyword">AND</span> <span class="string">`vc_City`</span>=<span class="string">'郑州'</span> <span class="keyword">AND</span> <span class="string">`i_Age`</span>=<span class="number">25</span>; <span class="comment">-- 关联搜索;</span></span><br></pre></td></tr></table></figure>
+<p><strong>首先考虑建MySQL单列索引：</strong></p>
+<p>在 <code>vc_Name</code> 列上建立了索引。执行 <code>T-SQL</code> 时,<code>MYSQL</code> 很快将目标锁定在了 <code>vc_Name=erquan</code> 的 5 条记录上,取出来放到一中间结果集。在这个结果集里,先排除掉 <code>vc_City</code> 不等于”郑州”的记录,再排除 <code>i_Age</code> 不等于 25 的记录,最后筛选出唯一的符合条件的记录。<br>虽然在 <code>vc_Name</code> 上建立了索引,查询时<code>MYSQL</code>不用扫描整张表,效率有所提高,但离我们的要求还有一定的距离。同样的,在 <code>vc_City</code> 和<code>i_Age</code>分别建立的MySQL单列索引的效率相似。</p>
+<p>为了进一步榨取 MySQL 的效率,就要考虑建立组合索引。就是将<code>vc_Name,vc_City,i_Age</code>建到一个索引里：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> <span class="string">`myIndex`</span> <span class="keyword">ADD</span> <span class="keyword">INDEX</span> <span class="string">`name_city_age`</span> (vc_Name(<span class="number">10</span>),vc_City,i_Age);</span><br></pre></td></tr></table></figure>
+<p>建表时,vc_Name 长度为 50,这里为什么用 10 呢？这就是下文要说到的前缀索引,因为一般情况下名字的长度不会超过 10,这样会加速索引查询速度,还会减少索引文件的大小,提高 INSERT 的更新速度。</p>
+<p>执行 T-SQL 时,MySQL 无须扫描任何记录就到找到唯一的记录！！</p>
+<p>如果分别在 vc_Name,vc_City,i_Age 上建立单列索引,让该表有 3 个单列索引,查询时和上述的组合索引效率一样吗？答案是大不一样,远远低于我们的组合索引。虽然此时有了三个索引,<strong>但 MySQL 只能用到其中的那个它认为似乎是最有效率的单列索引,另外两个是用不到的</strong>。</p>
+<p>建立这样的组合索引,其实是相当于分别建立了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vc_Name,vc_City,i_Age</span><br><span class="line">vc_Name,vc_City</span><br><span class="line">vc_Name</span><br></pre></td></tr></table></figure>
+<p>这样的三个组合索引！为什么没有 vc_City,i_Age 等这样的组合索引呢？这是因为 mysql 组合索引<strong>“最左前缀”</strong>的结果。简单的理解就是只从最左面的开始组合。并不是只要包含这三列的查询都会用到该组合索引,下面的几个 T-SQL 会用到：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM myIndex WHREE vc_Name=&quot;erquan&quot; AND vc_City=&quot;郑州&quot;</span><br><span class="line">SELECT * FROM myIndex WHREE vc_Name=&quot;erquan&quot;</span><br></pre></td></tr></table></figure>
+<p>而下面几个则不会用到：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM myIndex WHREE i_Age=20 AND vc_City=&quot;郑州&quot;</span><br><span class="line">SELECT * FROM myIndex WHREE vc_City=&quot;郑州&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>也就是,name_city_age (vc_Name(10),vc_City,i_Age) 从左到右进行索引,如果没有左前索引Mysql不执行索引查询</strong></p>
+<h4 id="4-1-2前缀索引"><a href="#4-1-2前缀索引" class="headerlink" title="4.1.2前缀索引"></a>4.1.2前缀索引</h4><p>如果索引列长度过长,这种列索引时将会产生很大的索引文件,不便于操作,可以使用前缀索引方式进行索引<br>前缀索引应该控制在一个合适的点,控制在0.31黄金值即可(大于这个值就可以创建)</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">COUNT</span>(<span class="keyword">DISTINCT</span>(<span class="keyword">LEFT</span>(<span class="string">`title`</span>,<span class="number">10</span>)))/<span class="keyword">COUNT</span>(*) <span class="keyword">FROM</span> Arctic; </span><br><span class="line"><span class="comment">-- 这个值大于0.31就可以创建前缀索引,Distinct去重复</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> <span class="string">`user`</span> <span class="keyword">ADD</span> <span class="keyword">INDEX</span> <span class="string">`uname`</span>(title(<span class="number">10</span>)); </span><br><span class="line"><span class="comment">-- 增加前缀索引SQL,将人名的索引建立在10,这样可以减少索引文件大小,加快索引查询速度</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-2不用索引的SQL"><a href="#4-2不用索引的SQL" class="headerlink" title="4.2不用索引的SQL"></a>4.2不用索引的SQL</h3><p>要尽量避免这些不走索引的SQL</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="string">`sname`</span> <span class="keyword">FROM</span> <span class="string">`stu`</span> <span class="keyword">WHERE</span> <span class="string">`age`</span>+<span class="number">10</span>=<span class="number">30</span>;</span><br><span class="line"><span class="comment">-- 不会使用索引,因为所有索引列参与了计算</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> <span class="string">`sname`</span> <span class="keyword">FROM</span> <span class="string">`stu`</span> <span class="keyword">WHERE</span> <span class="keyword">LEFT</span>(<span class="string">`date`</span>,<span class="number">4</span>) &lt;<span class="number">1990</span>; </span><br><span class="line"><span class="comment">-- 不会使用索引,因为使用了函数运算,原理与上面相同</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="string">`houdunwang`</span> <span class="keyword">WHERE</span> <span class="string">`uname`</span> <span class="keyword">LIKE</span><span class="string">'后盾%'</span> <span class="comment">-- 走索引</span></span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="string">`houdunwang`</span> <span class="keyword">WHERE</span> <span class="string">`uname`</span> <span class="keyword">LIKE</span> <span class="string">"%后盾%"</span> <span class="comment">-- 不走索引</span></span><br><span class="line"><span class="comment">-- 正则表达式不使用索引,这应该很好理解,所以为什么在SQL中很难看到regexp关键字的原因</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 字符串与数字比较不使用索引;</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`a`</span> (<span class="string">`a`</span> <span class="built_in">char</span>(<span class="number">10</span>));</span><br><span class="line"><span class="keyword">EXPLAIN</span> <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="string">`a`</span> <span class="keyword">WHERE</span> <span class="string">`a`</span>=<span class="string">"1"</span> <span class="comment">-- 走索引</span></span><br><span class="line"><span class="keyword">EXPLAIN</span> <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="string">`a`</span> <span class="keyword">WHERE</span> <span class="string">`a`</span>=<span class="number">1</span> <span class="comment">-- 不走索引</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> dept <span class="keyword">where</span> dname=<span class="string">'xxx'</span> <span class="keyword">or</span> loc=<span class="string">'xx'</span> <span class="keyword">or</span> deptno=<span class="number">45</span> </span><br><span class="line"><span class="comment">--如果条件中有or,即使其中有条件带索引也不会使用。</span></span><br><span class="line"><span class="comment">--换言之,就是要求使用的所有字段,都必须建立索引, 我们建议大家尽量避免使用or关键字</span></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 如果mysql估计使用全表扫描要比使用索引快,则不使用索引</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-3索引的弊端"><a href="#4-3索引的弊端" class="headerlink" title="4.3索引的弊端"></a>4.3索引的弊端</h3><p>不要盲目的创建索引,只为查询操作频繁的列创建索引,创建索引会使查询操作变得更加快速,但是会降低增加、删除、更新操作的速度,因为执行这些操作的同时会对索引文件进行重新排序或更新;</p>
+<p>但是,在互联网应用中,查询的语句远远大于DML的语句,甚至可以占到80%~90%,所以也不要太在意,只是在大数据导入时,可以先删除索引,再批量插入数据,最后再添加索引;</p>
+<h2 id="X-Explain优化查询检测"><a href="#X-Explain优化查询检测" class="headerlink" title="X.Explain优化查询检测"></a>X.Explain优化查询检测</h2><p>EXPLAIN可以帮助开发人员分析<code>SQL</code>问题,EXPLAIN显示了<code>MySQL</code>如何使用索引来处理<code>SELECT</code>语句以及连接表,可以帮助选择更好的索引和写出更优化的查询语句.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/公众号/LeetCode/第三天/12.阿拉伯数字转罗马数字/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/公众号/LeetCode/第三天/12.阿拉伯数字转罗马数字/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>题目：12.阿拉伯数字转罗马数字</strong></p>
+<p><img src="/home/hdr/.config/Typora/typora-user-images/1549711224863.png" alt="1549711224863"></p>
+<p>给你一个整数，转换成罗马数字的形式，整数的范围是0~3999.</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">intToRoman</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">    String M[] = &#123;<span class="string">""</span>, <span class="string">"M"</span>, <span class="string">"MM"</span>, <span class="string">"MMM"</span>&#125;;</span><br><span class="line">    String C[] = &#123;<span class="string">""</span>, <span class="string">"C"</span>, <span class="string">"CC"</span>, <span class="string">"CCC"</span>, <span class="string">"CD"</span>, <span class="string">"D"</span>, <span class="string">"DC"</span>, <span class="string">"DCC"</span>, <span class="string">"DCCC"</span>, <span class="string">"CM"</span>&#125;;</span><br><span class="line">    String X[] = &#123;<span class="string">""</span>, <span class="string">"X"</span>, <span class="string">"XX"</span>, <span class="string">"XXX"</span>, <span class="string">"XL"</span>, <span class="string">"L"</span>, <span class="string">"LX"</span>, <span class="string">"LXX"</span>, <span class="string">"LXXX"</span>, <span class="string">"XC"</span>&#125;;</span><br><span class="line">    String I[] = &#123;<span class="string">""</span>, <span class="string">"I"</span>, <span class="string">"II"</span>, <span class="string">"III"</span>, <span class="string">"IV"</span>, <span class="string">"V"</span>, <span class="string">"VI"</span>, <span class="string">"VII"</span>, <span class="string">"VIII"</span>, <span class="string">"IX"</span>&#125;;</span><br><span class="line">    <span class="keyword">return</span> M[num/<span class="number">1000</span>] + C[(num%<span class="number">1000</span>)/<span class="number">100</span>] + X[(num%<span class="number">100</span>)/<span class="number">10</span>] + I[num%<span class="number">10</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/工具/翻墙/v2ray/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/工具/翻墙/v2ray/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="V2Ray"><a href="#V2Ray" class="headerlink" title="V2Ray"></a>V2Ray</h1><h2 id="什么是v2ray？"><a href="#什么是v2ray？" class="headerlink" title="什么是v2ray？"></a>什么是v2ray？</h2><p>个人觉得是跟SSR类似的软件，不过SSR已经不再更新了，v2ray是未来潮流。</p>
+<h2 id="安装v2ray"><a href="#安装v2ray" class="headerlink" title="安装v2ray"></a>安装v2ray</h2><ol>
+<li>安装ubuntu18.04</li>
+<li>sudo su</li>
+<li>bash &lt;(curl -s -L <a href="https://233yes.com/v2ray.sh" target="_blank" rel="noopener">https://233yes.com/v2ray.sh</a>)</li>
+<li><a href="https://233yes.com/post/2/" target="_blank" rel="noopener">其他内容查看这里</a></li>
+</ol>
+<h1 id="V2Ray-的-WebSocket-Cloudflare-拯救被墙的-IP"><a href="#V2Ray-的-WebSocket-Cloudflare-拯救被墙的-IP" class="headerlink" title="V2Ray 的 WebSocket  + Cloudflare 拯救被墙的 IP"></a>V2Ray 的 WebSocket  + Cloudflare 拯救被墙的 IP</h1><h2 id="Cloudflare"><a href="#Cloudflare" class="headerlink" title="Cloudflare"></a>Cloudflare</h2><ol>
+<li>注册账号：<a href="https://www.cloudflare.com/" target="_blank" rel="noopener">https://www.cloudflare.com/</a></li>
+<li><a href="https://233yes.com/post/5/" target="_blank" rel="noopener">详细内容</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/工具/Nginx/Nginx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/工具/Nginx/Nginx/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>安装：<a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04#prerequisites" target="_blank" rel="noopener">Ubuntu16.04安装Nginx</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/公众号/LeetCode/第四天/第四天/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/公众号/LeetCode/第四天/第四天/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>题目：遍历二叉树</strong></p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>遍历二叉树分为前序遍历、中序遍历、后序遍历、层级遍历</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 前序遍历</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">preorderTraversal</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">   List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">   <span class="comment">// 用来存放右节点的栈</span></span><br><span class="line">   Deque&lt;TreeNode&gt; rights = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">   TreeNode cur = root;</span><br><span class="line">   <span class="keyword">while</span> (cur != <span class="keyword">null</span> || !rights.isEmpty()) &#123;</span><br><span class="line">      list.add(cur.val);</span><br><span class="line">      <span class="keyword">if</span> (cur.right != <span class="keyword">null</span>) rights.offerFirst(cur.right);</span><br><span class="line">      cur = cur.left != <span class="keyword">null</span> ? cur.left : rights.pollFirst();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> list;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 中序遍历</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">inorderTraversal</span><span class="params">(TreeNode root)</span> </span>&#123;houxubianli</span><br><span class="line"></span><br><span class="line">   List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">   Deque&lt;TreeNode&gt; nodeStack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">   TreeNode cur = root;</span><br><span class="line">   <span class="keyword">while</span> (cur != <span class="keyword">null</span> || !nodeStack.isEmpty()) &#123;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">while</span> (cur != <span class="keyword">null</span>) &#123;</span><br><span class="line">         nodeStack.offerFirst(cur);</span><br><span class="line">         cur = cur.left;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      cur = nodeStack.pollFirst();</span><br><span class="line">      list.add(cur.val);</span><br><span class="line">      cur = cur.right;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> list;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 后序遍历</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">postorderTraversal</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">   LinkedList&lt;Integer&gt; list = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">   Deque&lt;TreeNode&gt; lefts = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">   TreeNode cur = root;</span><br><span class="line">   <span class="keyword">while</span> (cur != <span class="keyword">null</span> || !lefts.isEmpty()) &#123;</span><br><span class="line">      list.addFirst(cur.val);</span><br><span class="line">      <span class="keyword">if</span> (cur.left != <span class="keyword">null</span>) lefts.offerFirst(cur.left);</span><br><span class="line">      cur = cur.right != <span class="keyword">null</span> ? cur.right : lefts.pollFirst();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> list;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 层级遍历</span></span><br><span class="line"><span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; levelOrder(TreeNode root) &#123;</span><br><span class="line">   <span class="keyword">if</span>(root == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">   List&lt;List&lt;Integer&gt;&gt; resList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">   Queue&lt;TreeNode&gt; queue = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">   TreeNode cur = root;</span><br><span class="line">   queue.offer(cur);</span><br><span class="line"></span><br><span class="line">   <span class="keyword">while</span>(!queue.isEmpty())&#123;</span><br><span class="line">      <span class="keyword">int</span> nodeNums = queue.size();</span><br><span class="line">      List&lt;Integer&gt; subList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nodeNums;i++)&#123;</span><br><span class="line">         cur = queue.poll();</span><br><span class="line">         subList.add(cur.val);</span><br><span class="line">         <span class="keyword">if</span>(cur.left != <span class="keyword">null</span>) queue.offer(cur.left);</span><br><span class="line">         <span class="keyword">if</span>(cur.right != <span class="keyword">null</span>) queue.offer(cur.right);</span><br><span class="line">      &#125;</span><br><span class="line">      resList.add(subList);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> resList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>题目：反转链表</strong></p>
+<h2 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(head==<span class="keyword">null</span>) <span class="keyword">return</span> head;</span><br><span class="line">    ListNode newList = <span class="keyword">null</span>;</span><br><span class="line">    ListNode cur = head;</span><br><span class="line">    <span class="keyword">while</span>(cur != <span class="keyword">null</span>)&#123;</span><br><span class="line">        ListNode next = cur.next;</span><br><span class="line">        cur.next = newList;</span><br><span class="line">        newList = cur;</span><br><span class="line">        cur = next;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> newList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/公众号/LeetCode/第三天/汇总/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/公众号/LeetCode/第三天/汇总/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>题目：11.装最多的水</strong></p>
+<p><img src="/home/hdr/.config/Typora/typora-user-images/1549709346495.png" alt="1549709346495"></p>
+<p>给你一个非负的整形数组，通过柱形图的形式表示每一个数字，求出柱形图中，两条柱子能组成的最大矩形面积。</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>一开始就能想到的解决方案是嵌套遍历。</p>
+<p>但是认真观察上图，会发现面积取决于宽度和高度，高度取决于低的柱子。</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="keyword">int</span>[] height)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">int</span> l = <span class="number">0</span>, r = height.length - <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">int</span> area = <span class="number">0</span>;</span><br><span class="line">   <span class="keyword">while</span> (l &lt; r) &#123;</span><br><span class="line">      area = Math.max(area, (r - l) * Math.min(height[l], height[r]));</span><br><span class="line">      <span class="keyword">if</span> (height[l] &lt; height[r]) l++;</span><br><span class="line">      <span class="keyword">else</span> r--;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> area;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>题目：12.阿拉伯数字转罗马数字</strong></p>
+<p><img src="/home/hdr/.config/Typora/typora-user-images/1549711224863.png" alt="1549711224863"></p>
+<p>给你一个整数，转换成罗马数字的形式，整数的范围是0~3999.</p>
+<h2 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h2><h2 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">intToRoman</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">    String M[] = &#123;<span class="string">""</span>, <span class="string">"M"</span>, <span class="string">"MM"</span>, <span class="string">"MMM"</span>&#125;;</span><br><span class="line">    String C[] = &#123;<span class="string">""</span>, <span class="string">"C"</span>, <span class="string">"CC"</span>, <span class="string">"CCC"</span>, <span class="string">"CD"</span>, <span class="string">"D"</span>, <span class="string">"DC"</span>, <span class="string">"DCC"</span>, <span class="string">"DCCC"</span>, <span class="string">"CM"</span>&#125;;</span><br><span class="line">    String X[] = &#123;<span class="string">""</span>, <span class="string">"X"</span>, <span class="string">"XX"</span>, <span class="string">"XXX"</span>, <span class="string">"XL"</span>, <span class="string">"L"</span>, <span class="string">"LX"</span>, <span class="string">"LXX"</span>, <span class="string">"LXXX"</span>, <span class="string">"XC"</span>&#125;;</span><br><span class="line">    String I[] = &#123;<span class="string">""</span>, <span class="string">"I"</span>, <span class="string">"II"</span>, <span class="string">"III"</span>, <span class="string">"IV"</span>, <span class="string">"V"</span>, <span class="string">"VI"</span>, <span class="string">"VII"</span>, <span class="string">"VIII"</span>, <span class="string">"IX"</span>&#125;;</span><br><span class="line">    <span class="keyword">return</span> M[num/<span class="number">1000</span>] + C[(num%<span class="number">1000</span>)/<span class="number">100</span>] + X[(num%<span class="number">100</span>)/<span class="number">10</span>] + I[num%<span class="number">10</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>题目：13罗马数字转阿拉伯数字</strong></p>
+<p><img src="/home/hdr/.config/Typora/typora-user-images/1549713449551.png" alt="1549713449551"></p>
+<h2 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h2><h2 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">romanToInt</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">	HashMap&lt;Character, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;(<span class="number">8</span>);</span><br><span class="line">	<span class="comment">// @formatter:off</span></span><br><span class="line">	map.put(<span class="string">'I'</span>, <span class="number">1</span>);map.put(<span class="string">'V'</span>, <span class="number">5</span>);</span><br><span class="line">	map.put(<span class="string">'X'</span>, <span class="number">10</span>);map.put(<span class="string">'L'</span>, <span class="number">50</span>);</span><br><span class="line">	map.put(<span class="string">'C'</span>, <span class="number">100</span>);map.put(<span class="string">'D'</span>, <span class="number">500</span>);</span><br><span class="line">	map.put(<span class="string">'M'</span>, <span class="number">1000</span>);</span><br><span class="line">	<span class="comment">// @formatter:on</span></span><br><span class="line">	<span class="keyword">int</span> result = map.get(s.charAt(<span class="number">0</span>));</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> prev = map.get(s.charAt(i - <span class="number">1</span>));</span><br><span class="line">		<span class="keyword">int</span> cur = map.get(s.charAt(i));</span><br><span class="line">		<span class="keyword">if</span> (prev&lt;cur)</span><br><span class="line">			result += cur - <span class="number">2</span> * prev;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			result += cur;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/公众号/LeetCode/第三天/13.罗马数字转阿拉伯数字/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/公众号/LeetCode/第三天/13.罗马数字转阿拉伯数字/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>题目：13罗马数字转阿拉伯数字</strong></p>
+<p><img src="/home/hdr/.config/Typora/typora-user-images/1549713449551.png" alt="1549713449551"></p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">romanToInt</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">	HashMap&lt;Character, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;(<span class="number">8</span>);</span><br><span class="line">	<span class="comment">// @formatter:off</span></span><br><span class="line">	map.put(<span class="string">'I'</span>, <span class="number">1</span>);map.put(<span class="string">'V'</span>, <span class="number">5</span>);</span><br><span class="line">	map.put(<span class="string">'X'</span>, <span class="number">10</span>);map.put(<span class="string">'L'</span>, <span class="number">50</span>);</span><br><span class="line">	map.put(<span class="string">'C'</span>, <span class="number">100</span>);map.put(<span class="string">'D'</span>, <span class="number">500</span>);</span><br><span class="line">	map.put(<span class="string">'M'</span>, <span class="number">1000</span>);</span><br><span class="line">	<span class="comment">// @formatter:on</span></span><br><span class="line">	<span class="keyword">int</span> result = map.get(s.charAt(<span class="number">0</span>));</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> prev = map.get(s.charAt(i - <span class="number">1</span>));</span><br><span class="line">		<span class="keyword">int</span> cur = map.get(s.charAt(i));</span><br><span class="line">		<span class="keyword">if</span> (prev&lt;cur)</span><br><span class="line">			result += cur - <span class="number">2</span> * prev;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			result += cur;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/前端/JS/基本语法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/前端/JS/基本语法/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p><strong>声明变量</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name = <span class="string">"hdr"</span>;</span><br></pre></td></tr></table></figure>
+<p><strong>条件语句</strong></p>
+<p><strong>循环语句</strong></p>
+<p><strong>变量提升</strong></p>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p><strong>定义</strong></p>
+<p>简单说，对象就是一组“键值对”（key-value）的集合，是一种无序的复合数据集合。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  foo: <span class="string">'Hello'</span>,</span><br><span class="line">  bar: <span class="string">'World'</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>属性可以动态创建，不必在对象声明时就指定。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">obj.age = <span class="number">18</span>;</span><br></pre></td></tr></table></figure>
+<p><strong>属性的CRUD</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 读取属性</span><br><span class="line">obj.foo</span><br><span class="line">obj[<span class="string">'bar'</span>]</span><br><span class="line"># 添加属性</span><br><span class="line">obj.foo = <span class="string">'Hello'</span>;</span><br><span class="line">obj[<span class="string">'bar'</span>] = <span class="string">'World'</span>;</span><br><span class="line"># 修改属性</span><br><span class="line">同上</span><br><span class="line"># 删除属性  delete命令只能删除对象本身的属性，无法删除继承的属性</span><br><span class="line"><span class="keyword">delete</span> obj.foo</span><br><span class="line"># 查看是否具有属性</span><br><span class="line"><span class="string">'p'</span> <span class="keyword">in</span> obj </span><br><span class="line">obj.hasOwnProperty('toString') # 只查看自身具有的属性</span><br><span class="line"># 遍历属性</span><br><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>, <span class="attr">c</span>: <span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> obj) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'键名：'</span>, i);</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'键值：'</span>, obj[i]);</span><br><span class="line">&#125;</span><br><span class="line"># 它遍历的是对象所有可遍历（enumerable）的属性，会跳过不可遍历的属性。</span><br><span class="line"># 它不仅遍历对象自身的属性，还遍历继承的属性。</span><br></pre></td></tr></table></figure>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p><strong>声明</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># JavaScript 有三种声明函数的方法。</span><br><span class="line"># 1. function关键字</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">print</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(s);</span><br><span class="line">&#125;</span><br><span class="line">var print = function(s) &#123; # 把匿名函数赋值给一个变量</span><br><span class="line">  <span class="built_in">console</span>.log(s);</span><br><span class="line">&#125;;</span><br><span class="line"># 2. Function构造器（几乎没人用）</span><br></pre></td></tr></table></figure>
+<p><strong>函数的属性和方法</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 函数的name属性返回函数的名字。</span><br><span class="line"># 函数的length属性返回函数所需参数个数。</span><br><span class="line"># 函数的toString方法返回一个字符串，内容是函数的源码。</span><br></pre></td></tr></table></figure>
+<p><strong>函数的作用域</strong></p>
+<p>作用域分为：全局作用于、局部作用域</p>
+<p>函数可以层层递进，寻找它需要的变量</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> n = <span class="number">999</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(n);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> f = f1()();</span><br><span class="line">f();</span><br></pre></td></tr></table></figure>
+<p><strong>闭包</strong></p>
+<p>函数内部可以访问函数外部的变量，反过来则不行。如果我们非要从函数外部读取函数内部的数据呢，那要怎么实现？这就要使用闭包了，闭包就是能够读取其他函数内部变量的函数，在JS中可以把闭包简单理解成“定义在一个函数内部的函数”，原理就是通过函数A中的函数B来操作函数A中的变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> name = <span class="string">"黄大仁"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">B</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(name);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> B;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>闭包的最大用处有两个，一个是可以读取函数内部的变量，另一个就是让这些内部变量始终保持在内存中。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">createIncrementor</span><span class="params">(start)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> function () &#123;</span><br><span class="line">        <span class="keyword">return</span> ++start;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> inc = createIncrementor(<span class="number">5</span>);</span><br><span class="line">console.log(inc()); <span class="comment">// 6</span></span><br><span class="line">console.log(inc()); <span class="comment">// 7</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> inc2 = createIncrementor(<span class="number">10</span>);</span><br><span class="line">console.log(inc2()); <span class="comment">// 11</span></span><br></pre></td></tr></table></figure>
+<p>上面代码中，<code>start</code>是函数<code>createIncrementor</code>的内部变量。通过闭包，<code>start</code>的状态被保留了，每一次调用都是在上一次调用的基础上进行计算。从中可以看到，闭包<code>inc</code>使得函数<code>createIncrementor</code>的内部环境，一直存在。为什么会这样呢？原因就在于<code>inc</code>始终在内存中，而<code>inc</code>的存在依赖于<code>createIncrementor</code>，因此也始终在内存中，不会在调用结束后，被垃圾回收机制回收。</p>
+<p>闭包的另一个用处，是封装对象的私有属性和私有方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">Person</span><span class="params">(name)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> _age;</span><br><span class="line">  <span class="function">function <span class="title">setAge</span><span class="params">(n)</span> </span>&#123;</span><br><span class="line">    _age = n;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function">function <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> _age;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    name: name,</span><br><span class="line">    getAge: getAge,</span><br><span class="line">    setAge: setAge</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p1 = Person(<span class="string">'张三'</span>);</span><br><span class="line">p1.setAge(<span class="number">25</span>);</span><br><span class="line">p1.getAge() <span class="comment">// 25</span></span><br></pre></td></tr></table></figure>
+<h2 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h2><h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><p>JS中使用构造函数来作为创建对象的模板。构造函数顾名思义就是一个函数，不过它有自己的特征和用法。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Vehicle</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  'use strict'; # 使用严格模式，避免没有使用new 关键字调用构造函数</span><br><span class="line">  <span class="keyword">this</span>.price = <span class="number">1000</span>;</span><br><span class="line">&#125;;</span><br><span class="line"># 或者</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Fubar</span>(<span class="params">foo, bar</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!(<span class="keyword">this</span> <span class="keyword">instanceof</span> Fubar)) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Fubar(foo, bar);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">this</span>._foo = foo;</span><br><span class="line">  <span class="keyword">this</span>._bar = bar;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面代码中，<code>Vehicle</code>就是构造函数。为了与普通函数区别，构造函数名字的第一个字母通常大写。</p>
+<p>构造函数的特点有两个。</p>
+<ul>
+<li>函数体内部使用了<code>this</code>关键字，代表了所要生成的对象实例。</li>
+<li>生成对象的时候，必须使用<code>new</code>命令。</li>
+</ul>
+<h3 id="new关键字"><a href="#new关键字" class="headerlink" title="new关键字"></a>new关键字</h3><p><code>new</code>命令的作用，就是执行构造函数，返回一个实例对象。</p>
+<p>使用<code>new</code>命令时，它后面的函数依次执行下面的步骤。</p>
+<ol>
+<li>创建一个空对象，作为将要返回的对象实例。</li>
+<li>将这个空对象的原型，指向构造函数的<code>prototype</code>属性。</li>
+<li>将这个空对象赋值给函数内部的<code>this</code>关键字。</li>
+<li>开始执行构造函数内部的代码。</li>
+</ol>
+<p>也就是说，构造函数内部，<code>this</code>指的是一个新生成的空对象，所有针对<code>this</code>的操作，都会发生在这个空对象上。构造函数之所以叫“构造函数”，就是说这个函数的目的，就是操作一个空对象（即<code>this</code>对象），将其“构造”为需要的样子。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line"><span class="meta">    'use strict'</span>;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">var</span> _age;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// getter</span></span><br><span class="line">    <span class="keyword">this</span>.getAge = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> _age;</span><br><span class="line">    &#125;;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// setter</span></span><br><span class="line">    <span class="keyword">this</span>.setAge = <span class="function"><span class="keyword">function</span> (<span class="params">age</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (age &gt;= <span class="number">120</span>) &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"too damn old !"</span>)</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (age &lt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"r u fucking kidding me ?"</span>)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            _age = age;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="this关键字"><a href="#this关键字" class="headerlink" title="this关键字"></a>this关键字</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123; <span class="attr">foo</span>:  <span class="number">5</span> &#125;;</span><br></pre></td></tr></table></figure>
+<p>上面的代码将一个对象赋值给变量<code>obj</code>。JavaScript 引擎会先在内存里面，生成一个对象<code>{ foo: 5 }</code>，然后把这个对象的内存地址赋值给变量<code>obj</code>。也就是说，变量<code>obj</code>是一个地址（reference）。后面如果要读取<code>obj.foo</code>，引擎先从<code>obj</code>拿到内存地址，然后再从该地址读出原始的对象，返回它的<code>foo</code>属性。</p>
+<p>原始的对象以<strong>字典结构</strong>保存，每一个属性名都对应一个<strong>属性描述对象</strong>。举例来说，上面例子的<code>foo</code>属性，实际上是以下面的形式保存的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  foo: &#123;</span><br><span class="line">    [[value]]: 5</span><br><span class="line">    [[writable]]: true</span><br><span class="line">    [[enumerable]]: true</span><br><span class="line">    [[configurable]]: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意，<code>foo</code>属性的值保存在属性描述对象的<code>value</code>属性里面。</p>
+<p>这样的结构是很清晰的，问题在于属性的值可能是一个函数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123; <span class="attr">foo</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125; &#125;;</span><br></pre></td></tr></table></figure>
+<p>这时，引擎会将函数单独保存在内存中，然后再将函数的地址赋值给<code>foo</code>属性的<code>value</code>属性。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  foo: &#123;</span><br><span class="line">    [[value]]: 函数的地址</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于函数是一个单独的值，所以它可以在不同的环境（上下文）执行。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"><span class="keyword">var</span> obj = &#123; <span class="attr">f</span>: f &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 单独执行</span></span><br><span class="line">f()</span><br><span class="line"></span><br><span class="line"><span class="comment">// obj 环境执行</span></span><br><span class="line">obj.f()</span><br></pre></td></tr></table></figure>
+<p>JavaScript 允许在函数体内部，引用当前环境的其他变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>上面代码中，函数体里面使用了变量<code>x</code>。该变量由运行环境提供。</p>
+<p>现在问题就来了，由于函数可以在不同的运行环境执行，所以需要有一种机制，能够在函数体内部获得当前的运行环境（context）。所以，<code>this</code>就出现了，它的设计目的就是在函数体内部，指代函数当前的运行环境。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.name != <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Hello I am "</span> + <span class="keyword">this</span>.name);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Hello"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> tom = &#123;</span><br><span class="line">    name: <span class="string">"tom"</span>,</span><br><span class="line">    sayHi: sayHi</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">sayHi();</span><br><span class="line">tom.sayHi();</span><br></pre></td></tr></table></figure>
+<h3 id="对象的继承"><a href="#对象的继承" class="headerlink" title="对象的继承"></a>对象的继承</h3><p>构造函数有一个缺点，同一个构造函数的多个实例之间，无法共享属性，从而造成对系统资源的浪费。例如一个构造函数中的方法，每个对象都会创建这些方法，从而导致内存的浪费。为了解决这个问题，我们需要使用继承。</p>
+<p>JavaScript 继承机制的设计思想就是，原型对象的所有属性和方法，都能被实例对象共享。也就是说，如果属性和方法定义在原型上，那么所有实例对象就能共享，不仅节省了内存，还体现了实例对象之间的联系。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">typeof</span> Animal.prototype; <span class="comment">// object</span></span><br><span class="line">Animal.prototype.color = <span class="string">'white'</span>;</span><br><span class="line"><span class="keyword">var</span> cat1 = <span class="keyword">new</span> Animal(<span class="string">'大毛'</span>);</span><br><span class="line"><span class="keyword">var</span> cat2 = <span class="keyword">new</span> Animal(<span class="string">'二毛'</span>);</span><br><span class="line">cat1.color <span class="comment">// 'white'</span></span><br><span class="line">cat2.color <span class="comment">// 'white'</span></span><br></pre></td></tr></table></figure>
+<p>原型对象的属性不是实例对象自身的属性。只要修改原型对象，变动就立刻会体现在<strong>所有</strong>实例对象上。</p>
+<h2 id="异步操作"><a href="#异步操作" class="headerlink" title="异步操作"></a>异步操作</h2><h3 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h3><h4 id="setTimeout"><a href="#setTimeout" class="headerlink" title="setTimeout()"></a>setTimeout()</h4><p><code>setTimeout</code>函数用来指定某个函数或某段代码，在多少毫秒之后执行。它返回一个整数，表示定时器的编号，以后可以用来取消这个定时器。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timerId = setTimeout(func|code, delay);</span><br><span class="line">setTimeout(f)</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line">setTimeout(f, <span class="number">0</span>)</span><br><span class="line"><span class="comment">// 除了前两个参数，setTimeout还允许更多的参数。它们将依次传入推迟执行的函数（回调函数）。</span></span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params">a,b</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a + b);</span><br><span class="line">&#125;, <span class="number">1000</span>, <span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line"><span class="comment">// 上面代码中，setTimeout共有4个参数。最后那两个参数，将在1000毫秒之后回调函数执行时，作为回调函数的参数。</span></span><br><span class="line"><span class="comment">//如果回调函数是对象的方法，那么setTimeout使得方法内部的this关键字指向全局环境，而不是定义时所在的那个对象。</span></span><br><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  x: <span class="number">2</span>,</span><br><span class="line">  y: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.x);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">setTimeout(obj.y, <span class="number">1000</span>) <span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 为了防止出现这个问题，一种解决方法是将obj.y放入函数。</span></span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  obj.y();</span><br><span class="line">&#125;, <span class="number">1000</span>);<span class="comment">// 2</span></span><br><span class="line"><span class="comment">// 另一种解决方法是，使用bind方法，将obj.y这个方法绑定在obj上面。</span></span><br><span class="line">setTimeout(obj.y.bind(obj), <span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="setInterval"><a href="#setInterval" class="headerlink" title="setInterval()"></a>setInterval()</h4><p><code>setInterval</code>函数的用法与<code>setTimeout</code>完全一致，区别仅仅在于<code>setInterval</code>指定某个任务每隔一段时间就执行一次，也就是无限次的定时执行。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $div = $(<span class="string">"div"</span>);</span><br><span class="line"><span class="keyword">var</span> opacity = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> fader = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (opacity &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        $div.css(<span class="string">"opacity"</span>, opacity -= <span class="number">0.1</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        clearInterval(fader);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, <span class="number">500</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// clearTimeout()，clearInterval()</span></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/前端/JS/JQuery/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/前端/JS/JQuery/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a>1.选择器</h2><p><strong>CSS选择器</strong></p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>语法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id选择器</td>
+<td>#ID{}</td>
+<td></td>
+</tr>
+<tr>
+<td>类选择器</td>
+<td>E.className{}</td>
+<td></td>
+</tr>
+<tr>
+<td>群组选择器</td>
+<td>E1,E2,E3{}</td>
+<td></td>
+</tr>
+<tr>
+<td>后代选择器</td>
+<td>E F{}</td>
+<td></td>
+</tr>
+<tr>
+<td>通配选择符</td>
+<td>*{}</td>
+</tr>
+</tbody>
+</table>
+<p><strong>JQuery选择器</strong></p>
+<p>基本选择器、层次选择器、过滤选择器、表单选择器。</p>
+<h3 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h3><p>通过元素Id、class、标签名等查找DOM元素。</p>
+<table>
+<thead>
+<tr>
+<th>实例</th>
+<th>返回</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(“#test”)</td>
+<td>单个元素</td>
+<td>选取id为test的元素</td>
+</tr>
+<tr>
+<td>$(“.test”)</td>
+<td>元素集合</td>
+<td>选取所有class为test的元素</td>
+</tr>
+<tr>
+<td>$(“p”)</td>
+<td>元素集合</td>
+<td>选取所有p标签元素</td>
+</tr>
+<tr>
+<td>$(“*”)</td>
+<td>元素集合</td>
+<td>选取所有元素</td>
+</tr>
+<tr>
+<td>$(“div,span,p.myClass”)</td>
+<td>元素集合</td>
+<td>选取div、span、class=myClass的p</td>
+</tr>
+</tbody>
+</table>
+<h3 id="层次选择器"><a href="#层次选择器" class="headerlink" title="层次选择器"></a>层次选择器</h3><p>通过DOM元素之间的层次关系获取特定元素，例如后代元素、子元素、相邻元素、兄弟元素。</p>
+<table>
+<thead>
+<tr>
+<th>实例</th>
+<th>返回</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(“div span”)</td>
+<td>集合元素</td>
+<td>选div中的所有span元素</td>
+</tr>
+<tr>
+<td>$(“div &gt; span”)</td>
+<td>集合元素</td>
+<td>选div中span子元素</td>
+</tr>
+<tr>
+<td>$(“.one + div”)</td>
+<td>集合元素</td>
+<td>选取class为one的下一个div元素（注意是下一个）</td>
+</tr>
+<tr>
+<td>$(“#two~div”)</td>
+<td>集合元素</td>
+<td>选取id为two的元素后面所有div兄弟元素</td>
+</tr>
+</tbody>
+</table>
+<h3 id="过滤选择器"><a href="#过滤选择器" class="headerlink" title="过滤选择器"></a>过滤选择器</h3><h4 id="基本过滤选择器"><a href="#基本过滤选择器" class="headerlink" title="基本过滤选择器"></a>基本过滤选择器</h4><h4 id="内容过滤选择器"><a href="#内容过滤选择器" class="headerlink" title="内容过滤选择器"></a>内容过滤选择器</h4><h4 id="可见性过滤选择器"><a href="#可见性过滤选择器" class="headerlink" title="可见性过滤选择器"></a>可见性过滤选择器</h4><h4 id="属性过滤选择器"><a href="#属性过滤选择器" class="headerlink" title="属性过滤选择器"></a>属性过滤选择器</h4><h4 id="子元素过滤选择器"><a href="#子元素过滤选择器" class="headerlink" title="子元素过滤选择器"></a>子元素过滤选择器</h4><h4 id="表单对象属性过滤选择器"><a href="#表单对象属性过滤选择器" class="headerlink" title="表单对象属性过滤选择器"></a>表单对象属性过滤选择器</h4><h3 id="表单选择器"><a href="#表单选择器" class="headerlink" title="表单选择器"></a>表单选择器</h3><table>
+<thead>
+<tr>
+<th>实例</th>
+<th>返回</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(“:input”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:text”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:password”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:radio”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:checkbox”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:submit”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:image”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:reset”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:button”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:file”)</td>
+<td>集合元素</td>
+<td></td>
+</tr>
+<tr>
+<td>$(“:hidden”)</td>
+<td>集合元素</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-JQuery操作DOM"><a href="#2-JQuery操作DOM" class="headerlink" title="2.JQuery操作DOM"></a>2.JQuery操作DOM</h2><p><strong>获取元素节点中的属性</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"input"</span>).attr(<span class="string">"nmae"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"&lt;li&gt;&lt;/li&gt;"</span>);</span><br><span class="line">$(<span class="string">"&lt;li&gt;雪梨&lt;/li&gt;"</span>)</span><br><span class="line">$(<span class="string">"&lt;li title='雪梨'&gt;雪梨&lt;/li&gt;"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="插入节点"><a href="#插入节点" class="headerlink" title="插入节点"></a>插入节点</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"p"</span>).append($li);</span><br><span class="line">($li).appendTo(<span class="string">"p"</span>);</span><br><span class="line"># prepend prependTo</span><br><span class="line"># after insertAfter before insertBefore</span><br></pre></td></tr></table></figure>
+<h3 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$("ul li:eq(1)").remove(); # 删除所有匹配的节点</span><br><span class="line">$(<span class="string">"ul li"</span>).remove(<span class="string">"li[title!=菠萝]"</span>);</span><br><span class="line">$("ul li:eq(1)").empty(); # 清空所有后代元素</span><br></pre></td></tr></table></figure>
+<h3 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"ul li"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  $(this).clone().appendTo("ul"); # clone(true) 也复制行为</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="替换节点"><a href="#替换节点" class="headerlink" title="替换节点"></a>替换节点</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"p"</span>).replaceWith(<span class="string">"&lt;div&gt;hello&lt;/div&gt;"</span>);</span><br><span class="line">$(<span class="string">"&lt;div&gt;hello&lt;/div&gt;"</span>).replaceAll(<span class="string">"p"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="包裹节点"><a href="#包裹节点" class="headerlink" title="包裹节点"></a>包裹节点</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$("strong").wrap("&lt;b&gt;&lt;/b&gt;"); # 用b标签包裹strong标签 (一对一)</span><br><span class="line">$("strong").wrapAll("&lt;b&gt;&lt;/b&gt;"); # 用一个b标签包裹所有strong标签 (一对多)</span><br><span class="line">$("strong").wrapInner("&lt;b&gt;&lt;/b&gt;"); # 用b标签包裹strong标签的内部</span><br></pre></td></tr></table></figure>
+<h3 id="属性操作"><a href="#属性操作" class="headerlink" title="属性操作"></a>属性操作</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"strong"</span>).attr(attrName,attrValue);</span><br><span class="line">$(<span class="string">"strong"</span>).removeAttr(attrName);</span><br><span class="line"># attr操作是替换或删除原来的属性</span><br><span class="line"># 对于像class这种具有多个属性值的 JQuery提供了addClass()方法</span><br><span class="line">$(<span class="string">"p"</span>).addClass(<span class="string">"another"</span>);</span><br><span class="line">$(<span class="string">"p"</span>).removeClass(<span class="string">"another"</span>);</span><br><span class="line">$(<span class="string">"p"</span>).removeClass(<span class="string">"another high"</span>);</span><br><span class="line">$(<span class="string">"p"</span>).hasClass(<span class="string">"another"</span>);</span><br><span class="line">$(<span class="string">"p"</span>).toggleClass(<span class="string">"another"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="设置和获取HTML、文本和值"><a href="#设置和获取HTML、文本和值" class="headerlink" title="设置和获取HTML、文本和值"></a>设置和获取HTML、文本和值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># &lt;p&gt;我有一只&lt;strong&gt;小毛驴&lt;/strong&gt;&lt;/p&gt;</span><br><span class="line">$("p").html(); # 我有一只&lt;strong&gt;小毛驴&lt;/strong&gt;</span><br><span class="line">$("p").text(); # 我有一只小毛驴</span><br><span class="line">$("input").val("请输入邮箱密码"); # 用于操作标签中的value属性</span><br><span class="line">$("input").focus(function()&#123; # focus</span><br><span class="line">  <span class="built_in">console</span>.log($(<span class="keyword">this</span>).attr(<span class="string">"name"</span>)+<span class="string">"focus"</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">$("input").blur(function()&#123; # blur</span><br><span class="line">  <span class="built_in">console</span>.log($(<span class="keyword">this</span>).attr(<span class="string">"name"</span>)+<span class="string">"blur"</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="遍历节点"><a href="#遍历节点" class="headerlink" title="遍历节点"></a>遍历节点</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$("p").children(); # 遍历子节点</span><br><span class="line">$(<span class="string">"p"</span>).prev();</span><br><span class="line">$(<span class="string">"p"</span>).next();</span><br><span class="line">$(<span class="string">"p"</span>).siblings();</span><br><span class="line">$("p").closest("li"); # 符合规则的临近节点</span><br></pre></td></tr></table></figure>
+<h3 id="CSS-DOM操作"><a href="#CSS-DOM操作" class="headerlink" title="CSS-DOM操作"></a>CSS-DOM操作</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"p"</span>).css(<span class="string">"color"</span>,<span class="string">"read"</span>);</span><br><span class="line">$(<span class="string">"p"</span>).css(&#123;<span class="string">"font-size"</span>:<span class="string">"30px"</span>,<span class="string">"background-color"</span>:<span class="string">"#888888"</span>&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="3-Jquery中的时间和动画"><a href="#3-Jquery中的时间和动画" class="headerlink" title="3.Jquery中的时间和动画"></a>3.Jquery中的时间和动画</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/公众号/LeetCode/第三天/11.装最多的水/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="黄大仁">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黄大仁的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/21/公众号/LeetCode/第三天/11.装最多的水/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T11:22:45+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>题目：11.装最多的水</strong></p>
+<p><img src="/home/hdr/.config/Typora/typora-user-images/1549709346495.png" alt="1549709346495"></p>
+<p>给你一个非负的整形数组，通过柱形图的形式表示每一个数字，求出柱形图中，两条柱子能组成的最大矩形面积。</p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>一开始就能想到的解决方案是嵌套遍历。</p>
+<p>但是认真观察上图，会发现面积取决于宽度和高度，高度取决于低的柱子。</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="keyword">int</span>[] height)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">int</span> l = <span class="number">0</span>, r = height.length - <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">int</span> area = <span class="number">0</span>;</span><br><span class="line">   <span class="keyword">while</span> (l &lt; r) &#123;</span><br><span class="line">      area = Math.max(area, (r - l) * Math.min(height[l], height[r]));</span><br><span class="line">      <span class="keyword">if</span> (height[l] &lt; height[r]) l++;</span><br><span class="line">      <span class="keyword">else</span> r--;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> area;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="黄大仁">
+            
+              <p class="site-author-name" itemprop="name">黄大仁</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">181</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">黄大仁</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
